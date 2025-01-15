@@ -1,0 +1,40 @@
+site_name: GLIDE for Valkey - API Documentation
+repo_url: https://github.com/valkey-io/valkey-glide
+repo_name: GitHub
+docs_dir: markdown
+nav:
+  - Python:
+      - Client:
+          - Standalone: python/glide_client.md
+          - Cluster: python/glide_cluster_client.md
+          - Base: python/base_client.md
+          - CoreCommands: python/core.md
+          - ClusterCommands: python/cluster_commands.md
+          - StandaloneCommands: python/standalone_commands.md
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  highlightjs: true
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    scheme: slate
+markdown_extensions:
+  - pymdownx.keys
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+plugins:
+  - mkdocstrings
+  - search
+extra:
+  generator: false
