@@ -44,6 +44,8 @@
     
       <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../../../../style.css">
+    
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -11164,7 +11166,8 @@ are provided.
 <blockquote>
 <p><strong>configGet</strong>(<code>parameters</code>): <code>T</code></p>
 </blockquote>
-<p>Reads the configuration parameters of the running server.</p>
+<p>Reads the configuration parameters of the running server.
+Starting from server version 7, command supports multiple parameters.</p>
 <h4 id="parameters_14">Parameters</h4>
 <table>
 <thead>
@@ -11213,7 +11216,8 @@ are provided.
 <blockquote>
 <p><strong>configSet</strong>(<code>parameters</code>): <code>T</code></p>
 </blockquote>
-<p>Sets configuration parameters to the specified values.</p>
+<p>Sets configuration parameters to the specified values.
+Starting from server version 7, command supports multiple parameters.</p>
 <h4 id="parameters_15">Parameters</h4>
 <table>
 <thead>
@@ -14583,7 +14587,7 @@ If <code>key</code> does not exist, a new set is created before adding <code>mem
 </tr>
 <tr>
 <td><code>options</code>?</td>
-<td><a href="../../../Commands/interfaces/SetOptions/"><code>SetOptions</code></a></td>
+<td><a href="../../../Commands/type-aliases/SetOptions/"><code>SetOptions</code></a></td>
 <td>The set options. Command Response - If the value is successfully set, return OK. If <code>value</code> isn't set because of <code>onlyIfExists</code> or <code>onlyIfDoesNotExist</code> conditions, return null. If <code>returnOldValue</code> is set, return the old value as a string.</td>
 </tr>
 </tbody>
@@ -17180,9 +17184,9 @@ Similar to ZRange but with a <code>WITHSCORE</code> flag.</p>
 </tr>
 <tr>
 <td><code>rangeQuery</code></td>
-<td><a href="../../../Commands/type-aliases/RangeByScore/"><code>RangeByScore</code></a> | <a href="../../../Commands/type-aliases/RangeByLex/"><code>RangeByLex</code></a> | <a href="../../../Commands/interfaces/RangeByIndex/"><code>RangeByIndex</code></a></td>
+<td><a href="../../../Commands/type-aliases/RangeByScore/"><code>RangeByScore</code></a> | <a href="../../../Commands/interfaces/RangeByIndex/"><code>RangeByIndex</code></a></td>
 <td><code>undefined</code></td>
-<td>The range query object representing the type of range query to perform. - For range queries by index (rank), use <a href="../../../Commands/interfaces/RangeByIndex/">RangeByIndex</a>. - For range queries by lexicographical order, use <a href="../../../Commands/type-aliases/RangeByLex/">RangeByLex</a>. - For range queries by score, use <a href="../../../Commands/type-aliases/RangeByScore/">RangeByScore</a>.</td>
+<td>The range query object representing the type of range query to perform. - For range queries by index (rank), use <a href="../../../Commands/interfaces/RangeByIndex/">RangeByIndex</a>. - For range queries by score, use <a href="../../../Commands/type-aliases/RangeByScore/">RangeByScore</a>.</td>
 </tr>
 <tr>
 <td><code>reverse</code></td>

@@ -44,6 +44,8 @@
     
       <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../../../../style.css">
+    
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1460,12 +1462,12 @@
 <tr>
 <td><a id="protocol"></a> <code>protocol?</code></td>
 <td><a href="../../enumerations/ProtocolVersion/"><code>ProtocolVersion</code></a></td>
-<td>Choose the serialization protocol to be used with the server. If not set, <code>RESP3</code> will be used.</td>
+<td>Serialization protocol to be used. If not set, <code>RESP3</code> will be used.</td>
 </tr>
 <tr>
 <td><a id="readfrom"></a> <code>readFrom?</code></td>
 <td><a href="../../type-aliases/ReadFrom/"><code>ReadFrom</code></a></td>
-<td>Represents the client's read from strategy. If not set, <code>Primary</code> will be used.</td>
+<td>The client's read from strategy. If not set, <code>Primary</code> will be used.</td>
 </tr>
 <tr>
 <td><a id="requesttimeout"></a> <code>requestTimeout?</code></td>

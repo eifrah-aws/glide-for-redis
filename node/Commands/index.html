@@ -44,6 +44,8 @@
     
       <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../../style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1502,10 +1504,6 @@
 <td>Options for the SCAN command. <code>match</code>: The match filter is applied to the result of the command and will only include keys that match the pattern specified. <code>count</code>: <code>COUNT</code> is a just a hint for the command for how many elements to fetch from the server, the default is 10. <code>type</code>: The type of the object to scan. Types are the data types of Valkey: <code>string</code>, <code>list</code>, <code>set</code>, <code>zset</code>, <code>hash</code>, <code>stream</code>.</td>
 </tr>
 <tr>
-<td><a href="interfaces/SetOptions/">SetOptions</a></td>
-<td>-</td>
-</tr>
-<tr>
 <td><a href="interfaces/SortOptions/">SortOptions</a></td>
 <td>Optional arguments to <a href="../BaseClient/classes/BaseClient/#sort">sort</a>, <a href="../BaseClient/classes/BaseClient/#sortstore">sortStore</a> and <a href="../BaseClient/classes/BaseClient/#sortreadonly">sortReadOnly</a> commands.</td>
 </tr>
@@ -1594,6 +1592,10 @@
 </tr>
 <tr>
 <td><a href="type-aliases/SearchOrigin/">SearchOrigin</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="type-aliases/SetOptions/">SetOptions</a></td>
 <td>-</td>
 </tr>
 <tr>
