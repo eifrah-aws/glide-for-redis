@@ -1262,7 +1262,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Commands</a> / SetOptions</p>
 <h1 id="interface-setoptions">Interface: SetOptions</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L127">src/Commands.ts:127</a></p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -1270,7 +1269,6 @@
 <th>Property</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1278,19 +1276,16 @@
 <td><a id="conditionalset"></a> <code>conditionalSet?</code></td>
 <td><code>"onlyIfExists"</code> | <code>"onlyIfDoesNotExist"</code></td>
 <td><code>onlyIfDoesNotExist</code> - Only set the key if it does not already exist. Equivalent to <code>NX</code> in the Valkey API. <code>onlyIfExists</code> - Only set the key if it already exist. Equivalent to <code>EX</code> in the Valkey API. if <code>conditional</code> is not set the value will be set regardless of prior value existence. If value isn't set because of the condition, return null.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L135">src/Commands.ts:135</a></td>
 </tr>
 <tr>
 <td><a id="expiry"></a> <code>expiry?</code></td>
 <td>{ <code>count</code>: <code>number</code>; <code>type</code>: <a href="../../enumerations/TimeUnit/"><code>TimeUnit</code></a>; } | <code>"keepExisting"</code></td>
 <td>If not set, no expiry time will be set for the value.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L145">src/Commands.ts:145</a></td>
 </tr>
 <tr>
 <td><a id="returnoldvalue"></a> <code>returnOldValue?</code></td>
 <td><code>boolean</code></td>
 <td>Return the old string stored at key, or nil if key did not exist. An error is returned and SET aborted if the value stored at key is not a string. Equivalent to <code>GET</code> in the Valkey API.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L141">src/Commands.ts:141</a></td>
 </tr>
 </tbody>
 </table>

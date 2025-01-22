@@ -3359,7 +3359,6 @@
 <hr />
 <p><a href="../../../../modules/">@valkey/valkey-glide</a> / <a href="../../">server-modules/GlideJson</a> / GlideJson</p>
 <h1 id="class-glidejson">Class: GlideJson</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L93">src/server-modules/GlideJson.ts:93</a></p>
 <p>Module for JSON commands.</p>
 <h2 id="constructors">Constructors</h2>
 <h3 id="new-glidejson">new GlideJson()</h3>
@@ -3373,7 +3372,6 @@
 <blockquote>
 <p><code>static</code> <strong>arrappend</strong>(<code>client</code>, <code>key</code>, <code>path</code>, <code>values</code>): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L908">src/server-modules/GlideJson.ts:908</a></p>
 <p>Appends one or more <code>values</code> to the JSON array at the specified <code>path</code> within the JSON
 document stored at <code>key</code>.</p>
 <h4 id="parameters">Parameters</h4>
@@ -3436,7 +3434,6 @@ document stored at <code>key</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrindex</strong>(<code>client</code>, <code>key</code>, <code>path</code>, <code>scalar</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L477">src/server-modules/GlideJson.ts:477</a></p>
 <p>Searches for the first occurrence of a <code>scalar</code> JSON value in the arrays at the <code>path</code>.
 Out of range errors are treated by rounding the index to the array's <code>start</code> and <code>end.
 If</code>start<code>&gt;</code>end<code>, return</code>-1` (not found).</p>
@@ -3507,7 +3504,6 @@ If</code>start<code>&gt;</code>end<code>, return</code>-1` (not found).</p>
 <blockquote>
 <p><code>static</code> <strong>arrinsert</strong>(<code>client</code>, <code>key</code>, <code>path</code>, <code>index</code>, <code>values</code>): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L279">src/server-modules/GlideJson.ts:279</a></p>
 <p>Inserts one or more values into the array at the specified <code>path</code> within the JSON
 document stored at <code>key</code>, before the given <code>index</code>.</p>
 <h4 id="parameters_2">Parameters</h4>
@@ -3579,7 +3575,6 @@ document stored at <code>key</code>, before the given <code>index</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrlen</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L375">src/server-modules/GlideJson.ts:375</a></p>
 <p>Retrieves the length of the array at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_3">Parameters</h4>
 <table>
@@ -3642,7 +3637,6 @@ document stored at <code>key</code>, before the given <code>index</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrpop</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L329">src/server-modules/GlideJson.ts:329</a></p>
 <p>Pops an element from the array located at <code>path</code> in the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_4">Parameters</h4>
 <table>
@@ -3706,7 +3700,6 @@ document stored at <code>key</code>, before the given <code>index</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrtrim</strong>(<code>client</code>, <code>key</code>, <code>path</code>, <code>start</code>, <code>end</code>): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L432">src/server-modules/GlideJson.ts:432</a></p>
 <p>Trims an array at the specified <code>path</code> within the JSON document stored at <code>key</code> so that it becomes a subarray [start, end], both inclusive.
 If <code>start</code> &lt; 0, it is treated as 0.
 If <code>end</code> &gt;= size (size of the array), it is treated as size-1.
@@ -3788,7 +3781,6 @@ If <code>start</code> &gt;= size or <code>start</code> &gt; <code>end</code>, th
 <blockquote>
 <p><code>static</code> <strong>clear</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L708">src/server-modules/GlideJson.ts:708</a></p>
 <p>Clears arrays or objects at the specified JSON path in the document stored at <code>key</code>.
 Numeric values are set to <code>0</code>, boolean values are set to <code>false</code>, and string values are converted to empty strings.</p>
 <h4 id="parameters_6">Parameters</h4>
@@ -3858,7 +3850,6 @@ If `key doesn't exist, an error is raised.</p>
 <blockquote>
 <p><code>static</code> <strong>debugFields</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L982">src/server-modules/GlideJson.ts:982</a></p>
 <p>Reports the number of fields at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_7">Parameters</h4>
 <table>
@@ -3916,7 +3907,6 @@ If `key doesn't exist, an error is raised.</p>
 <blockquote>
 <p><code>static</code> <strong>debugMemory</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L943">src/server-modules/GlideJson.ts:943</a></p>
 <p>Reports memory usage in bytes of a JSON object at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_8">Parameters</h4>
 <table>
@@ -3974,7 +3964,6 @@ If `key doesn't exist, an error is raised.</p>
 <blockquote>
 <p><code>static</code> <strong>del</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L575">src/server-modules/GlideJson.ts:575</a></p>
 <p>Deletes the JSON value at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_9">Parameters</h4>
 <table>
@@ -4028,7 +4017,6 @@ If `key doesn't exist, an error is raised.</p>
 <blockquote>
 <p><code>static</code> <strong>forget</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L611">src/server-modules/GlideJson.ts:611</a></p>
 <p>Deletes the JSON value at the specified <code>path</code> within the JSON document stored at <code>key</code>. This command is
 an alias of <a href="./#del">del</a>.</p>
 <h4 id="parameters_10">Parameters</h4>
@@ -4083,7 +4071,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>get</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L184">src/server-modules/GlideJson.ts:184</a></p>
 <p>Retrieves the JSON value at the specified <code>paths</code> stored at <code>key</code>.</p>
 <h4 id="parameters_11">Parameters</h4>
 <table>
@@ -4157,7 +4144,6 @@ In case of multiple paths, and <code>paths</code> are a mix of both JSONPath and
 <blockquote>
 <p><code>static</code> <strong>mget</strong>(<code>client</code>, <code>keys</code>, <code>path</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L230">src/server-modules/GlideJson.ts:230</a></p>
 <p>Retrieves the JSON values at the specified <code>path</code> stored at multiple <code>keys</code>.</p>
 <h4 id="parameters_12">Parameters</h4>
 <table>
@@ -4220,7 +4206,6 @@ the request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><code>static</code> <strong>numincrby</strong>(<code>client</code>, <code>key</code>, <code>path</code>, <code>num</code>): <code>Promise</code>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1026">src/server-modules/GlideJson.ts:1026</a></p>
 <p>Increments or decrements the JSON value(s) at the specified <code>path</code> by <code>number</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_13">Parameters</h4>
 <table>
@@ -4284,7 +4269,6 @@ the request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><code>static</code> <strong>nummultby</strong>(<code>client</code>, <code>key</code>, <code>path</code>, <code>num</code>): <code>Promise</code>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1066">src/server-modules/GlideJson.ts:1066</a></p>
 <p>Multiplies the JSON value(s) at the specified <code>path</code> by <code>number</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_14">Parameters</h4>
 <table>
@@ -4348,7 +4332,6 @@ the request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><code>static</code> <strong>objkeys</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1147">src/server-modules/GlideJson.ts:1147</a></p>
 <p>Retrieves key names in the object values at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_15">Parameters</h4>
 <table>
@@ -4403,7 +4386,6 @@ the request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><code>static</code> <strong>objlen</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1104">src/server-modules/GlideJson.ts:1104</a></p>
 <p>Retrieves the number of key-value pairs in the object stored at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_16">Parameters</h4>
 <table>
@@ -4462,7 +4444,6 @@ the request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><code>static</code> <strong>resp</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/UniversalReturnTypeJson/"><code>UniversalReturnTypeJson</code></a>\&lt;<code>null</code> | <code>number</code> | <a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L757">src/server-modules/GlideJson.ts:757</a></p>
 <p>Retrieve the JSON value at the specified <code>path</code> within the JSON document stored at <code>key</code>.
 The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP).
 - JSON null is mapped to the RESP Null Bulk String.
@@ -4525,7 +4506,6 @@ The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP)
 <blockquote>
 <p><code>static</code> <strong>set</strong>(<code>client</code>, <code>key</code>, <code>path</code>, <code>value</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L122">src/server-modules/GlideJson.ts:122</a></p>
 <p>Sets the JSON value at the specified <code>path</code> stored at <code>key</code>.</p>
 <h4 id="parameters_18">Parameters</h4>
 <table>
@@ -4583,7 +4563,6 @@ The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP)
 <blockquote>
 <p><code>static</code> <strong>strappend</strong>(<code>client</code>, <code>key</code>, <code>value</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L859">src/server-modules/GlideJson.ts:859</a></p>
 <p>Appends the specified <code>value</code> to the string stored at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_19">Parameters</h4>
 <table>
@@ -4655,7 +4634,6 @@ The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP)
 <blockquote>
 <p><code>static</code> <strong>strlen</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L811">src/server-modules/GlideJson.ts:811</a></p>
 <p>Returns the length of the JSON string value stored at the specified <code>path</code> within
 the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_20">Parameters</h4>
@@ -4725,7 +4703,6 @@ the JSON document stored at <code>key</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>toggle</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<code>boolean</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L540">src/server-modules/GlideJson.ts:540</a></p>
 <p>Toggles a Boolean value stored at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_21">Parameters</h4>
 <table>
@@ -4796,7 +4773,6 @@ or <code>null</code> for JSON values matching the path that are not boolean.</li
 <blockquote>
 <p><code>static</code> <strong>type</strong>(<code>client</code>, <code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ReturnTypeJson/"><code>ReturnTypeJson</code></a>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L655">src/server-modules/GlideJson.ts:655</a></p>
 <p>Reports the type of values at the given path.</p>
 <h4 id="parameters_22">Parameters</h4>
 <table>

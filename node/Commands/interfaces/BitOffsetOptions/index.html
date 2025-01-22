@@ -1271,7 +1271,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Commands</a> / BitOffsetOptions</p>
 <h1 id="interface-bitoffsetoptions">Interface: BitOffsetOptions</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2490">src/Commands.ts:2490</a></p>
 <p>Represents offsets specifying a string interval to analyze in the <a href="../../../BaseClient/classes/BaseClient/#bitcount">bitcount</a> and <a href="../../../BaseClient/classes/BaseClient/#bitpos">bitpos</a> commands.
 The offsets are zero-based indexes, with <code>0</code> being the first index of the string, <code>1</code> being the next index and so on.
 The offsets can also be negative numbers indicating offsets starting at the end of the string, with <code>-1</code> being
@@ -1289,7 +1288,6 @@ specified, <code>start=0</code> and <code>end=2</code> means to look at the firs
 <th>Property</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1297,19 +1295,16 @@ specified, <code>start=0</code> and <code>end=2</code> means to look at the firs
 <td><a id="end"></a> <code>end?</code></td>
 <td><code>number</code></td>
 <td>The ending offset index. Optional since Valkey version 8.0 and above for the BITCOUNT command. If not provided, it will default to the end of the string. Could be defined only if <code>start</code> is defined.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2498">src/Commands.ts:2498</a></td>
 </tr>
 <tr>
 <td><a id="indextype"></a> <code>indexType?</code></td>
 <td><a href="../../enumerations/BitmapIndexType/"><code>BitmapIndexType</code></a></td>
 <td>The index offset type. This option can only be specified if you are using server version 7.0.0 or above. Could be either <a href="../../enumerations/BitmapIndexType/#byte">BitmapIndexType.BYTE</a> or <a href="../../enumerations/BitmapIndexType/#bit">BitmapIndexType.BIT</a>. If no index type is provided, the indexes will be assumed to be byte indexes.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2504">src/Commands.ts:2504</a></td>
 </tr>
 <tr>
 <td><a id="start"></a> <code>start</code></td>
 <td><code>number</code></td>
 <td>The starting offset index.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2492">src/Commands.ts:2492</a></td>
 </tr>
 </tbody>
 </table>

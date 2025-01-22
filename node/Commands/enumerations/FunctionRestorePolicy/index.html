@@ -1271,7 +1271,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Commands</a> / FunctionRestorePolicy</p>
 <h1 id="enumeration-functionrestorepolicy">Enumeration: FunctionRestorePolicy</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2450">src/Commands.ts:2450</a></p>
 <p>Option for <code>FUNCTION RESTORE</code> command: <a href="../../../GlideClient/classes/GlideClient/#functionrestore">GlideClient.functionRestore</a> and
 <a href="../../../GlideClusterClient/classes/GlideClusterClient/#functionrestore">GlideClusterClient.functionRestore</a>.</p>
 <h2 id="see">See</h2>
@@ -1283,7 +1282,6 @@
 <th>Enumeration Member</th>
 <th>Value</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1291,19 +1289,16 @@
 <td><a id="append"></a> <code>APPEND</code></td>
 <td><code>"APPEND"</code></td>
 <td>Appends the restored libraries to the existing libraries and aborts on collision. This is the default policy.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2455">src/Commands.ts:2455</a></td>
 </tr>
 <tr>
 <td><a id="flush"></a> <code>FLUSH</code></td>
 <td><code>"FLUSH"</code></td>
 <td>Deletes all existing libraries before restoring the payload.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2457">src/Commands.ts:2457</a></td>
 </tr>
 <tr>
 <td><a id="replace"></a> <code>REPLACE</code></td>
 <td><code>"REPLACE"</code></td>
 <td>Appends the restored libraries to the existing libraries, replacing any existing ones in case of name collisions. Note that this policy doesn't prevent function name collisions, only libraries.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2463">src/Commands.ts:2463</a></td>
 </tr>
 </tbody>
 </table>

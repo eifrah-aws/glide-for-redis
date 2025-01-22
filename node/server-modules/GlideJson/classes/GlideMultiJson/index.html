@@ -2084,7 +2084,6 @@
 <hr />
 <p><a href="../../../../modules/">@valkey/valkey-glide</a> / <a href="../../">server-modules/GlideJson</a> / GlideMultiJson</p>
 <h1 id="class-glidemultijson">Class: GlideMultiJson</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1177">src/server-modules/GlideJson.ts:1177</a></p>
 <p>Transaction implementation for JSON module. Transactions allow the execution of a group of
 commands in a single step. See <a href="../../../../Transaction/classes/Transaction/">Transaction</a> and <a href="../../../../Transaction/classes/ClusterTransaction/">ClusterTransaction</a>.</p>
 <h2 id="example">Example</h2>
@@ -2108,7 +2107,6 @@ commands in a single step. See <a href="../../../../Transaction/classes/Transact
 <blockquote>
 <p><code>static</code> <strong>arrappend</strong>(<code>transaction</code>, <code>key</code>, <code>path</code>, <code>values</code>): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1730">src/server-modules/GlideJson.ts:1730</a></p>
 <p>Appends one or more <code>values</code> to the JSON array at the specified <code>path</code> within the JSON
 document stored at <code>key</code>.</p>
 <h4 id="parameters">Parameters</h4>
@@ -2150,7 +2148,6 @@ document stored at <code>key</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrindex</strong>(<code>transaction</code>, <code>key</code>, <code>path</code>, <code>scalar</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1436">src/server-modules/GlideJson.ts:1436</a></p>
 <p>Searches for the first occurrence of a <code>scalar</code> JSON value in the arrays at the <code>path</code>.
 Out of range errors are treated by rounding the index to the array's <code>start</code> and <code>end.
 If</code>start<code>&gt;</code>end<code>, return</code>-1` (not found).</p>
@@ -2208,7 +2205,6 @@ If</code>start<code>&gt;</code>end<code>, return</code>-1` (not found).</p>
 <blockquote>
 <p><code>static</code> <strong>arrinsert</strong>(<code>transaction</code>, <code>key</code>, <code>path</code>, <code>index</code>, <code>values</code>): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1296">src/server-modules/GlideJson.ts:1296</a></p>
 <p>Inserts one or more values into the array at the specified <code>path</code> within the JSON
 document stored at <code>key</code>, before the given <code>index</code>.</p>
 <h4 id="parameters_2">Parameters</h4>
@@ -2255,7 +2251,6 @@ document stored at <code>key</code>, before the given <code>index</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrlen</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1360">src/server-modules/GlideJson.ts:1360</a></p>
 <p>Retrieves the length of the array at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_3">Parameters</h4>
 <table>
@@ -2296,7 +2291,6 @@ document stored at <code>key</code>, before the given <code>index</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrpop</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1327">src/server-modules/GlideJson.ts:1327</a></p>
 <p>Pops an element from the array located at <code>path</code> in the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_4">Parameters</h4>
 <table>
@@ -2332,7 +2326,6 @@ document stored at <code>key</code>, before the given <code>index</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>arrtrim</strong>(<code>transaction</code>, <code>key</code>, <code>path</code>, <code>start</code>, <code>end</code>): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1397">src/server-modules/GlideJson.ts:1397</a></p>
 <p>Trims an array at the specified <code>path</code> within the JSON document stored at <code>key</code> so that it becomes a subarray [start, end], both inclusive.
 If <code>start</code> &lt; 0, it is treated as 0.
 If <code>end</code> &gt;= size (size of the array), it is treated as size-1.
@@ -2381,7 +2374,6 @@ If <code>start</code> &gt;= size or <code>start</code> &gt; <code>end</code>, th
 <blockquote>
 <p><code>static</code> <strong>clear</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1584">src/server-modules/GlideJson.ts:1584</a></p>
 <p>Clears arrays or objects at the specified JSON path in the document stored at <code>key</code>.
 Numeric values are set to <code>0</code>, boolean values are set to <code>false</code>, and string values are converted to empty strings.</p>
 <h4 id="parameters_6">Parameters</h4>
@@ -2423,7 +2415,6 @@ Numeric values are set to <code>0</code>, boolean values are set to <code>false<
 <blockquote>
 <p><code>static</code> <strong>debugFields</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1790">src/server-modules/GlideJson.ts:1790</a></p>
 <p>Reports the number of fields at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_7">Parameters</h4>
 <table>
@@ -2464,7 +2455,6 @@ Numeric values are set to <code>0</code>, boolean values are set to <code>false<
 <blockquote>
 <p><code>static</code> <strong>debugMemory</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1758">src/server-modules/GlideJson.ts:1758</a></p>
 <p>Reports memory usage in bytes of a JSON object at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_8">Parameters</h4>
 <table>
@@ -2505,7 +2495,6 @@ Numeric values are set to <code>0</code>, boolean values are set to <code>false<
 <blockquote>
 <p><code>static</code> <strong>del</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1498">src/server-modules/GlideJson.ts:1498</a></p>
 <p>Deletes the JSON value at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_9">Parameters</h4>
 <table>
@@ -2546,7 +2535,6 @@ Numeric values are set to <code>0</code>, boolean values are set to <code>false<
 <blockquote>
 <p><code>static</code> <strong>forget</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1523">src/server-modules/GlideJson.ts:1523</a></p>
 <p>Deletes the JSON value at the specified <code>path</code> within the JSON document stored at <code>key</code>. This command is
 an alias of <a href="./#del">del</a>.</p>
 <h4 id="parameters_10">Parameters</h4>
@@ -2588,7 +2576,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>get</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1231">src/server-modules/GlideJson.ts:1231</a></p>
 <p>Retrieves the JSON value at the specified <code>paths</code> stored at <code>key</code>.</p>
 <h4 id="parameters_11">Parameters</h4>
 <table>
@@ -2624,7 +2611,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>mget</strong>(<code>transaction</code>, <code>keys</code>, <code>path</code>): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1264">src/server-modules/GlideJson.ts:1264</a></p>
 <p>Retrieves the JSON values at the specified <code>path</code> stored at multiple <code>keys</code>.</p>
 <h4 id="parameters_12">Parameters</h4>
 <table>
@@ -2662,7 +2648,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>numincrby</strong>(<code>transaction</code>, <code>key</code>, <code>path</code>, <code>num</code>): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1824">src/server-modules/GlideJson.ts:1824</a></p>
 <p>Increments or decrements the JSON value(s) at the specified <code>path</code> by <code>number</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_13">Parameters</h4>
 <table>
@@ -2703,7 +2688,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>nummultby</strong>(<code>transaction</code>, <code>key</code>, <code>path</code>, <code>num</code>): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1854">src/server-modules/GlideJson.ts:1854</a></p>
 <p>Multiplies the JSON value(s) at the specified <code>path</code> by <code>number</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_14">Parameters</h4>
 <table>
@@ -2744,7 +2728,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>objkeys</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1917">src/server-modules/GlideJson.ts:1917</a></p>
 <p>Retrieves key names in the object values at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_15">Parameters</h4>
 <table>
@@ -2785,7 +2768,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>objlen</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1883">src/server-modules/GlideJson.ts:1883</a></p>
 <p>Retrieves the number of key-value pairs in the object stored at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_16">Parameters</h4>
 <table>
@@ -2826,7 +2808,6 @@ an alias of <a href="./#del">del</a>.</p>
 <blockquote>
 <p><code>static</code> <strong>resp</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1623">src/server-modules/GlideJson.ts:1623</a></p>
 <p>Retrieve the JSON value at the specified <code>path</code> within the JSON document stored at <code>key</code>.
 The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP).
 - JSON null is mapped to the RESP Null Bulk String.
@@ -2875,7 +2856,6 @@ The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP)
 <blockquote>
 <p><code>static</code> <strong>set</strong>(<code>transaction</code>, <code>key</code>, <code>path</code>, <code>value</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1193">src/server-modules/GlideJson.ts:1193</a></p>
 <p>Sets the JSON value at the specified <code>path</code> stored at <code>key</code>.</p>
 <h4 id="parameters_18">Parameters</h4>
 <table>
@@ -2926,7 +2906,6 @@ The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP)
 <blockquote>
 <p><code>static</code> <strong>strappend</strong>(<code>transaction</code>, <code>key</code>, <code>value</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1691">src/server-modules/GlideJson.ts:1691</a></p>
 <p>Appends the specified <code>value</code> to the string stored at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_19">Parameters</h4>
 <table>
@@ -2972,7 +2951,6 @@ The returning result is in the Valkey or Redis OSS Serialization Protocol (RESP)
 <blockquote>
 <p><code>static</code> <strong>strlen</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1657">src/server-modules/GlideJson.ts:1657</a></p>
 <p>Returns the length of the JSON string value stored at the specified <code>path</code> within
 the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_20">Parameters</h4>
@@ -3014,7 +2992,6 @@ the JSON document stored at <code>key</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>toggle</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1474">src/server-modules/GlideJson.ts:1474</a></p>
 <p>Toggles a Boolean value stored at the specified <code>path</code> within the JSON document stored at <code>key</code>.</p>
 <h4 id="parameters_21">Parameters</h4>
 <table>
@@ -3055,7 +3032,6 @@ the JSON document stored at <code>key</code>.</p>
 <blockquote>
 <p><code>static</code> <strong>type</strong>(<code>transaction</code>, <code>key</code>, <code>options</code>?): <a href="../../../../Transaction/classes/Transaction/"><code>Transaction</code></a> | <a href="../../../../Transaction/classes/ClusterTransaction/"><code>ClusterTransaction</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideJson.ts#L1556">src/server-modules/GlideJson.ts:1556</a></p>
 <p>Reports the type of values at the given path.</p>
 <h4 id="parameters_22">Parameters</h4>
 <table>

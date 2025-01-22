@@ -1262,7 +1262,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Commands</a> / BitOverflowControl</p>
 <h1 id="enumeration-bitoverflowcontrol">Enumeration: BitOverflowControl</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L775">src/Commands.ts:775</a></p>
 <p>Enumeration specifying bit overflow controls for the <a href="../../../BaseClient/classes/BaseClient/#bitfield">bitfield</a> command.</p>
 <h2 id="enumeration-members">Enumeration Members</h2>
 <table>
@@ -1271,7 +1270,6 @@
 <th>Enumeration Member</th>
 <th>Value</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1279,19 +1277,16 @@
 <td><a id="fail"></a> <code>FAIL</code></td>
 <td><code>"FAIL"</code></td>
 <td>Returns <code>None</code> when overflows occur.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L789">src/Commands.ts:789</a></td>
 </tr>
 <tr>
 <td><a id="sat"></a> <code>SAT</code></td>
 <td><code>"SAT"</code></td>
 <td>Underflows remain set to the minimum value, and overflows remain set to the maximum value.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L785">src/Commands.ts:785</a></td>
 </tr>
 <tr>
 <td><a id="wrap"></a> <code>WRAP</code></td>
 <td><code>"WRAP"</code></td>
 <td>Performs modulo when overflows occur with unsigned encoding. When overflows occur with signed encoding, the value restarts at the most negative value. When underflows occur with signed encoding, the value restarts at the most positive value.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L781">src/Commands.ts:781</a></td>
 </tr>
 </tbody>
 </table>

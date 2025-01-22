@@ -1525,13 +1525,11 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Logger</a> / Logger</p>
 <h1 id="class-logger">Class: Logger</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Logger.ts#L31">src/Logger.ts:31</a></p>
 <h2 id="methods">Methods</h2>
 <h3 id="init">init()</h3>
 <blockquote>
 <p><code>static</code> <strong>init</strong>(<code>level</code>?, <code>fileName</code>?): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Logger.ts#L67">src/Logger.ts:67</a></p>
 <p>Initialize a logger if it wasn't initialized before - this method is meant to be used when there is no intention to replace an existing logger.
 The logger will filter all logs with a level lower than the given level,
 If given a fileName argument, will write the logs to files postfixed with fileName. If fileName isn't provided, the logs will be written to the console.
@@ -1562,7 +1560,6 @@ To turn off the logger, provide the level "off".</p>
 <blockquote>
 <p><code>static</code> <strong>log</strong>(<code>logLevel</code>, <code>logIdentifier</code>, <code>message</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Logger.ts#L47">src/Logger.ts:47</a></p>
 <p>take the arguments from the user and provide to the core-logger (see ../logger-core)
 if the level is higher then the logger level (error is 0, warn 1, etc.) simply return without operation
 if a logger instance doesn't exist, create new one with default mode (decided by rust core, normally - level: error, target: console)
@@ -1599,7 +1596,6 @@ External users shouldn't use this function.</p>
 <blockquote>
 <p><code>static</code> <strong>setLoggerConfig</strong>(<code>level</code>, <code>fileName</code>?): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Logger.ts#L79">src/Logger.ts:79</a></p>
 <p>configure the logger.
 the level argument is the level of the logs you want the system to provide (error logs, warn logs, etc.)
 the filename argument is optional - if provided the target of the logs will be the file mentioned, else will be the console

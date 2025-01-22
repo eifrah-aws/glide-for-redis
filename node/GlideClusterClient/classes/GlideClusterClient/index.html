@@ -31673,7 +31673,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">GlideClusterClient</a> / GlideClusterClient</p>
 <h1 id="class-glideclusterclient">Class: GlideClusterClient</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L499">src/GlideClusterClient.ts:499</a></p>
 <p>Client used for connection to cluster servers.</p>
 <h2 id="see">See</h2>
 <p>For full documentation refer to <a href="https://github.com/valkey-io/valkey-glide/wiki/NodeJS-wrapper#cluster|Valkey">Glide Wiki</a>.</p>
@@ -31686,7 +31685,6 @@
 <blockquote>
 <p><code>protected</code> <strong>new GlideClusterClient</strong>(<code>socket</code>, <code>options</code>?): <a href="./"><code>GlideClusterClient</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L973">src/BaseClient.ts:973</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters">Parameters</h4>
 <table>
@@ -31720,7 +31718,6 @@
 <th>Type</th>
 <th>Default value</th>
 <th>Inherited from</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -31730,7 +31727,6 @@
 <td><a href="../../../BaseClient/enumerations/Decoder/"><code>Decoder</code></a></td>
 <td><code>Decoder.String</code></td>
 <td><a href="../../../BaseClient/classes/BaseClient/"><code>BaseClient</code></a>.<a href="../../../BaseClient/classes/BaseClient/#defaultdecoder"><code>defaultDecoder</code></a></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L819">src/BaseClient.ts:819</a></td>
 </tr>
 <tr>
 <td><a id="isclosed"></a> <code>isClosed</code></td>
@@ -31738,7 +31734,6 @@
 <td><code>boolean</code></td>
 <td><code>false</code></td>
 <td><a href="../../../BaseClient/classes/BaseClient/"><code>BaseClient</code></a>.<a href="../../../BaseClient/classes/BaseClient/#isclosed"><code>isClosed</code></a></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L818">src/BaseClient.ts:818</a></td>
 </tr>
 <tr>
 <td><a id="promisecallbackfunctions"></a> <code>promiseCallbackFunctions</code></td>
@@ -31746,7 +31741,6 @@
 <td>[<code>PromiseFunction</code>, <code>ErrorFunction</code>][]</td>
 <td><code>[]</code></td>
 <td><a href="../../../BaseClient/classes/BaseClient/"><code>BaseClient</code></a>.<a href="../../../BaseClient/classes/BaseClient/#promisecallbackfunctions"><code>promiseCallbackFunctions</code></a></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L809">src/BaseClient.ts:809</a></td>
 </tr>
 </tbody>
 </table>
@@ -31755,7 +31749,6 @@
 <blockquote>
 <p><strong>append</strong>(<code>key</code>, <code>value</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7336">src/BaseClient.ts:7336</a></p>
 <p>Appends a <code>value</code> to a <code>key</code>. If <code>key</code> does not exist it is created and set as an empty string,
 so <code>APPEND</code> will be similar to <a href="../../../BaseClient/classes/BaseClient/#set">set</a> in this special case.</p>
 <h4 id="parameters_1">Parameters</h4>
@@ -31802,7 +31795,6 @@ so <code>APPEND</code> will be similar to <a href="../../../BaseClient/classes/B
 <blockquote>
 <p><strong>bitcount</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6584">src/BaseClient.ts:6584</a></p>
 <p>Counts the number of set bits (population counting) in the string stored at <code>key</code>. The <code>options</code> argument can
 optionally be provided to count the number of bits in a specific string interval.</p>
 <h4 id="parameters_2">Parameters</h4>
@@ -31848,7 +31840,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitfield</strong>(<code>key</code>, <code>subcommands</code>): <code>Promise</code>\&lt;(<code>null</code> | <code>number</code>)[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1969">src/BaseClient.ts:1969</a></p>
 <p>Reads or modifies the array of bits representing the string that is held at <code>key</code> based on the specified
 <code>subcommands</code>.</p>
 <h4 id="parameters_3">Parameters</h4>
@@ -31898,7 +31889,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitfieldReadOnly</strong>(<code>key</code>, <code>subcommands</code>): <code>Promise</code>\&lt;<code>number</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1993">src/BaseClient.ts:1993</a></p>
 <p>Reads the array of bits representing the string that is held at <code>key</code> based on the specified <code>subcommands</code>.</p>
 <h4 id="parameters_4">Parameters</h4>
 <table>
@@ -31941,7 +31931,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitop</strong>(<code>operation</code>, <code>destination</code>, <code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1840">src/BaseClient.ts:1840</a></p>
 <p>Perform a bitwise operation between multiple keys (containing string values) and store the result in the
 <code>destination</code>.</p>
 <h4 id="parameters_5">Parameters</h4>
@@ -31994,7 +31983,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitpos</strong>(<code>key</code>, <code>bit</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1930">src/BaseClient.ts:1930</a></p>
 <p>Returns the position of the first bit matching the given <code>bit</code> value. The optional starting offset
 <code>start</code> is a zero-based index, with <code>0</code> being the first byte of the list, <code>1</code> being the next byte and so on.
 The offset can also be a negative number indicating an offset starting at the end of the list, with <code>-1</code> being
@@ -32054,7 +32042,6 @@ the last byte of the list, <code>-2</code> being the penultimate, and so on.</p>
 <blockquote>
 <p><strong>blmove</strong>(<code>source</code>, <code>destination</code>, <code>whereFrom</code>, <code>whereTo</code>, <code>timeout</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2769">src/BaseClient.ts:2769</a></p>
 <p>Blocks the connection until it pops atomically and removes the left/right-most element to the
 list stored at <code>source</code> depending on <code>whereFrom</code>, and pushes the element at the first/last element
 of the list stored at <code>destination</code> depending on <code>whereTo</code>.
@@ -32127,7 +32114,6 @@ of the list stored at <code>destination</code> depending on <code>whereTo</code>
 <blockquote>
 <p><strong>blmpop</strong>(<code>keys</code>, <code>direction</code>, <code>timeout</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | { <code>elements</code>: <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]; <code>key</code>: <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>; }&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7404">src/BaseClient.ts:7404</a></p>
 <p>Blocks the connection until it pops one or more elements from the first non-empty list from the
 provided <code>key</code>. <code>BLMPOP</code> is the blocking variant of <a href="../../../BaseClient/classes/BaseClient/#lmpop">lmpop</a>.</p>
 <h4 id="parameters_8">Parameters</h4>
@@ -32183,7 +32169,6 @@ provided <code>key</code>. <code>BLMPOP</code> is the blocking variant of <a hre
 <blockquote>
 <p><strong>blpop</strong>(<code>keys</code>, <code>timeout</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6313">src/BaseClient.ts:6313</a></p>
 <p>Blocking list pop primitive.
 Pop an element from the head of the first list that is non-empty,
 with the given <code>keys</code> being checked in the order that they are given.
@@ -32236,7 +32221,6 @@ formatted as [key, value]. If no element could be popped and the timeout expired
 <blockquote>
 <p><strong>brpop</strong>(<code>keys</code>, <code>timeout</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6284">src/BaseClient.ts:6284</a></p>
 <p>Blocking list pop primitive.
 Pop an element from the tail of the first list that is non-empty,
 with the given <code>keys</code> being checked in the order that they are given.
@@ -32290,7 +32274,6 @@ formatted as [key, value]. If no element could be popped and the timeout expired
 <blockquote>
 <p><strong>bzmpop</strong>(<code>keys</code>, <code>modifier</code>, <code>timeout</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6896">src/BaseClient.ts:6896</a></p>
 <p>Pops a member-score pair from the first non-empty sorted set, with the given <code>keys</code> being
 checked in the order they are provided. Blocks the connection when there are no members
 to pop from any of the given sorted sets. <code>BZMPOP</code> is the blocking variant of <a href="../../../BaseClient/classes/BaseClient/#zmpop">zmpop</a>.</p>
@@ -32353,7 +32336,6 @@ to pop from any of the given sorted sets. <code>BZMPOP</code> is the blocking va
 <blockquote>
 <p><strong>bzpopmax</strong>(<code>keys</code>, <code>timeout</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <code>number</code>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5022">src/BaseClient.ts:5022</a></p>
 <p>Blocks the connection until it removes and returns a member with the highest score from the
 first non-empty sorted set, with the given <code>key</code> being checked in the order they
 are provided.
@@ -32404,7 +32386,6 @@ are provided.
 <blockquote>
 <p><strong>bzpopmin</strong>(<code>keys</code>, <code>timeout</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <code>number</code>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4946">src/BaseClient.ts:4946</a></p>
 <p>Blocks the connection until it removes and returns a member with the lowest score from the
 first non-empty sorted set, with the given <code>key</code> being checked in the order they
 are provided.
@@ -32455,7 +32436,6 @@ are provided.
 <blockquote>
 <p><strong>cancelPubSubFuturesWithExceptionSafe</strong>(<code>exception</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1168">src/BaseClient.ts:1168</a></p>
 <h4 id="parameters_14">Parameters</h4>
 <table>
 <thead>
@@ -32480,7 +32460,6 @@ are provided.
 <blockquote>
 <p><strong>clientGetName</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L861">src/GlideClusterClient.ts:861</a></p>
 <p>Gets the name of the connection to which the request is routed.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_15">Parameters</h4>
@@ -32523,7 +32502,6 @@ are provided.
 <blockquote>
 <p><strong>clientId</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L935">src/GlideClusterClient.ts:935</a></p>
 <p>Returns the current connection ID.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_16">Parameters</h4>
@@ -32558,7 +32536,6 @@ are provided.
 <blockquote>
 <p><strong>close</strong>(<code>errorMessage</code>?): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7693">src/BaseClient.ts:7693</a></p>
 <p>Terminate the client by closing all associated resources, including the socket and any active promises.
  All open promises will be closed with an exception.</p>
 <h4 id="parameters_17">Parameters</h4>
@@ -32587,7 +32564,6 @@ are provided.
 <blockquote>
 <p><strong>completePubSubFuturesSafe</strong>(): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1331">src/BaseClient.ts:1331</a></p>
 <h4 id="returns_18">Returns</h4>
 <p><code>void</code></p>
 <h4 id="inherited-from_16">Inherited from</h4>
@@ -32597,7 +32573,6 @@ are provided.
 <blockquote>
 <p><strong>configGet</strong>(<code>parameters</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>Record</code>\&lt;<code>string</code>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L971">src/GlideClusterClient.ts:971</a></p>
 <p>Reads the configuration parameters of the running server.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_18">Parameters</h4>
@@ -32642,7 +32617,6 @@ are provided.
 <blockquote>
 <p><strong>configResetStat</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L911">src/GlideClusterClient.ts:911</a></p>
 <p>Resets the statistics reported by the server using the <code>INFO</code> and <code>LATENCY HISTOGRAM</code> commands.</p>
 <p>The command will be routed to all nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_19">Parameters</h4>
@@ -32677,7 +32651,6 @@ are provided.
 <blockquote>
 <p><strong>configRewrite</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L887">src/GlideClusterClient.ts:887</a></p>
 <p>Rewrites the configuration file with the current configuration.</p>
 <p>The command will be routed to a all nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_20">Parameters</h4>
@@ -32712,7 +32685,6 @@ are provided.
 <blockquote>
 <p><strong>configSet</strong>(<code>parameters</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1000">src/GlideClusterClient.ts:1000</a></p>
 <p>Sets configuration parameters to the specified values.</p>
 <p>The command will be routed to all nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_21">Parameters</h4>
@@ -32752,7 +32724,6 @@ are provided.
 <blockquote>
 <p><code>protected</code> <strong>configureAdvancedConfigurationBase</strong>(<code>options</code>, <code>request</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7653">src/BaseClient.ts:7653</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_22">Parameters</h4>
 <table>
@@ -32782,7 +32753,6 @@ are provided.
 <blockquote>
 <p><code>protected</code> <strong>configurePubsub</strong>(<code>options</code>, <code>configuration</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L826">src/BaseClient.ts:826</a></p>
 <h4 id="parameters_23">Parameters</h4>
 <table>
 <thead>
@@ -32811,7 +32781,6 @@ are provided.
 <blockquote>
 <p><code>protected</code> <strong>connectToServer</strong>(<code>options</code>): <code>Promise</code>\&lt;<code>void</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7665">src/BaseClient.ts:7665</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_24">Parameters</h4>
 <table>
@@ -32837,7 +32806,6 @@ are provided.
 <blockquote>
 <p><strong>copy</strong>(<code>source</code>, <code>destination</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1105">src/GlideClusterClient.ts:1105</a></p>
 <p>Copies the value stored at the <code>source</code> to the <code>destination</code> key. When <code>replace</code> is <code>true</code>,
 removes the <code>destination</code> key first if it already exists, otherwise performs no action.</p>
 <h4 id="parameters_25">Parameters</h4>
@@ -32888,7 +32856,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><code>protected</code> <strong>createClientRequest</strong>(<code>options</code>): <code>IConnectionRequest</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L503">src/GlideClusterClient.ts:503</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_26">Parameters</h4>
 <table>
@@ -32914,7 +32881,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><code>protected</code> <strong>createClusterScanPromise</strong>(<code>cursor</code>, <code>options</code>?): <code>Promise</code>\&lt;[<code>ClusterScanCursor</code>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L633">src/GlideClusterClient.ts:633</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_27">Parameters</h4>
 <table>
@@ -32942,7 +32908,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><code>protected</code> <strong>createWritePromise</strong>\&lt;<code>T</code>&gt;(<code>command</code>, <code>options</code>): <code>Promise</code>\&lt;<code>T</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1018">src/BaseClient.ts:1018</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="type-parameters">Type Parameters</h4>
 <table>
@@ -32985,7 +32950,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><strong>customCommand</strong>(<code>args</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L730">src/GlideClusterClient.ts:730</a></p>
 <p>Executes a single command, without checking inputs. Every part of the command, including subcommands,
  should be added as a separate value in args.
  The command will be routed automatically based on the passed command's default request policy, unless <code>route</code> is provided,
@@ -33028,7 +32992,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><strong>dbsize</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1551">src/GlideClusterClient.ts:1551</a></p>
 <p>Returns the number of keys in the database.</p>
 <p>The command will be routed to all nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_30">Parameters</h4>
@@ -33063,7 +33026,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><strong>decr</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1793">src/BaseClient.ts:1793</a></p>
 <p>Decrements the number stored at <code>key</code> by one. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_31">Parameters</h4>
 <table>
@@ -33100,7 +33062,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><strong>decrBy</strong>(<code>key</code>, <code>amount</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1813">src/BaseClient.ts:1813</a></p>
 <p>Decrements the number stored at <code>key</code> by <code>amount</code>. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_32">Parameters</h4>
 <table>
@@ -33142,7 +33103,6 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 <blockquote>
 <p><strong>del</strong>(<code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1537">src/BaseClient.ts:1537</a></p>
 <p>Removes the specified keys. A key is ignored if it does not exist.</p>
 <h4 id="parameters_33">Parameters</h4>
 <table>
@@ -33191,7 +33151,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>dump</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>null</code> | <code>Buffer</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1561">src/BaseClient.ts:1561</a></p>
 <p>Serialize the value stored at <code>key</code> in a Valkey-specific format and return it to the user.</p>
 <h4 id="parameters_34">Parameters</h4>
 <table>
@@ -33229,7 +33188,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>echo</strong>(<code>message</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1035">src/GlideClusterClient.ts:1035</a></p>
 <p>Echoes the provided <code>message</code> back.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_35">Parameters</h4>
@@ -33274,7 +33232,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>exec</strong>(<code>transaction</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L755">src/GlideClusterClient.ts:755</a></p>
 <p>Execute a transaction by processing the queued commands.</p>
 <h4 id="parameters_36">Parameters</h4>
 <table>
@@ -33311,7 +33268,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>exists</strong>(<code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3556">src/BaseClient.ts:3556</a></p>
 <p>Returns the number of keys in <code>keys</code> that exist in the database.</p>
 <h4 id="parameters_37">Parameters</h4>
 <table>
@@ -33356,7 +33312,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>expire</strong>(<code>key</code>, <code>seconds</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3618">src/BaseClient.ts:3618</a></p>
 <p>Sets a timeout on <code>key</code> in seconds. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
 If <code>seconds</code> is non-positive number, the key will be deleted rather than expired.
@@ -33415,7 +33370,6 @@ or operation skipped due to the provided arguments.</p>
 <blockquote>
 <p><strong>expireAt</strong>(<code>key</code>, <code>unixSeconds</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3650">src/BaseClient.ts:3650</a></p>
 <p>Sets a timeout on <code>key</code>. It takes an absolute Unix timestamp (seconds since January 1, 1970) instead of specifying the number of seconds.
 A timestamp in the past will delete the key immediately. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
@@ -33470,7 +33424,6 @@ or operation skipped due to the provided arguments.</p>
 <blockquote>
 <p><strong>expiretime</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3684">src/BaseClient.ts:3684</a></p>
 <p>Returns the absolute Unix timestamp (since January 1, 1970) at which the given <code>key</code> will expire, in seconds.
 To get the expiration with millisecond precision, use <a href="../../../BaseClient/classes/BaseClient/#pexpiretime">pexpiretime</a>.</p>
 <h4 id="parameters_40">Parameters</h4>
@@ -33516,7 +33469,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>fcall</strong>(<code>func</code>, <code>keys</code>, <code>args</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6492">src/BaseClient.ts:6492</a></p>
 <p>Invokes a previously loaded function.</p>
 <h4 id="parameters_41">Parameters</h4>
 <table>
@@ -33568,7 +33520,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>fcallReadonly</strong>(<code>func</code>, <code>keys</code>, <code>args</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6522">src/BaseClient.ts:6522</a></p>
 <p>Invokes a previously loaded read-only function.</p>
 <h4 id="parameters_42">Parameters</h4>
 <table>
@@ -33621,7 +33572,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>fcallReadonlyWithRoute</strong>(<code>func</code>, <code>args</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1190">src/GlideClusterClient.ts:1190</a></p>
 <p>Invokes a previously loaded read-only function.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_43">Parameters</h4>
@@ -33668,7 +33618,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>fcallWithRoute</strong>(<code>func</code>, <code>args</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1159">src/GlideClusterClient.ts:1159</a></p>
 <p>Invokes a previously loaded function.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_44">Parameters</h4>
@@ -33714,7 +33663,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>flushall</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1494">src/GlideClusterClient.ts:1494</a></p>
 <p>Deletes all the keys of all the existing databases. This command never fails.</p>
 <p>The command will be routed to all primary nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_45">Parameters</h4>
@@ -33748,7 +33696,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>flushdb</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1523">src/GlideClusterClient.ts:1523</a></p>
 <p>Deletes all the keys of the currently selected database. This command never fails.</p>
 <p>The command will be routed to all primary nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_46">Parameters</h4>
@@ -33782,7 +33729,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionDelete</strong>(<code>libraryCode</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1218">src/GlideClusterClient.ts:1218</a></p>
 <p>Deletes a library and all its functions.</p>
 <h4 id="parameters_47">Parameters</h4>
 <table>
@@ -33822,7 +33768,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionDump</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>Buffer</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1439">src/GlideClusterClient.ts:1439</a></p>
 <p>Returns the serialized payload of all loaded libraries.</p>
 <h4 id="parameters_48">Parameters</h4>
 <table>
@@ -33857,7 +33802,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionFlush</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1279">src/GlideClusterClient.ts:1279</a></p>
 <p>Deletes all function libraries.</p>
 <h4 id="parameters_49">Parameters</h4>
 <table>
@@ -33892,7 +33836,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionKill</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1417">src/GlideClusterClient.ts:1417</a></p>
 <p>Kills a function that is currently executing.
 <code>FUNCTION KILL</code> terminates read-only functions only.</p>
 <h4 id="parameters_50">Parameters</h4>
@@ -33927,7 +33870,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionList</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<a href="../../../Commands/type-aliases/FunctionListResponse/"><code>FunctionListResponse</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1320">src/GlideClusterClient.ts:1320</a></p>
 <p>Returns information about the functions and libraries.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_51">Parameters</h4>
@@ -33976,7 +33918,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionLoad</strong>(<code>libraryCode</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1249">src/GlideClusterClient.ts:1249</a></p>
 <p>Loads a library to Valkey.</p>
 <h4 id="parameters_52">Parameters</h4>
 <table>
@@ -34017,7 +33958,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionRestore</strong>(<code>payload</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1466">src/GlideClusterClient.ts:1466</a></p>
 <p>Restores libraries from the serialized payload returned by <a href="./#functiondump">functionDump</a>.</p>
 <h4 id="parameters_53">Parameters</h4>
 <table>
@@ -34056,7 +33996,6 @@ To get the expiration with millisecond precision, use <a href="../../../BaseClie
 <blockquote>
 <p><strong>functionStats</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<a href="../../../Commands/type-aliases/FunctionStatsSingleResponse/"><code>FunctionStatsSingleResponse</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1389">src/GlideClusterClient.ts:1389</a></p>
 <p>Returns information about the function that's currently running and information about the
 available execution engines.</p>
 <p>The command will be routed to all primary nodes, unless <code>route</code> is provided.</p>
@@ -34124,7 +34063,6 @@ available execution engines.</p>
 <blockquote>
 <p><strong>geoadd</strong>(<code>key</code>, <code>membersToGeospatialData</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6615">src/BaseClient.ts:6615</a></p>
 <p>Adds geospatial members with their positions to the specified sorted set stored at <code>key</code>.
 If a member is already a part of the sorted set, its position is updated.</p>
 <h4 id="parameters_55">Parameters</h4>
@@ -34175,7 +34113,6 @@ If a member is already a part of the sorted set, its position is updated.</p>
 <blockquote>
 <p><strong>geodist</strong>(<code>key</code>, <code>member1</code>, <code>member2</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7039">src/BaseClient.ts:7039</a></p>
 <p>Returns the distance between <code>member1</code> and <code>member2</code> saved in the geospatial index stored at <code>key</code>.</p>
 <h4 id="parameters_56">Parameters</h4>
 <table>
@@ -34231,7 +34168,6 @@ If a member is already a part of the sorted set, its position is updated.</p>
 <blockquote>
 <p><strong>geohash</strong>(<code>key</code>, <code>members</code>): <code>Promise</code>\&lt;(<code>null</code> | <code>string</code>)[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7066">src/BaseClient.ts:7066</a></p>
 <p>Returns the <code>GeoHash</code> strings representing the positions of all the specified <code>members</code> in the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_57">Parameters</h4>
 <table>
@@ -34272,7 +34208,6 @@ If a member is already a part of the sorted set, its position is updated.</p>
 <blockquote>
 <p><strong>geopos</strong>(<code>key</code>, <code>members</code>): <code>Promise</code>\&lt;(<code>null</code> | [<code>number</code>, <code>number</code>])[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6809">src/BaseClient.ts:6809</a></p>
 <p>Returns the positions (longitude, latitude) of all the specified <code>members</code> of the
 geospatial index represented by the sorted set at <code>key</code>.</p>
 <h4 id="parameters_58">Parameters</h4>
@@ -34324,7 +34259,6 @@ geospatial index represented by the sorted set at <code>key</code>.</p>
 <blockquote>
 <p><strong>geosearch</strong>(<code>key</code>, <code>searchFrom</code>, <code>searchBy</code>, <code>options</code>?): <code>Promise</code>\&lt;[<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, [<code>number</code>?, <code>number</code>?, [<code>number</code>, <code>number</code>]?]?][]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6692">src/BaseClient.ts:6692</a></p>
 <p>Returns the members of a sorted set populated with geospatial information using <a href="../../../BaseClient/classes/BaseClient/#geoadd">geoadd</a>,
 which are within the borders of the area specified by a given shape.</p>
 <h4 id="parameters_59">Parameters</h4>
@@ -34420,7 +34354,6 @@ which are within the borders of the area specified by a given shape.</p>
 <blockquote>
 <p><strong>geosearchstore</strong>(<code>destination</code>, <code>source</code>, <code>searchFrom</code>, <code>searchBy</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6764">src/BaseClient.ts:6764</a></p>
 <p>Searches for members in a sorted set stored at <code>source</code> representing geospatial data
 within a circular or rectangular area and stores the result in <code>destination</code>.</p>
 <p>If <code>destination</code> already exists, it is overwritten. Otherwise, a new sorted set will be created.</p>
@@ -34510,7 +34443,6 @@ within a circular or rectangular area and stores the result in <code>destination
 <blockquote>
 <p><strong>get</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1365">src/BaseClient.ts:1365</a></p>
 <p>Get the value associated with the given key, or null if no such value exists.</p>
 <h4 id="parameters_61">Parameters</h4>
 <table>
@@ -34554,7 +34486,6 @@ within a circular or rectangular area and stores the result in <code>destination
 <blockquote>
 <p><strong>getbit</strong>(<code>key</code>, <code>offset</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1867">src/BaseClient.ts:1867</a></p>
 <p>Returns the bit value at <code>offset</code> in the string value stored at <code>key</code>. <code>offset</code> must be greater than or equal
 to zero.</p>
 <h4 id="parameters_62">Parameters</h4>
@@ -34596,7 +34527,6 @@ the length of the string.</p>
 <blockquote>
 <p><code>protected</code> <strong>getCallbackIndex</strong>(): <code>number</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L994">src/BaseClient.ts:994</a></p>
 <h4 id="returns_64">Returns</h4>
 <p><code>number</code></p>
 <h4 id="inherited-from_39">Inherited from</h4>
@@ -34606,7 +34536,6 @@ the length of the string.</p>
 <blockquote>
 <p><strong>getdel</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1421">src/BaseClient.ts:1421</a></p>
 <p>Gets a string value associated with the given <code>key</code>and deletes the key.</p>
 <h4 id="parameters_63">Parameters</h4>
 <table>
@@ -34648,7 +34577,6 @@ the length of the string.</p>
 <blockquote>
 <p><strong>getex</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1392">src/BaseClient.ts:1392</a></p>
 <p>Get the value of <code>key</code> and optionally set its expiration. <code>GETEX</code> is similar to <a href="../../../BaseClient/classes/BaseClient/#get">get</a>.</p>
 <h4 id="parameters_64">Parameters</h4>
 <table>
@@ -34690,7 +34618,6 @@ the length of the string.</p>
 <blockquote>
 <p><strong>getPubsubCallbackAndContext</strong>(<code>config</code>): [<code>undefined</code> | <code>null</code> | (<code>msg</code>, <code>context</code>) =&gt; <code>void</code>, <code>any</code>]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1185">src/BaseClient.ts:1185</a></p>
 <h4 id="parameters_65">Parameters</h4>
 <table>
 <thead>
@@ -34715,7 +34642,6 @@ the length of the string.</p>
 <blockquote>
 <p><strong>getPubSubMessage</strong>(): <code>Promise</code>\&lt;<a href="../../../BaseClient/interfaces/PubSubMsg/"><code>PubSubMsg</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1199">src/BaseClient.ts:1199</a></p>
 <h4 id="returns_68">Returns</h4>
 <p><code>Promise</code>\&lt;<a href="../../../BaseClient/interfaces/PubSubMsg/"><code>PubSubMsg</code></a>&gt;</p>
 <h4 id="inherited-from_43">Inherited from</h4>
@@ -34725,7 +34651,6 @@ the length of the string.</p>
 <blockquote>
 <p><strong>getrange</strong>(<code>key</code>, <code>start</code>, <code>end</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1456">src/BaseClient.ts:1456</a></p>
 <p>Returns the substring of the string value stored at <code>key</code>, determined by the byte offsets
 <code>start</code> and <code>end</code> (both are inclusive). Negative offsets can be used in order to provide
 an offset starting from the end of the string. So <code>-1</code> means the last character, <code>-2</code> the
@@ -34786,7 +34711,6 @@ or <code>end</code> are out of range, returns the substring within the valid ran
 <blockquote>
 <p><strong>getStatistics</strong>(): <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7815">src/BaseClient.ts:7815</a></p>
 <p>Return a statistics</p>
 <h4 id="returns_70">Returns</h4>
 <p><code>object</code></p>
@@ -34798,7 +34722,6 @@ or <code>end</code> are out of range, returns the substring within the valid ran
 <blockquote>
 <p><strong>hdel</strong>(<code>key</code>, <code>fields</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2138">src/BaseClient.ts:2138</a></p>
 <p>Removes the specified fields from the hash stored at <code>key</code>.
 Specified fields that do not exist within this hash are ignored.</p>
 <h4 id="parameters_67">Parameters</h4>
@@ -34841,7 +34764,6 @@ If <code>key</code> does not exist, it is treated as an empty hash and it return
 <blockquote>
 <p><strong>hexists</strong>(<code>key</code>, <code>field</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2193">src/BaseClient.ts:2193</a></p>
 <p>Returns if <code>field</code> is an existing field in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_68">Parameters</h4>
 <table>
@@ -34886,7 +34808,6 @@ If <code>key</code> does not exist, it is treated as an empty hash and it return
 <blockquote>
 <p><strong>hget</strong>(<code>key</code>, <code>field</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2024">src/BaseClient.ts:2024</a></p>
 <p>Retrieve the value associated with <code>field</code> in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_69">Parameters</h4>
 <table>
@@ -34937,7 +34858,6 @@ If <code>key</code> does not exist, it is treated as an empty hash and it return
 <blockquote>
 <p><strong>hgetall</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/HashDataType/"><code>HashDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2221">src/BaseClient.ts:2221</a></p>
 <p>Returns all fields and values of the hash stored at <code>key</code>.</p>
 <h4 id="parameters_70">Parameters</h4>
 <table>
@@ -34983,7 +34903,6 @@ If <code>key</code> does not exist, it returns an empty list.</p>
 <blockquote>
 <p><strong>hincrBy</strong>(<code>key</code>, <code>field</code>, <code>amount</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2253">src/BaseClient.ts:2253</a></p>
 <p>Increments the number stored at <code>field</code> in the hash stored at <code>key</code> by increment.
 By using a negative increment value, the value stored at <code>field</code> in the hash stored at <code>key</code> is decremented.
 If <code>field</code> or <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
@@ -35031,7 +34950,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hincrByFloat</strong>(<code>key</code>, <code>field</code>, <code>amount</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2279">src/BaseClient.ts:2279</a></p>
 <p>Increment the string representing a floating point number stored at <code>field</code> in the hash stored at <code>key</code> by increment.
 By using a negative increment value, the value stored at <code>field</code> in the hash stored at <code>key</code> is decremented.
 If <code>field</code> or <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
@@ -35079,7 +34997,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hkeys</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2081">src/BaseClient.ts:2081</a></p>
 <p>Returns all field names in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_73">Parameters</h4>
 <table>
@@ -35121,7 +35038,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hlen</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2308">src/BaseClient.ts:2308</a></p>
 <p>Returns the number of fields contained in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_74">Parameters</h4>
 <table>
@@ -35161,7 +35077,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hmget</strong>(<code>key</code>, <code>fields</code>, <code>options</code>?): <code>Promise</code>\&lt;(<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>)[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2163">src/BaseClient.ts:2163</a></p>
 <p>Returns the values associated with the specified fields in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_75">Parameters</h4>
 <table>
@@ -35209,7 +35124,6 @@ If <code>key</code> does not exist, it is treated as an empty hash and it return
 <blockquote>
 <p><strong>hrandfield</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2373">src/BaseClient.ts:2373</a></p>
 <p>Returns a random field name from the hash value stored at <code>key</code>.</p>
 <h4 id="parameters_76">Parameters</h4>
 <table>
@@ -35251,7 +35165,6 @@ If <code>key</code> does not exist, it is treated as an empty hash and it return
 <blockquote>
 <p><strong>hrandfieldCount</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2471">src/BaseClient.ts:2471</a></p>
 <p>Retrieves up to <code>count</code> random field names from the hash value stored at <code>key</code>.</p>
 <h4 id="parameters_77">Parameters</h4>
 <table>
@@ -35298,7 +35211,6 @@ If <code>key</code> does not exist, it is treated as an empty hash and it return
 <blockquote>
 <p><strong>hrandfieldWithValues</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;[<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>][]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2501">src/BaseClient.ts:2501</a></p>
 <p>Retrieves up to <code>count</code> random field names along with their values from the hash
 value stored at <code>key</code>.</p>
 <h4 id="parameters_78">Parameters</h4>
@@ -35348,7 +35260,6 @@ value stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>hscan</strong>(<code>key</code>, <code>cursor</code>, <code>options</code>?): <code>Promise</code>\&lt;[<code>string</code>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2441">src/BaseClient.ts:2441</a></p>
 <p>Iterates incrementally over a hash.</p>
 <h4 id="parameters_79">Parameters</h4>
 <table>
@@ -35436,7 +35347,6 @@ If <code>options.noValues</code> is set to <code>true</code>, the second element
 <blockquote>
 <p><strong>hset</strong>(<code>key</code>, <code>fieldsAndValues</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2051">src/BaseClient.ts:2051</a></p>
 <p>Sets the specified fields to their respective values in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_80">Parameters</h4>
 <table>
@@ -35481,7 +35391,6 @@ If <code>options.noValues</code> is set to <code>true</code>, the second element
 <blockquote>
 <p><strong>hsetnx</strong>(<code>key</code>, <code>field</code>, <code>value</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2113">src/BaseClient.ts:2113</a></p>
 <p>Sets <code>field</code> in the hash stored at <code>key</code> to <code>value</code>, only if <code>field</code> does not yet exist.
 If <code>key</code> does not exist, a new key holding a hash is created.
 If <code>field</code> already exists, this operation has no effect.</p>
@@ -35533,7 +35442,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>hstrlen</strong>(<code>key</code>, <code>field</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2350">src/BaseClient.ts:2350</a></p>
 <p>Returns the string length of the value associated with <code>field</code> in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_82">Parameters</h4>
 <table>
@@ -35574,7 +35482,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>hvals</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2327">src/BaseClient.ts:2327</a></p>
 <p>Returns all values in the hash stored at key.</p>
 <h4 id="parameters_83">Parameters</h4>
 <table>
@@ -35615,7 +35522,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>incr</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1729">src/BaseClient.ts:1729</a></p>
 <p>Increments the number stored at <code>key</code> by one. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_84">Parameters</h4>
 <table>
@@ -35652,7 +35558,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>incrBy</strong>(<code>key</code>, <code>amount</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1749">src/BaseClient.ts:1749</a></p>
 <p>Increments the number stored at <code>key</code> by <code>amount</code>. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_85">Parameters</h4>
 <table>
@@ -35694,7 +35599,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>incrByFloat</strong>(<code>key</code>, <code>amount</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1771">src/BaseClient.ts:1771</a></p>
 <p>Increment the string representing a floating point number stored at <code>key</code> by <code>amount</code>.
 By using a negative increment value, the result is that the value stored at <code>key</code> is decremented.
 If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
@@ -35738,7 +35642,6 @@ If <code>key</code> does not exist, it is set to 0 before performing the operati
 <blockquote>
 <p><strong>info</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>string</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L825">src/GlideClusterClient.ts:825</a></p>
 <p>Gets information and statistics about the server.</p>
 <p>The command will be routed to all primary nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_87">Parameters</h4>
@@ -35770,7 +35673,6 @@ When specifying a route other than a single node,
 <blockquote>
 <p><strong>invokeScript</strong>(<code>script</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3839">src/BaseClient.ts:3839</a></p>
 <p>Invokes a Lua script with its keys and arguments.
 This method simplifies the process of invoking scripts on a Valkey server by using an object that represents a Lua script.
 The script loading, argument preparation, and execution will all be handled internally. If the script has not already been loaded,
@@ -35820,7 +35722,6 @@ it will be loaded automatically using the <code>SCRIPT LOAD</code> command. Afte
 <blockquote>
 <p><strong>invokeScriptWithRoute</strong>(<code>script</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1756">src/GlideClusterClient.ts:1756</a></p>
 <p>Invokes a Lua script with arguments.
 This method simplifies the process of invoking scripts on a Valkey server by using an object that represents a Lua script.
 The script loading, argument preparation, and execution will all be handled internally. If the script has not already been loaded,
@@ -35863,7 +35764,6 @@ it will be loaded automatically using the <code>SCRIPT LOAD</code> command. Afte
 <blockquote>
 <p><strong>isPubsubConfigured</strong>(<code>config</code>): <code>boolean</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1179">src/BaseClient.ts:1179</a></p>
 <h4 id="parameters_90">Parameters</h4>
 <table>
 <thead>
@@ -35888,7 +35788,6 @@ it will be loaded automatically using the <code>SCRIPT LOAD</code> command. Afte
 <blockquote>
 <p><strong>lastsave</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>number</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1675">src/GlideClusterClient.ts:1675</a></p>
 <p>Returns <code>UNIX TIME</code> of the last DB save timestamp or startup timestamp if no save
 was made since then.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
@@ -35923,7 +35822,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lcs</strong>(<code>key1</code>, <code>key2</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7095">src/BaseClient.ts:7095</a></p>
 <p>Returns all the longest common subsequences combined between strings stored at <code>key1</code> and <code>key2</code>.</p>
 <h4 id="parameters_92">Parameters</h4>
 <table>
@@ -35972,7 +35870,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lcsIdx</strong>(<code>key1</code>, <code>key2</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>number</code> | (<code>number</code> | [<code>number</code>, <code>number</code>])[][]&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7180">src/BaseClient.ts:7180</a></p>
 <p>Returns the indices and lengths of the longest common subsequences between strings stored at
 <code>key1</code> and <code>key2</code>.</p>
 <h4 id="parameters_93">Parameters</h4>
@@ -36056,7 +35953,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lcsLen</strong>(<code>key1</code>, <code>key2</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7122">src/BaseClient.ts:7122</a></p>
 <p>Returns the total length of all the longest common subsequences between strings stored at <code>key1</code> and <code>key2</code>.</p>
 <h4 id="parameters_94">Parameters</h4>
 <table>
@@ -36104,7 +36000,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lindex</strong>(<code>key</code>, <code>index</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6152">src/BaseClient.ts:6152</a></p>
 <p>Returns the element at index <code>index</code> in the list stored at <code>key</code>.
 The index is zero-based, so 0 means the first element, 1 the second element and so on.
 Negative indices can be used to designate elements starting at the tail of the list.
@@ -36160,7 +36055,6 @@ If <code>index</code> is out of range or if <code>key</code> does not exist, nul
 <blockquote>
 <p><strong>linsert</strong>(<code>key</code>, <code>position</code>, <code>pivot</code>, <code>element</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6180">src/BaseClient.ts:6180</a></p>
 <p>Inserts <code>element</code> in the list at <code>key</code> either before or after the <code>pivot</code>.</p>
 <h4 id="parameters_96">Parameters</h4>
 <table>
@@ -36212,7 +36106,6 @@ If the <code>pivot</code> wasn't found, returns <code>0</code>.</p>
 <blockquote>
 <p><strong>llen</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2689">src/BaseClient.ts:2689</a></p>
 <p>Returns the length of the list stored at <code>key</code>.</p>
 <h4 id="parameters_97">Parameters</h4>
 <table>
@@ -36249,7 +36142,6 @@ If <code>key</code> does not exist, it is interpreted as an empty list and 0 is 
 <blockquote>
 <p><strong>lmove</strong>(<code>source</code>, <code>destination</code>, <code>whereFrom</code>, <code>whereTo</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2723">src/BaseClient.ts:2723</a></p>
 <p>Atomically pops and removes the left/right-most element to the list stored at <code>source</code>
 depending on <code>whereTo</code>, and pushes the element at the first/last element of the list
 stored at <code>destination</code> depending on <code>whereFrom</code>, see <a href="../../../Commands/enumerations/ListDirection/">ListDirection</a>.</p>
@@ -36317,7 +36209,6 @@ stored at <code>destination</code> depending on <code>whereFrom</code>, see <a h
 <blockquote>
 <p><strong>lmpop</strong>(<code>keys</code>, <code>direction</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | { <code>elements</code>: <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]; <code>key</code>: <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>; }&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7362">src/BaseClient.ts:7362</a></p>
 <p>Pops one or more elements from the first non-empty list from the provided <code>keys</code>.</p>
 <h4 id="parameters_99">Parameters</h4>
 <table>
@@ -36366,7 +36257,6 @@ stored at <code>destination</code> depending on <code>whereFrom</code>, see <a h
 <blockquote>
 <p><strong>lolwut</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>string</code>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1131">src/GlideClusterClient.ts:1131</a></p>
 <p>Displays a piece of generative computer art and the server version.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_100">Parameters</h4>
@@ -36400,7 +36290,6 @@ stored at <code>destination</code> depending on <code>whereFrom</code>, see <a h
 <blockquote>
 <p><strong>lpop</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2589">src/BaseClient.ts:2589</a></p>
 <p>Removes and returns the first elements of the list stored at <code>key</code>.
 The command pops a single element from the beginning of the list.</p>
 <h4 id="parameters_101">Parameters</h4>
@@ -36447,7 +36336,6 @@ If <code>key</code> does not exist null will be returned.</p>
 <blockquote>
 <p><strong>lpopCount</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2620">src/BaseClient.ts:2620</a></p>
 <p>Removes and returns up to <code>count</code> elements of the list stored at <code>key</code>, depending on the list's length.</p>
 <h4 id="parameters_102">Parameters</h4>
 <table>
@@ -36498,7 +36386,6 @@ If <code>key</code> does not exist null will be returned.</p>
 <blockquote>
 <p><strong>lpos</strong>(<code>key</code>, <code>element</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <code>number</code> | <code>number</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6555">src/BaseClient.ts:6555</a></p>
 <p>Returns the index of the first occurrence of <code>element</code> inside the list specified by <code>key</code>. If no
 match is found, <code>null</code> is returned. If the <code>count</code> option is specified, then the function returns
 an <code>array</code> of indices of matching elements within the list.</p>
@@ -36549,7 +36436,6 @@ is specified, then the function returns an <code>array</code> of indices of matc
 <blockquote>
 <p><strong>lpush</strong>(<code>key</code>, <code>elements</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2536">src/BaseClient.ts:2536</a></p>
 <p>Inserts all the specified values at the head of the list stored at <code>key</code>.
 <code>elements</code> are inserted one after the other to the head of the list, from the leftmost element to the rightmost element.
 If <code>key</code> does not exist, it is created as empty list before performing the push operations.</p>
@@ -36596,7 +36482,6 @@ If <code>key</code> does not exist, it is created as empty list before performin
 <blockquote>
 <p><strong>lpushx</strong>(<code>key</code>, <code>elements</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2558">src/BaseClient.ts:2558</a></p>
 <p>Inserts specified values at the head of the <code>list</code>, only if <code>key</code> already
 exists and holds a list.</p>
 <h4 id="parameters_105">Parameters</h4>
@@ -36637,7 +36522,6 @@ exists and holds a list.</p>
 <blockquote>
 <p><strong>lrange</strong>(<code>key</code>, <code>start</code>, <code>end</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2665">src/BaseClient.ts:2665</a></p>
 <p>Returns the specified elements of the list stored at <code>key</code>.
 The offsets <code>start</code> and <code>end</code> are zero-based indexes, with 0 being the first element of the list, 1 being the next element and so on.
 These offsets can also be negative numbers indicating offsets starting at the end of the list,
@@ -36702,7 +36586,6 @@ If <code>key</code> does not exist an empty list will be returned.</p>
 <blockquote>
 <p><strong>lrem</strong>(<code>key</code>, <code>count</code>, <code>element</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2863">src/BaseClient.ts:2863</a></p>
 <p>Removes the first <code>count</code> occurrences of elements equal to <code>element</code> from the list stored at <code>key</code>.
 If <code>count</code> is positive : Removes elements equal to <code>element</code> moving from head to tail.
 If <code>count</code> is negative : Removes elements equal to <code>element</code> moving from tail to head.
@@ -36750,7 +36633,6 @@ If <code>key</code> does not exist, 0 is returned.</p>
 <blockquote>
 <p><strong>lset</strong>(<code>key</code>, <code>index</code>, <code>element</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2803">src/BaseClient.ts:2803</a></p>
 <p>Sets the list element at <code>index</code> to <code>element</code>.
 The index is zero-based, so <code>0</code> means the first element, <code>1</code> the second element and so on.
 Negative indices can be used to designate elements starting at the tail of
@@ -36799,7 +36681,6 @@ the list. Here, <code>-1</code> means the last element, <code>-2</code> means th
 <blockquote>
 <p><strong>ltrim</strong>(<code>key</code>, <code>start</code>, <code>end</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2835">src/BaseClient.ts:2835</a></p>
 <p>Trim an existing list so that it will contain only the specified range of elements specified.
 The offsets <code>start</code> and <code>end</code> are zero-based indexes, with 0 being the first element of the list, 1 being the next element and so on.
 These offsets can also be negative numbers indicating offsets starting at the end of the list,
@@ -36851,7 +36732,6 @@ If <code>key</code> does not exist the command will be ignored.</p>
 <blockquote>
 <p><strong>mget</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;(<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>)[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1642">src/BaseClient.ts:1642</a></p>
 <p>Retrieve the values of multiple keys.</p>
 <h4 id="parameters_110">Parameters</h4>
 <table>
@@ -36903,7 +36783,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>mset</strong>(<code>keysAndValues</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1679">src/BaseClient.ts:1679</a></p>
 <p>Set multiple keys to multiple values in a single operation.</p>
 <h4 id="parameters_111">Parameters</h4>
 <table>
@@ -36951,7 +36830,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>msetnx</strong>(<code>keysAndValues</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1706">src/BaseClient.ts:1706</a></p>
 <p>Sets multiple keys to values if the key does not exist. The operation is atomic, and if one or
 more keys already exist, the entire operation fails.</p>
 <h4 id="parameters_112">Parameters</h4>
@@ -36992,7 +36870,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>notificationToPubSubMessageSafe</strong>(<code>pushNotification</code>, <code>decoder</code>?): <code>null</code> | <a href="../../../BaseClient/interfaces/PubSubMsg/"><code>PubSubMsg</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1256">src/BaseClient.ts:1256</a></p>
 <h4 id="parameters_113">Parameters</h4>
 <table>
 <thead>
@@ -37021,7 +36898,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectEncoding</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>null</code> | <code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6410">src/BaseClient.ts:6410</a></p>
 <p>Returns the internal encoding for the Valkey object stored at <code>key</code>.</p>
 <h4 id="parameters_114">Parameters</h4>
 <table>
@@ -37059,7 +36935,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectFreq</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6431">src/BaseClient.ts:6431</a></p>
 <p>Returns the logarithmic access frequency counter of a Valkey object stored at <code>key</code>.</p>
 <h4 id="parameters_115">Parameters</h4>
 <table>
@@ -37097,7 +36972,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectIdletime</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6449">src/BaseClient.ts:6449</a></p>
 <p>Returns the time in seconds since the last access to the value stored at <code>key</code>.</p>
 <h4 id="parameters_116">Parameters</h4>
 <table>
@@ -37132,7 +37006,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectRefcount</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6468">src/BaseClient.ts:6468</a></p>
 <p>Returns the reference count of the object stored at <code>key</code>.</p>
 <h4 id="parameters_117">Parameters</h4>
 <table>
@@ -37168,7 +37041,6 @@ Otherwise, returns <code>null</code>.</p>
 <blockquote>
 <p><strong>persist</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6207">src/BaseClient.ts:6207</a></p>
 <p>Removes the existing timeout on <code>key</code>, turning the key from volatile (a key with an expire set) to
 persistent (a key that will never expire as no timeout is associated).</p>
 <h4 id="parameters_118">Parameters</h4>
@@ -37205,7 +37077,6 @@ persistent (a key that will never expire as no timeout is associated).</p>
 <blockquote>
 <p><strong>pexpire</strong>(<code>key</code>, <code>milliseconds</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3710">src/BaseClient.ts:3710</a></p>
 <p>Sets a timeout on <code>key</code> in milliseconds. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
 If <code>milliseconds</code> is non-positive number, the key will be deleted rather than expired.
@@ -37260,7 +37131,6 @@ or operation skipped due to the provided arguments.</p>
 <blockquote>
 <p><strong>pexpireAt</strong>(<code>key</code>, <code>unixMilliseconds</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3742">src/BaseClient.ts:3742</a></p>
 <p>Sets a timeout on <code>key</code>. It takes an absolute Unix timestamp (milliseconds since January 1, 1970) instead of specifying the number of milliseconds.
 A timestamp in the past will delete the key immediately. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
@@ -37315,7 +37185,6 @@ or operation skipped due to the provided arguments.</p>
 <blockquote>
 <p><strong>pexpiretime</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3775">src/BaseClient.ts:3775</a></p>
 <p>Returns the absolute Unix timestamp (since January 1, 1970) at which the given <code>key</code> will expire, in milliseconds.</p>
 <h4 id="parameters_121">Parameters</h4>
 <table>
@@ -37360,7 +37229,6 @@ or operation skipped due to the provided arguments.</p>
 <blockquote>
 <p><strong>pfadd</strong>(<code>key</code>, <code>elements</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6339">src/BaseClient.ts:6339</a></p>
 <p>Adds all elements to the HyperLogLog data structure stored at the specified <code>key</code>.
 Creates a new structure if the <code>key</code> does not exist.
 When no elements are provided, and <code>key</code> exists and is a HyperLogLog, then no operation is performed.</p>
@@ -37407,7 +37275,6 @@ When no elements are provided, and <code>key</code> exists and is a HyperLogLog,
 <blockquote>
 <p><strong>pfcount</strong>(<code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6361">src/BaseClient.ts:6361</a></p>
 <p>Estimates the cardinality of the data stored in a HyperLogLog structure for a single key or
 calculates the combined cardinality of multiple keys by merging their HyperLogLogs temporarily.</p>
 <h4 id="parameters_123">Parameters</h4>
@@ -37448,7 +37315,6 @@ calculates the combined cardinality of multiple keys by merging their HyperLogLo
 <blockquote>
 <p><strong>pfmerge</strong>(<code>destination</code>, <code>sourceKeys</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6386">src/BaseClient.ts:6386</a></p>
 <p>Merges multiple HyperLogLog values into a unique value. If the destination variable exists, it is
 treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog is created.</p>
 <h4 id="parameters_124">Parameters</h4>
@@ -37495,7 +37361,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>ping</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L801">src/GlideClusterClient.ts:801</a></p>
 <p>Pings the server.</p>
 <p>The command will be routed to all primary nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_125">Parameters</h4>
@@ -37534,7 +37399,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>processPush</strong>(<code>response</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L943">src/BaseClient.ts:943</a></p>
 <h4 id="parameters_126">Parameters</h4>
 <table>
 <thead>
@@ -37559,7 +37423,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>processResponse</strong>(<code>message</code>): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L907">src/BaseClient.ts:907</a></p>
 <h4 id="parameters_127">Parameters</h4>
 <table>
 <thead>
@@ -37584,7 +37447,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><code>protected</code> <strong>processResultWithSetCommands</strong>(<code>result</code>, <code>setCommandsIndexes</code>): <code>null</code> | <a href="../../../BaseClient/type-aliases/GlideReturnType/"><code>GlideReturnType</code></a>[]</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1151">src/BaseClient.ts:1151</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_128">Parameters</h4>
 <table>
@@ -37614,7 +37476,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>pttl</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5059">src/BaseClient.ts:5059</a></p>
 <p>Returns the remaining time to live of <code>key</code> that has a timeout, in milliseconds.</p>
 <h4 id="parameters_129">Parameters</h4>
 <table>
@@ -37658,7 +37519,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>publish</strong>(<code>message</code>, <code>channel</code>, <code>sharded</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1581">src/GlideClusterClient.ts:1581</a></p>
 <p>Publish a message on pubsub channel.
 This command aggregates PUBLISH and SPUBLISH commands functionalities.
 The mode is selected using the 'sharded' parameter.
@@ -37715,7 +37575,6 @@ For both sharded and non-sharded mode, request is routed using hashed channel as
 <blockquote>
 <p><strong>pubsubChannels</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7444">src/BaseClient.ts:7444</a></p>
 <p>Lists the currently active channels.
 The command is routed to all nodes, and aggregates the response to a single array.</p>
 <h4 id="parameters_131">Parameters</h4>
@@ -37755,7 +37614,6 @@ The command is routed to all nodes, and aggregates the response to a single arra
 <blockquote>
 <p><strong>pubsubNumPat</strong>(): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7470">src/BaseClient.ts:7470</a></p>
 <p>Returns the number of unique patterns that are subscribed to by clients.</p>
 <p>Note: This is the total number of unique patterns all the clients are subscribed to,
 not the count of clients subscribed to patterns.
@@ -37776,7 +37634,6 @@ The command is routed to all nodes, and aggregates the response to the sum of al
 <blockquote>
 <p><strong>pubsubNumSub</strong>(<code>channels</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>object</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7494">src/BaseClient.ts:7494</a></p>
 <p>Returns the number of subscribers (exclusive of clients subscribed to patterns) for the specified channels.</p>
 <h4 id="parameters_132">Parameters</h4>
 <table>
@@ -37822,7 +37679,6 @@ The command is routed to all nodes, and aggregates the response to the sum of al
 <blockquote>
 <p><strong>pubsubShardChannels</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1613">src/GlideClusterClient.ts:1613</a></p>
 <p>Lists the currently active shard channels.
 The command is routed to all nodes, and aggregates the response to a single array.</p>
 <h4 id="parameters_133">Parameters</h4>
@@ -37860,7 +37716,6 @@ The command is routed to all nodes, and aggregates the response to a single arra
 <blockquote>
 <p><strong>pubsubShardNumSub</strong>(<code>channels</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>object</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1644">src/GlideClusterClient.ts:1644</a></p>
 <p>Returns the number of subscribers (exclusive of clients subscribed to patterns) for the specified shard channels.</p>
 <h4 id="parameters_134">Parameters</h4>
 <table>
@@ -37904,7 +37759,6 @@ The command is routed to all nodes, and aggregates the response to a single arra
 <blockquote>
 <p><strong>randomKey</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1700">src/GlideClusterClient.ts:1700</a></p>
 <p>Returns a random existing key name.</p>
 <p>The command will be routed to all primary nodes, unless <code>route</code> is provided.</p>
 <h4 id="parameters_135">Parameters</h4>
@@ -37938,7 +37792,6 @@ The command is routed to all nodes, and aggregates the response to a single arra
 <blockquote>
 <p><strong>rename</strong>(<code>key</code>, <code>newKey</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6230">src/BaseClient.ts:6230</a></p>
 <p>Renames <code>key</code> to <code>newkey</code>.
 If <code>newkey</code> already exists it is overwritten.</p>
 <h4 id="parameters_136">Parameters</h4>
@@ -37985,7 +37838,6 @@ If <code>newkey</code> already exists it is overwritten.</p>
 <blockquote>
 <p><strong>renamenx</strong>(<code>key</code>, <code>newKey</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6255">src/BaseClient.ts:6255</a></p>
 <p>Renames <code>key</code> to <code>newkey</code> if <code>newkey</code> does not yet exist.</p>
 <h4 id="parameters_137">Parameters</h4>
 <table>
@@ -38032,7 +37884,6 @@ If <code>key</code> does not exist, an error is thrown.</li>
 <blockquote>
 <p><strong>restore</strong>(<code>key</code>, <code>ttl</code>, <code>value</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1604">src/BaseClient.ts:1604</a></p>
 <p>Create a <code>key</code> associated with a <code>value</code> that is obtained by deserializing the provided
 serialized <code>value</code> (obtained via <a href="../../../BaseClient/classes/BaseClient/#dump">dump</a>).</p>
 <h4 id="parameters_138">Parameters</h4>
@@ -38094,7 +37945,6 @@ serialized <code>value</code> (obtained via <a href="../../../BaseClient/classes
 <blockquote>
 <p><strong>rpop</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2948">src/BaseClient.ts:2948</a></p>
 <p>Removes and returns the last elements of the list stored at <code>key</code>.
 The command pops a single element from the end of the list.</p>
 <h4 id="parameters_139">Parameters</h4>
@@ -38141,7 +37991,6 @@ If <code>key</code> does not exist null will be returned.</p>
 <blockquote>
 <p><strong>rpopCount</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2979">src/BaseClient.ts:2979</a></p>
 <p>Removes and returns up to <code>count</code> elements from the list stored at <code>key</code>, depending on the list's length.</p>
 <h4 id="parameters_140">Parameters</h4>
 <table>
@@ -38192,7 +38041,6 @@ If <code>key</code> does not exist null will be returned.</p>
 <blockquote>
 <p><strong>rpush</strong>(<code>key</code>, <code>elements</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2895">src/BaseClient.ts:2895</a></p>
 <p>Inserts all the specified values at the tail of the list stored at <code>key</code>.
 <code>elements</code> are inserted one after the other to the tail of the list, from the leftmost element to the rightmost element.
 If <code>key</code> does not exist, it is created as empty list before performing the push operations.</p>
@@ -38239,7 +38087,6 @@ If <code>key</code> does not exist, it is created as empty list before performin
 <blockquote>
 <p><strong>rpushx</strong>(<code>key</code>, <code>elements</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L2917">src/BaseClient.ts:2917</a></p>
 <p>Inserts specified values at the tail of the <code>list</code>, only if <code>key</code> already
 exists and holds a list.</p>
 <h4 id="parameters_142">Parameters</h4>
@@ -38280,7 +38127,6 @@ exists and holds a list.</p>
 <blockquote>
 <p><strong>sadd</strong>(<code>key</code>, <code>members</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3003">src/BaseClient.ts:3003</a></p>
 <p>Adds the specified members to the set stored at <code>key</code>. Specified members that are already a member of this set are ignored.
 If <code>key</code> does not exist, a new set is created before adding <code>members</code>.</p>
 <h4 id="parameters_143">Parameters</h4>
@@ -38322,7 +38168,6 @@ If <code>key</code> does not exist, a new set is created before adding <code>mem
 <blockquote>
 <p><strong>scan</strong>(<code>cursor</code>, <code>options</code>?): <code>Promise</code>\&lt;[<code>ClusterScanCursor</code>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L703">src/GlideClusterClient.ts:703</a></p>
 <p>Incrementally iterates over the keys in the Cluster.</p>
 <p>This command is similar to the <code>SCAN</code> command but designed for Cluster environments.
 It uses a ClusterScanCursor object to manage iterations.</p>
@@ -38399,7 +38244,6 @@ The API does not accept <code>route</code> as it go through all slots in the clu
 <blockquote>
 <p><code>protected</code> <strong>scanOptionsToProto</strong>(<code>cursor</code>, <code>options</code>?): <code>ClusterScan</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L607">src/GlideClusterClient.ts:607</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_145">Parameters</h4>
 <table>
@@ -38427,7 +38271,6 @@ The API does not accept <code>route</code> as it go through all slots in the clu
 <blockquote>
 <p><strong>scard</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3147">src/BaseClient.ts:3147</a></p>
 <p>Returns the set cardinality (number of elements) of the set stored at <code>key</code>.</p>
 <h4 id="parameters_146">Parameters</h4>
 <table>
@@ -38463,7 +38306,6 @@ The API does not accept <code>route</code> as it go through all slots in the clu
 <blockquote>
 <p><strong>scriptExists</strong>(<code>sha1s</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;<code>boolean</code>[]&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1786">src/GlideClusterClient.ts:1786</a></p>
 <p>Checks existence of scripts in the script cache by their SHA1 digest.</p>
 <h4 id="parameters_147">Parameters</h4>
 <table>
@@ -38501,7 +38343,6 @@ The API does not accept <code>route</code> as it go through all slots in the clu
 <blockquote>
 <p><strong>scriptFlush</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1809">src/GlideClusterClient.ts:1809</a></p>
 <p>Flushes the Lua scripts cache.</p>
 <h4 id="parameters_148">Parameters</h4>
 <table>
@@ -38534,7 +38375,6 @@ The API does not accept <code>route</code> as it go through all slots in the clu
 <blockquote>
 <p><strong>scriptKill</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1835">src/GlideClusterClient.ts:1835</a></p>
 <p>Kills the currently executing Lua script, assuming no write operation was yet performed by the script.</p>
 <h4 id="parameters_149">Parameters</h4>
 <table>
@@ -38569,7 +38409,6 @@ The API does not accept <code>route</code> as it go through all slots in the clu
 <blockquote>
 <p><strong>scriptShow</strong>(<code>sha1</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3872">src/BaseClient.ts:3872</a></p>
 <p>Returns the original source code of a script in the script cache.</p>
 <h4 id="parameters_150">Parameters</h4>
 <table>
@@ -38613,7 +38452,6 @@ If the script is not found in the cache, an error is thrown.</p>
 <blockquote>
 <p><strong>sdiff</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Set</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3257">src/BaseClient.ts:3257</a></p>
 <p>Computes the difference between the first set and all the successive sets in <code>keys</code>.</p>
 <h4 id="parameters_151">Parameters</h4>
 <table>
@@ -38658,7 +38496,6 @@ If a key in <code>keys</code> does not exist, it is treated as an empty set.</p>
 <blockquote>
 <p><strong>sdiffstore</strong>(<code>destination</code>, <code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3285">src/BaseClient.ts:3285</a></p>
 <p>Stores the difference between the first set and all the successive sets in <code>keys</code> into a new set at <code>destination</code>.</p>
 <h4 id="parameters_152">Parameters</h4>
 <table>
@@ -38702,7 +38539,6 @@ If a key in <code>keys</code> does not exist, it is treated as an empty set.</p>
 <blockquote>
 <p><strong>set</strong>(<code>key</code>, <code>value</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1498">src/BaseClient.ts:1498</a></p>
 <p>Set the given key with the given value. Return value is dependent on the passed options.</p>
 <h4 id="parameters_153">Parameters</h4>
 <table>
@@ -38764,7 +38600,6 @@ If <code>returnOldValue</code> is set, return the old value as a string.</li>
 <blockquote>
 <p><strong>setbit</strong>(<code>key</code>, <code>offset</code>, <code>value</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1890">src/BaseClient.ts:1890</a></p>
 <p>Sets or clears the bit at <code>offset</code> in the string value stored at <code>key</code>. The <code>offset</code> is a zero-based index, with
 <code>0</code> being the first element of the list, <code>1</code> being the next element, and so on. The <code>offset</code> must be less than
 <code>2^32</code> and greater than or equal to <code>0</code>. If a key is non-existent then the bit at <code>offset</code> is set to <code>value</code> and
@@ -38812,7 +38647,6 @@ the preceding bits are set to <code>0</code>.</p>
 <blockquote>
 <p><strong>setrange</strong>(<code>key</code>, <code>offset</code>, <code>value</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7306">src/BaseClient.ts:7306</a></p>
 <p>Overwrites part of the string stored at <code>key</code>, starting at the specified byte <code>offset</code>,
 for the entire length of <code>value</code>. If the <code>offset</code> is larger than the current length of the string at <code>key</code>,
 the string is padded with zero bytes to make <code>offset</code> fit. Creates the <code>key</code> if it doesn't exist.</p>
@@ -38861,7 +38695,6 @@ the string is padded with zero bytes to make <code>offset</code> fit. Creates th
 <blockquote>
 <p><strong>sinter</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Set</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3175">src/BaseClient.ts:3175</a></p>
 <p>Gets the intersection of all the given sets.</p>
 <h4 id="parameters_156">Parameters</h4>
 <table>
@@ -38911,7 +38744,6 @@ If one or more sets do not exist, an empty set will be returned.</li>
 <blockquote>
 <p><strong>sintercard</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3208">src/BaseClient.ts:3208</a></p>
 <p>Gets the cardinality of the intersection of all the given sets.</p>
 <h4 id="parameters_157">Parameters</h4>
 <table>
@@ -38963,7 +38795,6 @@ If one or more sets do not exist, an empty set will be returned.</li>
 <blockquote>
 <p><strong>sinterstore</strong>(<code>destination</code>, <code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3231">src/BaseClient.ts:3231</a></p>
 <p>Stores the members of the intersection of all given sets specified by <code>keys</code> into a new set at <code>destination</code>.</p>
 <h4 id="parameters_158">Parameters</h4>
 <table>
@@ -39005,7 +38836,6 @@ If one or more sets do not exist, an empty set will be returned.</li>
 <blockquote>
 <p><strong>sismember</strong>(<code>key</code>, <code>member</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3371">src/BaseClient.ts:3371</a></p>
 <p>Returns if <code>member</code> is a member of the set stored at <code>key</code>.</p>
 <h4 id="parameters_159">Parameters</h4>
 <table>
@@ -39051,7 +38881,6 @@ If <code>key</code> doesn't exist, it is treated as an empty set and the command
 <blockquote>
 <p><strong>smembers</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Set</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3096">src/BaseClient.ts:3096</a></p>
 <p>Returns all the members of the set value stored at <code>key</code>.</p>
 <h4 id="parameters_160">Parameters</h4>
 <table>
@@ -39093,7 +38922,6 @@ If <code>key</code> does not exist, it is treated as an empty set and this comma
 <blockquote>
 <p><strong>smismember</strong>(<code>key</code>, <code>members</code>): <code>Promise</code>\&lt;<code>boolean</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3395">src/BaseClient.ts:3395</a></p>
 <p>Checks whether each member is contained in the members of the set stored at <code>key</code>.</p>
 <h4 id="parameters_161">Parameters</h4>
 <table>
@@ -39136,7 +38964,6 @@ If <code>key</code> does not exist, it is treated as an empty set and this comma
 <blockquote>
 <p><strong>smove</strong>(<code>source</code>, <code>destination</code>, <code>member</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3123">src/BaseClient.ts:3123</a></p>
 <p>Moves <code>member</code> from the set at <code>source</code> to the set at <code>destination</code>, removing it from the source set.
 Creates a new destination set if needed. The operation is atomic.</p>
 <h4 id="parameters_162">Parameters</h4>
@@ -39184,7 +39011,6 @@ Creates a new destination set if needed. The operation is atomic.</p>
 <blockquote>
 <p><strong>sort</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;(<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>)[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7534">src/BaseClient.ts:7534</a></p>
 <p>Sorts the elements in the list, set, or sorted set at <code>key</code> and returns the result.</p>
 <p>The <code>sort</code> command can be used to sort elements based on different criteria and
 apply transformations on sorted elements.</p>
@@ -39234,7 +39060,6 @@ and <a href="../../../Commands/interfaces/SortOptions/#getpatterns">SortOptions.
 <blockquote>
 <p><strong>sortReadOnly</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;(<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>)[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7567">src/BaseClient.ts:7567</a></p>
 <p>Sorts the elements in the list, set, or sorted set at <code>key</code> and returns the result.</p>
 <p>The <code>sortReadOnly</code> command can be used to sort elements based on different criteria and
 apply transformations on sorted elements.</p>
@@ -39282,7 +39107,6 @@ apply transformations on sorted elements.</p>
 <blockquote>
 <p><strong>sortStore</strong>(<code>key</code>, <code>destination</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7606">src/BaseClient.ts:7606</a></p>
 <p>Sorts the elements in the list, set, or sorted set at <code>key</code> and stores the result in
 <code>destination</code>.</p>
 <p>The <code>sort</code> command can be used to sort elements based on different criteria and
@@ -39339,7 +39163,6 @@ and <a href="../../../Commands/interfaces/SortOptions/#getpatterns">SortOptions.
 <blockquote>
 <p><strong>spop</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3426">src/BaseClient.ts:3426</a></p>
 <p>Removes and returns one random member from the set value store at <code>key</code>.
 To pop multiple members, see <a href="../../../BaseClient/classes/BaseClient/#spopcount">spopCount</a>.</p>
 <h4 id="parameters_166">Parameters</h4>
@@ -39386,7 +39209,6 @@ If <code>key</code> does not exist, null will be returned.</p>
 <blockquote>
 <p><strong>spopCount</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Set</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3457">src/BaseClient.ts:3457</a></p>
 <p>Removes and returns up to <code>count</code> random members from the set value store at <code>key</code>, depending on the set's length.</p>
 <h4 id="parameters_167">Parameters</h4>
 <table>
@@ -39437,7 +39259,6 @@ If <code>key</code> does not exist, an empty <code>Set</code> will be returned.<
 <blockquote>
 <p><strong>srandmember</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3491">src/BaseClient.ts:3491</a></p>
 <p>Returns a random element from the set value stored at <code>key</code>.</p>
 <h4 id="parameters_168">Parameters</h4>
 <table>
@@ -39482,7 +39303,6 @@ If <code>key</code> does not exist, an empty <code>Set</code> will be returned.<
 <blockquote>
 <p><strong>srandmemberCount</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3524">src/BaseClient.ts:3524</a></p>
 <p>Returns one or more random elements from the set value stored at <code>key</code>.</p>
 <h4 id="parameters_169">Parameters</h4>
 <table>
@@ -39532,7 +39352,6 @@ If <code>key</code> does not exist, an empty <code>Set</code> will be returned.<
 <blockquote>
 <p><strong>srem</strong>(<code>key</code>, <code>members</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3026">src/BaseClient.ts:3026</a></p>
 <p>Removes the specified members from the set stored at <code>key</code>. Specified members that are not a member of this set are ignored.</p>
 <h4 id="parameters_170">Parameters</h4>
 <table>
@@ -39574,7 +39393,6 @@ If <code>key</code> does not exist, it is treated as an empty set and this comma
 <blockquote>
 <p><strong>sscan</strong>(<code>key</code>, <code>cursor</code>, <code>options</code>?): <code>Promise</code>\&lt;[<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3069">src/BaseClient.ts:3069</a></p>
 <p>Iterates incrementally over a set.</p>
 <h4 id="parameters_171">Parameters</h4>
 <table>
@@ -39639,7 +39457,6 @@ The <code>cursor</code> will be <code>"0"</code> on the last iteration of the se
 <blockquote>
 <p><strong>strlen</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4844">src/BaseClient.ts:4844</a></p>
 <p>Returns the length of the string value stored at <code>key</code>.</p>
 <h4 id="parameters_172">Parameters</h4>
 <table>
@@ -39681,7 +39498,6 @@ If <code>key</code> does not exist, it is treated as an empty string, and the co
 <blockquote>
 <p><strong>sunion</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Set</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3314">src/BaseClient.ts:3314</a></p>
 <p>Gets the union of all the given sets.</p>
 <h4 id="parameters_173">Parameters</h4>
 <table>
@@ -39729,7 +39545,6 @@ If none of the sets exist, an empty <code>Set</code> will be returned.</p>
 <blockquote>
 <p><strong>sunionstore</strong>(<code>destination</code>, <code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3341">src/BaseClient.ts:3341</a></p>
 <p>Stores the members of the union of all given sets specified by <code>keys</code> into a new set
 at <code>destination</code>.</p>
 <h4 id="parameters_174">Parameters</h4>
@@ -39772,7 +39587,6 @@ at <code>destination</code>.</p>
 <blockquote>
 <p><strong>time</strong>(<code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/ClusterResponse/"><code>ClusterResponse</code></a>\&lt;[<code>string</code>, <code>string</code>]&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1075">src/GlideClusterClient.ts:1075</a></p>
 <p>Returns the server time.</p>
 <p>The command will be routed to a random node, unless <code>route</code> is provided.</p>
 <h4 id="parameters_175">Parameters</h4>
@@ -39815,7 +39629,6 @@ its corresponding node response is the value.</p>
 <blockquote>
 <p><strong>touch</strong>(<code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7219">src/BaseClient.ts:7219</a></p>
 <p>Updates the last access time of the specified keys.</p>
 <h4 id="parameters_176">Parameters</h4>
 <table>
@@ -39860,7 +39673,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>tryGetPubSubMessage</strong>(<code>decoder</code>?): <code>null</code> | <a href="../../../BaseClient/interfaces/PubSubMsg/"><code>PubSubMsg</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1224">src/BaseClient.ts:1224</a></p>
 <h4 id="parameters_177">Parameters</h4>
 <table>
 <thead>
@@ -39885,7 +39697,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>ttl</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3808">src/BaseClient.ts:3808</a></p>
 <p>Returns the remaining time to live of <code>key</code> that has a timeout.</p>
 <h4 id="parameters_178">Parameters</h4>
 <table>
@@ -39929,7 +39740,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>type</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>string</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4872">src/BaseClient.ts:4872</a></p>
 <p>Returns the string representation of the type of the value stored at <code>key</code>.</p>
 <h4 id="parameters_179">Parameters</h4>
 <table>
@@ -39971,7 +39781,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>unlink</strong>(<code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3585">src/BaseClient.ts:3585</a></p>
 <p>Removes the specified keys. A key is ignored if it does not exist.
 This command, similar to <a href="../../../BaseClient/classes/BaseClient/#del">del</a>, removes specified keys and ignores non-existent ones.
 However, this command does not block the server, while <a href="https://valkey.io/commands/del|DEL">https://valkey.io/commands/del|`DEL`</a> does.</p>
@@ -40017,7 +39826,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>unwatch</strong>(<code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L1725">src/GlideClusterClient.ts:1725</a></p>
 <p>Flushes all the previously watched keys for a transaction. Executing a transaction will
 automatically flush all previously watched keys.</p>
 <p>The command will be routed to all primary nodes, unless <code>route</code> is provided</p>
@@ -40054,7 +39862,6 @@ automatically flush all previously watched keys.</p>
 <blockquote>
 <p><strong>updateConnectionPassword</strong>(<code>password</code>, <code>immediateAuth</code>): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7784">src/BaseClient.ts:7784</a></p>
 <p>Update the current connection with a new password.</p>
 <p>This method is useful in scenarios where the server password has changed or when utilizing short-lived passwords for enhanced security.
 It allows the client to update its password to reconnect upon disconnection without the need to recreate the client instance.
@@ -40097,7 +39904,6 @@ This ensures that the internal reconnection mechanism can handle reconnection se
 <blockquote>
 <p><strong>wait</strong>(<code>numreplicas</code>, <code>timeout</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7282">src/BaseClient.ts:7282</a></p>
 <p>Blocks the current client until all the previous write commands are successfully transferred and
 acknowledged by at least <code>numreplicas</code> of replicas. If <code>timeout</code> is reached, the command returns
 the number of replicas that were not yet reached.</p>
@@ -40140,7 +39946,6 @@ the number of replicas that were not yet reached.</p>
 <blockquote>
 <p><strong>watch</strong>(<code>keys</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7258">src/BaseClient.ts:7258</a></p>
 <p>Marks the given keys to be watched for conditional execution of a transaction. Transactions
 will only execute commands if the watched keys are not modified before execution of the
 transaction. Executing a transaction will automatically flush all previously watched keys.</p>
@@ -40195,7 +40000,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><code>protected</code> <strong>writeOrBufferCommandRequest</strong>(<code>callbackIdx</code>, <code>command</code>, <code>route</code>?): <code>void</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L1088">src/BaseClient.ts:1088</a></p>
 <h4 id="parameters_185">Parameters</h4>
 <table>
 <thead>
@@ -40228,7 +40032,6 @@ request into sub-requests per slot to ensure atomicity.</p>
 <blockquote>
 <p><strong>xack</strong>(<code>key</code>, <code>group</code>, <code>ids</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6087">src/BaseClient.ts:6087</a></p>
 <p>Returns the number of messages that were successfully acknowledged by the consumer group member of a stream.
 This command should be called on a pending message so that such message does not get processed again.</p>
 <h4 id="parameters_186">Parameters</h4>
@@ -40277,7 +40080,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xadd</strong>(<code>key</code>, <code>values</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5323">src/BaseClient.ts:5323</a></p>
 <p>Adds an entry to the specified stream stored at <code>key</code>. If the <code>key</code> doesn't exist, the stream is created.</p>
 <h4 id="parameters_187">Parameters</h4>
 <table>
@@ -40318,7 +40120,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xautoclaim</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>start</code>, <code>options</code>?): <code>Promise</code>\&lt;[<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/StreamEntryDataType/"><code>StreamEntryDataType</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]?]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5743">src/BaseClient.ts:5743</a></p>
 <p>Transfers ownership of pending stream entries that match the specified criteria.</p>
 <h4 id="parameters_188">Parameters</h4>
 <table>
@@ -40401,7 +40202,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xautoclaimJustId</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>start</code>, <code>options</code>?): <code>Promise</code>\&lt;[<code>string</code>, <code>string</code>[], <code>string</code>[]?]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5815">src/BaseClient.ts:5815</a></p>
 <p>Transfers ownership of pending stream entries that match the specified criteria.</p>
 <h4 id="parameters_189">Parameters</h4>
 <table>
@@ -40487,7 +40287,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xclaim</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>ids</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/StreamEntryDataType/"><code>StreamEntryDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5683">src/BaseClient.ts:5683</a></p>
 <p>Changes the ownership of a pending message.</p>
 <h4 id="parameters_190">Parameters</h4>
 <table>
@@ -40551,7 +40350,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xclaimJustId</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>ids</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>string</code>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5858">src/BaseClient.ts:5858</a></p>
 <p>Changes the ownership of a pending message. This function returns an <code>array</code> with
 only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in the Valkey API.</p>
 <h4 id="parameters_191">Parameters</h4>
@@ -40613,7 +40411,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xdel</strong>(<code>key</code>, <code>ids</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5350">src/BaseClient.ts:5350</a></p>
 <p>Removes the specified entries by id from a stream, and returns the number of entries deleted.</p>
 <h4 id="parameters_192">Parameters</h4>
 <table>
@@ -40654,7 +40451,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xgroupCreate</strong>(<code>key</code>, <code>groupName</code>, <code>id</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5889">src/BaseClient.ts:5889</a></p>
 <p>Creates a new consumer group uniquely identified by <code>groupname</code> for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_193">Parameters</h4>
 <table>
@@ -40704,7 +40500,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xgroupCreateConsumer</strong>(<code>key</code>, <code>groupName</code>, <code>consumerName</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6022">src/BaseClient.ts:6022</a></p>
 <p>Creates a consumer named <code>consumerName</code> in the consumer group <code>groupName</code> for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_194">Parameters</h4>
 <table>
@@ -40749,7 +40544,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xgroupDelConsumer</strong>(<code>key</code>, <code>groupName</code>, <code>consumerName</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6048">src/BaseClient.ts:6048</a></p>
 <p>Deletes a consumer named <code>consumerName</code> in the consumer group <code>groupName</code> for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_195">Parameters</h4>
 <table>
@@ -40795,7 +40589,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xgroupDestroy</strong>(<code>key</code>, <code>groupName</code>): <code>Promise</code>\&lt;<code>boolean</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5916">src/BaseClient.ts:5916</a></p>
 <p>Destroys the consumer group <code>groupname</code> for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_196">Parameters</h4>
 <table>
@@ -40835,7 +40628,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xgroupSetId</strong>(<code>key</code>, <code>groupName</code>, <code>id</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6113">src/BaseClient.ts:6113</a></p>
 <p>Sets the last delivered ID for a consumer group.</p>
 <h4 id="parameters_197">Parameters</h4>
 <table>
@@ -40890,7 +40682,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xinfoConsumers</strong>(<code>key</code>, <code>group</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>number</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5605">src/BaseClient.ts:5605</a></p>
 <p>Returns the list of all consumers and their attributes for the given consumer group of the
 stream stored at <code>key</code>.</p>
 <h4 id="parameters_198">Parameters</h4>
@@ -40946,7 +40737,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xinfoGroups</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>null</code> | <code>number</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5649">src/BaseClient.ts:5649</a></p>
 <p>Returns the list of all consumer groups and their attributes for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_199">Parameters</h4>
 <table>
@@ -41005,7 +40795,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xinfoStream</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/ReturnTypeXinfoStream/"><code>ReturnTypeXinfoStream</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5989">src/BaseClient.ts:5989</a></p>
 <p>Returns information about the stream stored at <code>key</code>.</p>
 <h4 id="parameters_200">Parameters</h4>
 <table>
@@ -41089,7 +40878,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xlen</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5503">src/BaseClient.ts:5503</a></p>
 <p>Returns the number of entries in the stream stored at <code>key</code>.</p>
 <h4 id="parameters_201">Parameters</h4>
 <table>
@@ -41124,7 +40912,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xpending</strong>(<code>key</code>, <code>group</code>): <code>Promise</code>\&lt;[<code>number</code>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <code>number</code>][]]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5529">src/BaseClient.ts:5529</a></p>
 <p>Returns stream message summary information for pending messages matching a given range of IDs.</p>
 <h4 id="parameters_202">Parameters</h4>
 <table>
@@ -41172,7 +40959,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xpendingWithOptions</strong>(<code>key</code>, <code>group</code>, <code>options</code>): <code>Promise</code>\&lt;[<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <code>number</code>, <code>number</code>][]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5570">src/BaseClient.ts:5570</a></p>
 <p>Returns an extended form of stream message information for pending messages matching a given range of IDs.</p>
 <h4 id="parameters_203">Parameters</h4>
 <table>
@@ -41235,7 +41021,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xrange</strong>(<code>key</code>, <code>start</code>, <code>end</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/StreamEntryDataType/"><code>StreamEntryDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3911">src/BaseClient.ts:3911</a></p>
 <p>Returns stream entries matching a given range of entry IDs.</p>
 <h4 id="parameters_204">Parameters</h4>
 <table>
@@ -41291,7 +41076,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xread</strong>(<code>keys_and_ids</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideRecord/"><code>GlideRecord</code></a>\&lt;<a href="../../../BaseClient/type-aliases/StreamEntryDataType/"><code>StreamEntryDataType</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5401">src/BaseClient.ts:5401</a></p>
 <p>Reads entries from the given streams.</p>
 <h4 id="parameters_205">Parameters</h4>
 <table>
@@ -41347,7 +41131,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xreadgroup</strong>(<code>group</code>, <code>consumer</code>, <code>keys_and_ids</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideRecord/"><code>GlideRecord</code></a>\&lt;<code>Record</code>\&lt;<code>string</code>, <code>null</code> | [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>][]&gt;&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5460">src/BaseClient.ts:5460</a></p>
 <p>Reads entries from the given streams owned by a consumer group.</p>
 <h4 id="parameters_206">Parameters</h4>
 <table>
@@ -41418,7 +41201,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xrevrange</strong>(<code>key</code>, <code>end</code>, <code>start</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/StreamEntryDataType/"><code>StreamEntryDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L3957">src/BaseClient.ts:3957</a></p>
 <p>Returns stream entries matching a given range of entry IDs in reverse order. Equivalent to <a href="../../../BaseClient/classes/BaseClient/#xrange">xrange</a> but returns the
 entries in reverse order.</p>
 <h4 id="parameters_207">Parameters</h4>
@@ -41475,7 +41257,6 @@ entries in reverse order.</p>
 <blockquote>
 <p><strong>xtrim</strong>(<code>key</code>, <code>options</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5363">src/BaseClient.ts:5363</a></p>
 <p>Trims the stream stored at <code>key</code> by evicting older entries.</p>
 <h4 id="parameters_208">Parameters</h4>
 <table>
@@ -41511,7 +41292,6 @@ entries in reverse order.</p>
 <blockquote>
 <p><strong>zadd</strong>(<code>key</code>, <code>membersAndScores</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4001">src/BaseClient.ts:4001</a></p>
 <p>Adds members with their scores to the sorted set stored at <code>key</code>.
 If a member is already a part of the sorted set, its score is updated.</p>
 <h4 id="parameters_209">Parameters</h4>
@@ -41565,7 +41345,6 @@ If <a href="../../../Commands/interfaces/ZAddOptions/#changed">ZAddOptions.chang
 <blockquote>
 <p><strong>zaddIncr</strong>(<code>key</code>, <code>member</code>, <code>increment</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4043">src/BaseClient.ts:4043</a></p>
 <p>Increments the score of member in the sorted set stored at <code>key</code> by <code>increment</code>.
 If <code>member</code> does not exist in the sorted set, it is added with <code>increment</code> as its score (as if its previous score was 0.0).
 If <code>key</code> does not exist, a new sorted set with the specified member as its sole member is created.</p>
@@ -41623,7 +41402,6 @@ If there was a conflict with the options, the operation aborts and <code>null</c
 <blockquote>
 <p><strong>zcard</strong>(<code>key</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4114">src/BaseClient.ts:4114</a></p>
 <p>Returns the cardinality (number of elements) of the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_211">Parameters</h4>
 <table>
@@ -41664,7 +41442,6 @@ If <code>key</code> does not exist, it is treated as an empty sorted set, and th
 <blockquote>
 <p><strong>zcount</strong>(<code>key</code>, <code>minScore</code>, <code>maxScore</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4380">src/BaseClient.ts:4380</a></p>
 <p>Returns the number of members in the sorted set stored at <code>key</code> with scores between <code>minScore</code> and <code>maxScore</code>.</p>
 <h4 id="parameters_212">Parameters</h4>
 <table>
@@ -41716,7 +41493,6 @@ If <code>minScore</code> is greater than <code>maxScore</code>, <code>0</code> i
 <blockquote>
 <p><strong>zdiff</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4165">src/BaseClient.ts:4165</a></p>
 <p>Returns the difference between the first sorted set and all the successive sorted sets.
 To get the elements with their scores, see <a href="../../../BaseClient/classes/BaseClient/#zdiffwithscores">zdiffWithScores</a>.</p>
 <h4 id="parameters_213">Parameters</h4>
@@ -41763,7 +41539,6 @@ If the first key does not exist, it is treated as an empty sorted set, and the c
 <blockquote>
 <p><strong>zdiffstore</strong>(<code>destination</code>, <code>keys</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4229">src/BaseClient.ts:4229</a></p>
 <p>Calculates the difference between the first sorted set and all the successive sorted sets in <code>keys</code> and stores
 the difference as a sorted set to <code>destination</code>, overwriting it if it already exists. Non-existent keys are
 treated as empty sets.</p>
@@ -41812,7 +41587,6 @@ treated as empty sets.</p>
 <blockquote>
 <p><strong>zdiffWithScores</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4195">src/BaseClient.ts:4195</a></p>
 <p>Returns the difference between the first sorted set and all the successive sorted sets, with the associated
 scores.</p>
 <h4 id="parameters_215">Parameters</h4>
@@ -41860,7 +41634,6 @@ If the first key does not exist, it is treated as an empty sorted set, and the c
 <blockquote>
 <p><strong>zincrby</strong>(<code>key</code>, <code>increment</code>, <code>member</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6937">src/BaseClient.ts:6937</a></p>
 <p>Increments the score of <code>member</code> in the sorted set stored at <code>key</code> by <code>increment</code>.
 If <code>member</code> does not exist in the sorted set, it is added with <code>increment</code> as its score.
 If <code>key</code> does not exist, a new sorted set is created with the specified member as its sole member.</p>
@@ -41913,7 +41686,6 @@ If <code>key</code> does not exist, a new sorted set is created with the specifi
 <blockquote>
 <p><strong>zinter</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4602">src/BaseClient.ts:4602</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and returns a list of intersecting elements.
 To get the scores as well, see <a href="../../../BaseClient/classes/BaseClient/#zinterwithscores">zinterWithScores</a>.
 To store the result in a key as a sorted set, see zinterStore.</p>
@@ -41959,7 +41731,6 @@ To store the result in a key as a sorted set, see zinterStore.</p>
 <blockquote>
 <p><strong>zintercard</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4136">src/BaseClient.ts:4136</a></p>
 <p>Returns the cardinality of the intersection of the sorted sets specified by <code>keys</code>.</p>
 <h4 id="parameters_218">Parameters</h4>
 <table>
@@ -42006,7 +41777,6 @@ To store the result in a key as a sorted set, see zinterStore.</p>
 <blockquote>
 <p><strong>zinterstore</strong>(<code>destination</code>, <code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4569">src/BaseClient.ts:4569</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and stores the result in <code>destination</code>.
 If <code>destination</code> already exists, it is overwritten. Otherwise, a new sorted set will be created.
 To get the result directly, see <a href="../../../BaseClient/classes/BaseClient/#zinterwithscores">zinterWithScores</a>.</p>
@@ -42072,7 +41842,6 @@ To get the result directly, see <a href="../../../BaseClient/classes/BaseClient/
 <blockquote>
 <p><strong>zinterWithScores</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4642">src/BaseClient.ts:4642</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and returns a list of intersecting elements with scores.
 To get the elements only, see <a href="../../../BaseClient/classes/BaseClient/#zinter">zinter</a>.
 To store the result in a key as a sorted set, see zinterStore.</p>
@@ -42123,7 +41892,6 @@ If a key does not exist, it is treated as an empty sorted set, and the command r
 <blockquote>
 <p><strong>zlexcount</strong>(<code>key</code>, <code>minLex</code>, <code>maxLex</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5189">src/BaseClient.ts:5189</a></p>
 <p>Returns the number of members in the sorted set stored at 'key' with scores between 'minLex' and 'maxLex'.</p>
 <h4 id="parameters_221">Parameters</h4>
 <table>
@@ -42173,7 +41941,6 @@ If maxLex is less than minLex, '0' is returned.</p>
 <blockquote>
 <p><strong>zmpop</strong>(<code>keys</code>, <code>modifier</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | [<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>, <a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L6847">src/BaseClient.ts:6847</a></p>
 <p>Pops member-score pairs from the first non-empty sorted set, with the given <code>keys</code>
 being checked in the order they are provided.</p>
 <h4 id="parameters_222">Parameters</h4>
@@ -42230,7 +41997,6 @@ being checked in the order they are provided.</p>
 <blockquote>
 <p><strong>zmscore</strong>(<code>key</code>, <code>members</code>): <code>Promise</code>\&lt;(<code>null</code> | <code>number</code>)[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4347">src/BaseClient.ts:4347</a></p>
 <p>Returns the scores associated with the specified <code>members</code> in the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_223">Parameters</h4>
 <table>
@@ -42273,7 +42039,6 @@ If a member does not exist in the sorted set, the corresponding value in the lis
 <blockquote>
 <p><strong>zpopmax</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4990">src/BaseClient.ts:4990</a></p>
 <p>Removes and returns the members with the highest scores from the sorted set stored at <code>key</code>.
 If <code>count</code> is provided, up to <code>count</code> members with the highest scores are removed and returned.
 Otherwise, only one member with the highest score is removed and returned.</p>
@@ -42329,7 +42094,6 @@ If <code>count</code> is higher than the sorted set's cardinality, returns all m
 <blockquote>
 <p><strong>zpopmin</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4914">src/BaseClient.ts:4914</a></p>
 <p>Removes and returns the members with the lowest scores from the sorted set stored at <code>key</code>.
 If <code>count</code> is provided, up to <code>count</code> members with the lowest scores are removed and returned.
 Otherwise, only one member with the lowest score is removed and returned.</p>
@@ -42385,7 +42149,6 @@ If <code>count</code> is higher than the sorted set's cardinality, returns all m
 <blockquote>
 <p><strong>zrandmember</strong>(<code>key</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>null</code> | <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4744">src/BaseClient.ts:4744</a></p>
 <p>Returns a random member from the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_226">Parameters</h4>
 <table>
@@ -42429,7 +42192,6 @@ If <code>count</code> is higher than the sorted set's cardinality, returns all m
 <blockquote>
 <p><strong>zrandmemberWithCount</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4776">src/BaseClient.ts:4776</a></p>
 <p>Returns random members from the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_227">Parameters</h4>
 <table>
@@ -42478,7 +42240,6 @@ If <code>count</code> is higher than the sorted set's cardinality, returns all m
 <blockquote>
 <p><strong>zrandmemberWithCountWithScores</strong>(<code>key</code>, <code>count</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../Commands/type-aliases/KeyWeight/"><code>KeyWeight</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4809">src/BaseClient.ts:4809</a></p>
 <p>Returns random members with scores from the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_228">Parameters</h4>
 <table>
@@ -42527,7 +42288,6 @@ If <code>count</code> is higher than the sorted set's cardinality, returns all m
 <blockquote>
 <p><strong>zrange</strong>(<code>key</code>, <code>rangeQuery</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4426">src/BaseClient.ts:4426</a></p>
 <p>Returns the specified range of elements in the sorted set stored at <code>key</code>.
 <code>ZRANGE</code> can perform different types of range queries: by index (rank), by the score, or by lexicographical order.</p>
 <p>To get the elements with their scores, see <a href="../../../BaseClient/classes/BaseClient/#zrangewithscores">zrangeWithScores</a>.</p>
@@ -42586,7 +42346,6 @@ If <code>key</code> does not exist, it is treated as an empty sorted set, and th
 <blockquote>
 <p><strong>zrangeStore</strong>(<code>destination</code>, <code>source</code>, <code>rangeQuery</code>, <code>reverse</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4523">src/BaseClient.ts:4523</a></p>
 <p>Stores a specified range of elements from the sorted set at <code>source</code>, into a new
 sorted set at <code>destination</code>. If <code>destination</code> doesn't exist, a new sorted
 set is created; if it exists, it's overwritten.</p>
@@ -42654,7 +42413,6 @@ set is created; if it exists, it's overwritten.</p>
 <blockquote>
 <p><strong>zrangeWithScores</strong>(<code>key</code>, <code>rangeQuery</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4477">src/BaseClient.ts:4477</a></p>
 <p>Returns the specified range of elements with their scores in the sorted set stored at <code>key</code>.
 Similar to ZRange but with a <code>WITHSCORE</code> flag.</p>
 <h4 id="parameters_231">Parameters</h4>
@@ -42716,7 +42474,6 @@ If <code>key</code> does not exist, it is treated as an empty sorted set, and th
 <blockquote>
 <p><strong>zrank</strong>(<code>key</code>, <code>member</code>): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5222">src/BaseClient.ts:5222</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code>, with scores ordered from low to high.
 To get the rank of <code>member</code> with its score, see <a href="../../../BaseClient/classes/BaseClient/#zrankwithscore">zrankWithScore</a>.</p>
 <h4 id="parameters_232">Parameters</h4>
@@ -42763,7 +42520,6 @@ If <code>key</code> doesn't exist, or if <code>member</code> is not present in t
 <blockquote>
 <p><strong>zrankWithScore</strong>(<code>key</code>, <code>member</code>): <code>Promise</code>\&lt;<code>null</code> | [<code>number</code>, <code>number</code>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5254">src/BaseClient.ts:5254</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code> with its score, where scores are ordered from the lowest to highest.</p>
 <h4 id="parameters_233">Parameters</h4>
 <table>
@@ -42811,7 +42567,6 @@ If <code>key</code> doesn't exist, or if <code>member</code> is not present in t
 <blockquote>
 <p><strong>zrem</strong>(<code>key</code>, <code>members</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4084">src/BaseClient.ts:4084</a></p>
 <p>Removes the specified members from the sorted set stored at <code>key</code>.
 Specified members that are not a member of this set are ignored.</p>
 <h4 id="parameters_234">Parameters</h4>
@@ -42858,7 +42613,6 @@ If <code>key</code> does not exist, it is treated as an empty sorted set, and th
 <blockquote>
 <p><strong>zremRangeByLex</strong>(<code>key</code>, <code>minLex</code>, <code>maxLex</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5119">src/BaseClient.ts:5119</a></p>
 <p>Removes all elements in the sorted set stored at <code>key</code> with lexicographical order between <code>minLex</code> and <code>maxLex</code>.</p>
 <h4 id="parameters_235">Parameters</h4>
 <table>
@@ -42910,7 +42664,6 @@ If <code>minLex</code> is greater than <code>maxLex</code>, 0 is returned.</p>
 <blockquote>
 <p><strong>zremRangeByRank</strong>(<code>key</code>, <code>start</code>, <code>end</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5085">src/BaseClient.ts:5085</a></p>
 <p>Removes all elements in the sorted set stored at <code>key</code> with rank between <code>start</code> and <code>end</code>.
 Both <code>start</code> and <code>end</code> are zero-based indexes with 0 being the element with the lowest score.
 These indexes can be negative numbers, where they indicate offsets starting at the element with the highest score.</p>
@@ -42961,7 +42714,6 @@ If <code>key</code> does not exist 0 will be returned.</p>
 <blockquote>
 <p><strong>zremRangeByScore</strong>(<code>key</code>, <code>minScore</code>, <code>maxScore</code>): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5155">src/BaseClient.ts:5155</a></p>
 <p>Removes all elements in the sorted set stored at <code>key</code> with a score between <code>minScore</code> and <code>maxScore</code>.</p>
 <h4 id="parameters_237">Parameters</h4>
 <table>
@@ -43013,7 +42765,6 @@ If <code>minScore</code> is greater than <code>maxScore</code>, 0 is returned.</
 <blockquote>
 <p><strong>zrevrank</strong>(<code>key</code>, <code>member</code>): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5279">src/BaseClient.ts:5279</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code>, where
 scores are ordered from the highest to lowest, starting from <code>0</code>.
 To get the rank of <code>member</code> with its score, see <a href="../../../BaseClient/classes/BaseClient/#zrevrankwithscore">zrevrankWithScore</a>.</p>
@@ -43056,7 +42807,6 @@ To get the rank of <code>member</code> with its score, see <a href="../../../Bas
 <blockquote>
 <p><strong>zrevrankWithScore</strong>(<code>key</code>, <code>member</code>): <code>Promise</code>\&lt;<code>null</code> | [<code>number</code>, <code>number</code>]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L5305">src/BaseClient.ts:5305</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code> with its
 score, where scores are ordered from the highest to lowest, starting from <code>0</code>.</p>
 <h4 id="parameters_239">Parameters</h4>
@@ -43101,7 +42851,6 @@ score, where scores are ordered from the highest to lowest, starting from <code>
 <blockquote>
 <p><strong>zscan</strong>(<code>key</code>, <code>cursor</code>, <code>options</code>?): <code>Promise</code>\&lt;[<code>string</code>, <a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7008">src/BaseClient.ts:7008</a></p>
 <p>Iterates incrementally over a sorted set.</p>
 <h4 id="parameters_240">Parameters</h4>
 <table>
@@ -43189,7 +42938,6 @@ score, where scores are ordered from the highest to lowest, starting from <code>
 <blockquote>
 <p><strong>zscore</strong>(<code>key</code>, <code>member</code>): <code>Promise</code>\&lt;<code>null</code> | <code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4268">src/BaseClient.ts:4268</a></p>
 <p>Returns the score of <code>member</code> in the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_241">Parameters</h4>
 <table>
@@ -43240,7 +42988,6 @@ If <code>key</code> does not exist, null is returned.</p>
 <blockquote>
 <p><strong>zunion</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4674">src/BaseClient.ts:4674</a></p>
 <p>Computes the union of sorted sets given by the specified <code>keys</code> and returns a list of union elements.</p>
 <p>To get the scores as well, see <a href="../../../BaseClient/classes/BaseClient/#zunionwithscores">zunionWithScores</a>.
 To store the result in a key as a sorted set, see zunionStore.</p>
@@ -43286,7 +43033,6 @@ To store the result in a key as a sorted set, see zunionStore.</p>
 <blockquote>
 <p><strong>zunionstore</strong>(<code>destination</code>, <code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>number</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4320">src/BaseClient.ts:4320</a></p>
 <p>Computes the union of sorted sets given by the specified <code>keys</code> and stores the result in <code>destination</code>.
 If <code>destination</code> already exists, it is overwritten. Otherwise, a new sorted set will be created.
 To get the result directly, see <a href="../../../BaseClient/classes/BaseClient/#zunionwithscores">zunionWithScores</a>.</p>
@@ -43356,7 +43102,6 @@ To get the result directly, see <a href="../../../BaseClient/classes/BaseClient/
 <blockquote>
 <p><strong>zunionWithScores</strong>(<code>keys</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../BaseClient/type-aliases/SortedSetDataType/"><code>SortedSetDataType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L4712">src/BaseClient.ts:4712</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and returns a list of union elements with scores.
 To get the elements only, see <a href="../../../BaseClient/classes/BaseClient/#zunion">zunion</a>.</p>
 <h4 id="parameters_244">Parameters</h4>
@@ -43405,7 +43150,6 @@ To get the elements only, see <a href="../../../BaseClient/classes/BaseClient/#z
 <blockquote>
 <p><code>static</code> <strong>__createClient</strong>(<code>options</code>, <code>connectedSocket</code>): <code>Promise</code>\&lt;<a href="./"><code>GlideClusterClient</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L593">src/GlideClusterClient.ts:593</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_245">Parameters</h4>
 <table>
@@ -43433,7 +43177,6 @@ To get the elements only, see <a href="../../../BaseClient/classes/BaseClient/#z
 <blockquote>
 <p><code>protected</code> <code>static</code> <strong>__createClientInternal</strong>\&lt;<code>TConnection</code>&gt;(<code>options</code>, <code>connectedSocket</code>, <code>constructor</code>): <code>Promise</code>\&lt;<code>TConnection</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7710">src/BaseClient.ts:7710</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="type-parameters_1">Type Parameters</h4>
 <table>
@@ -43480,7 +43223,6 @@ To get the elements only, see <a href="../../../BaseClient/classes/BaseClient/#z
 <blockquote>
 <p><code>static</code> <strong>createClient</strong>(<code>options</code>): <code>Promise</code>\&lt;<a href="./"><code>GlideClusterClient</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L581">src/GlideClusterClient.ts:581</a></p>
 <p>Creates a new <code>GlideClusterClient</code> instance and establishes connections to a Valkey GLIDE Cluster.</p>
 <h4 id="parameters_247">Parameters</h4>
 <table>
@@ -43536,7 +43278,6 @@ To get the elements only, see <a href="../../../BaseClient/classes/BaseClient/#z
 <blockquote>
 <p><code>protected</code> <code>static</code> <strong>createClientInternal</strong>\&lt;<code>TConnection</code>&gt;(<code>options</code>, <code>constructor</code>): <code>Promise</code>\&lt;<code>TConnection</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7742">src/BaseClient.ts:7742</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="type-parameters_2">Type Parameters</h4>
 <table>
@@ -43579,7 +43320,6 @@ To get the elements only, see <a href="../../../BaseClient/classes/BaseClient/#z
 <blockquote>
 <p><code>protected</code> <code>static</code> <strong>GetSocket</strong>(<code>path</code>): <code>Promise</code>\&lt;<code>Socket</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/BaseClient.ts#L7729">src/BaseClient.ts:7729</a></p>
 <p><strong><code>Internal</code></strong></p>
 <h4 id="parameters_249">Parameters</h4>
 <table>

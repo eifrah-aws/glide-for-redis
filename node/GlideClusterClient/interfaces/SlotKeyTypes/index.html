@@ -1280,7 +1280,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">GlideClusterClient</a> / SlotKeyTypes</p>
 <h1 id="interface-slotkeytypes">Interface: SlotKeyTypes</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L325">src/GlideClusterClient.ts:325</a></p>
 <p>Routing configuration for commands based on a key in a Valkey cluster.</p>
 <h2 id="remarks">Remarks</h2>
 <p>This interface allows you to specify routing of a command to a node responsible for the slot that a specific key hashes to.
@@ -1314,7 +1313,6 @@ Valkey clusters use consistent hashing to map keys to hash slots, which are then
 <th>Property</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1322,13 +1320,11 @@ Valkey clusters use consistent hashing to map keys to hash slots, which are then
 <td><a id="key"></a> <code>key</code></td>
 <td><code>string</code></td>
 <td>The request will be sent to nodes managing this key.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L334">src/GlideClusterClient.ts:334</a></td>
 </tr>
 <tr>
 <td><a id="type"></a> <code>type</code></td>
 <td><code>"primarySlotKey"</code> | <code>"replicaSlotKey"</code></td>
 <td><code>replicaSlotKey</code> overrides the <code>readFrom</code> configuration. If it's used the request will be routed to a replica, even if the strategy is <code>alwaysFromPrimary</code>.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L330">src/GlideClusterClient.ts:330</a></td>
 </tr>
 </tbody>
 </table>

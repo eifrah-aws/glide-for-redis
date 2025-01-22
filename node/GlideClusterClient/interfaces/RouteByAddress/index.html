@@ -1280,7 +1280,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">GlideClusterClient</a> / RouteByAddress</p>
 <h1 id="interface-routebyaddress">Interface: RouteByAddress</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L370">src/GlideClusterClient.ts:370</a></p>
 <p>Routing configuration to send a command to a specific node by its address and port.</p>
 <h2 id="remarks">Remarks</h2>
 <p>This interface allows you to specify routing of a command to a node in the Valkey cluster by providing its network address and port.
@@ -1317,7 +1316,6 @@ It's useful when you need to direct a command to a particular node.</p>
 <th>Property</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1325,19 +1323,16 @@ It's useful when you need to direct a command to a particular node.</p>
 <td><a id="host"></a> <code>host</code></td>
 <td><code>string</code></td>
 <td>The endpoint of the node. If <code>port</code> is not provided, should be in the <code>${address}:${port}</code> format, where <code>address</code> is the preferred endpoint as shown in the output of the <code>CLUSTER SLOTS</code> command.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L375">src/GlideClusterClient.ts:375</a></td>
 </tr>
 <tr>
 <td><a id="port"></a> <code>port?</code></td>
 <td><code>number</code></td>
 <td>The port to access on the node. If port is not provided, <code>host</code> is assumed to be in the format <code>${address}:${port}</code>.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L379">src/GlideClusterClient.ts:379</a></td>
 </tr>
 <tr>
 <td><a id="type"></a> <code>type</code></td>
 <td><code>"routeByAddress"</code></td>
 <td>-</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L371">src/GlideClusterClient.ts:371</a></td>
 </tr>
 </tbody>
 </table>

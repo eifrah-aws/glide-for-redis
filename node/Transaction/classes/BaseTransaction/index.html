@@ -10538,7 +10538,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Transaction</a> / BaseTransaction</p>
 <h1 id="class-basetransactiont">Class: BaseTransaction\&lt;T&gt;</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L290">src/Transaction.ts:290</a></p>
 <p>Base class encompassing shared commands for both standalone and cluster mode implementations in a transaction.
 Transactions allow the execution of a group of commands in a single step.</p>
 <p>Command Response:
@@ -10587,7 +10586,6 @@ Transactions allow the execution of a group of commands in a single step.</p>
 <th>Type</th>
 <th>Default value</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -10597,7 +10595,6 @@ Transactions allow the execution of a group of commands in a single step.</p>
 <td><code>Command</code>[]</td>
 <td><code>[]</code></td>
 <td><strong><code>Internal</code></strong></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L294">src/Transaction.ts:294</a></td>
 </tr>
 <tr>
 <td><a id="setcommandsindexes"></a> <code>setCommandsIndexes</code></td>
@@ -10605,7 +10602,6 @@ Transactions allow the execution of a group of commands in a single step.</p>
 <td><code>number</code>[]</td>
 <td><code>[]</code></td>
 <td><strong><code>Internal</code></strong> Array of command indexes indicating commands that need to be converted into a <code>Set</code> within the transaction.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L299">src/Transaction.ts:299</a></td>
 </tr>
 </tbody>
 </table>
@@ -10614,7 +10610,6 @@ Transactions allow the execution of a group of commands in a single step.</p>
 <blockquote>
 <p><code>protected</code> <strong>addAndReturn</strong>(<code>command</code>, <code>shouldConvertToSet</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L307">src/Transaction.ts:307</a></p>
 <p>Adds a command to the transaction and returns the transaction instance.</p>
 <h4 id="parameters">Parameters</h4>
 <table>
@@ -10649,7 +10644,6 @@ Transactions allow the execution of a group of commands in a single step.</p>
 <blockquote>
 <p><strong>append</strong>(<code>key</code>, <code>value</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3885">src/Transaction.ts:3885</a></p>
 <p>Appends a <code>value</code> to a <code>key</code>. If <code>key</code> does not exist it is created and set as an empty string,
 so <code>APPEND</code> will be similar to <a href="./#set">set</a> in this special case.</p>
 <h4 id="parameters_1">Parameters</h4>
@@ -10683,7 +10677,6 @@ so <code>APPEND</code> will be similar to <a href="./#set">set</a> in this speci
 <blockquote>
 <p><strong>bitcount</strong>(<code>key</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3494">src/Transaction.ts:3494</a></p>
 <p>Counts the number of set bits (population counting) in the string stored at <code>key</code>. The <code>options</code> argument can
 optionally be provided to count the number of bits in a specific string interval.</p>
 <h4 id="parameters_2">Parameters</h4>
@@ -10717,7 +10710,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitfield</strong>(<code>key</code>, <code>subcommands</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L725">src/Transaction.ts:725</a></p>
 <p>Reads or modifies the array of bits representing the string that is held at <code>key</code> based on the specified
 <code>subcommands</code>.</p>
 <h4 id="parameters_3">Parameters</h4>
@@ -10751,7 +10743,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitfieldReadOnly</strong>(<code>key</code>, <code>subcommands</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L741">src/Transaction.ts:741</a></p>
 <p>Reads the array of bits representing the string that is held at <code>key</code> based on the specified <code>subcommands</code>.</p>
 <h4 id="parameters_4">Parameters</h4>
 <table>
@@ -10786,7 +10777,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitop</strong>(<code>operation</code>, <code>destination</code>, <code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L636">src/Transaction.ts:636</a></p>
 <p>Perform a bitwise operation between multiple keys (containing string values) and store the result in the
 <code>destination</code>.</p>
 <h4 id="parameters_5">Parameters</h4>
@@ -10825,7 +10815,6 @@ optionally be provided to count the number of bits in a specific string interval
 <blockquote>
 <p><strong>bitpos</strong>(<code>key</code>, <code>bit</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L693">src/Transaction.ts:693</a></p>
 <p>Returns the position of the first bit matching the given <code>bit</code> value. The optional starting offset
 <code>start</code> is a zero-based index, with <code>0</code> being the first byte of the list, <code>1</code> being the next byte and so on.
 The offset can also be a negative number indicating an offset starting at the end of the list, with <code>-1</code> being
@@ -10866,7 +10855,6 @@ the last byte of the list, <code>-2</code> being the penultimate, and so on.</p>
 <blockquote>
 <p><strong>blmove</strong>(<code>source</code>, <code>destination</code>, <code>whereFrom</code>, <code>whereTo</code>, <code>timeout</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1163">src/Transaction.ts:1163</a></p>
 <p>Blocks the connection until it pops atomically and removes the left/right-most element to the
 list stored at <code>source</code> depending on <code>whereFrom</code>, and pushes the element at the first/last element
 of the list stored at <code>destination</code> depending on <code>whereTo</code>.
@@ -10919,7 +10907,6 @@ of the list stored at <code>destination</code> depending on <code>whereTo</code>
 <blockquote>
 <p><strong>blmpop</strong>(<code>keys</code>, <code>direction</code>, <code>timeout</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3925">src/Transaction.ts:3925</a></p>
 <p>Blocks the connection until it pops one or more elements from the first non-empty list from the
 provided <code>key</code>. <code>BLMPOP</code> is the blocking variant of <a href="./#lmpop">lmpop</a>.</p>
 <h4 id="parameters_8">Parameters</h4>
@@ -10965,7 +10952,6 @@ provided <code>key</code>. <code>BLMPOP</code> is the blocking variant of <a hre
 <blockquote>
 <p><strong>blpop</strong>(<code>keys</code>, <code>timeout</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3147">src/Transaction.ts:3147</a></p>
 <p>Blocking list pop primitive.
 Pop an element from the head of the first list that is non-empty,
 with the given <code>keys</code> being checked in the order that they are given.
@@ -11003,7 +10989,6 @@ Blocks the connection when there are no elements to pop from any of the given li
 <blockquote>
 <p><strong>brpop</strong>(<code>keys</code>, <code>timeout</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3129">src/Transaction.ts:3129</a></p>
 <p>Blocking list pop primitive.
 Pop an element from the tail of the first list that is non-empty,
 with the given <code>keys</code> being checked in the order that they are given.
@@ -11041,7 +11026,6 @@ Blocks the connection when there are no elements to pop from any of the given li
 <blockquote>
 <p><strong>bzmpop</strong>(<code>keys</code>, <code>modifier</code>, <code>timeout</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3666">src/Transaction.ts:3666</a></p>
 <p>Pops a member-score pair from the first non-empty sorted set, with the given <code>keys</code> being
 checked in the order they are provided. Blocks the connection when there are no members
 to pop from any of the given sorted sets. <code>BZMPOP</code> is the blocking variant of <a href="./#zmpop">zmpop</a>.</p>
@@ -11088,7 +11072,6 @@ to pop from any of the given sorted sets. <code>BZMPOP</code> is the blocking va
 <blockquote>
 <p><strong>bzpopmax</strong>(<code>keys</code>, <code>timeout</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2304">src/Transaction.ts:2304</a></p>
 <p>Blocks the connection until it removes and returns a member with the highest score from the
 first non-empty sorted set, with the given <code>key</code> being checked in the order they
 are provided.
@@ -11124,7 +11107,6 @@ are provided.
 <blockquote>
 <p><strong>bzpopmin</strong>(<code>keys</code>, <code>timeout</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2266">src/Transaction.ts:2266</a></p>
 <p>Blocks the connection until it removes and returns a member with the lowest score from the
 first non-empty sorted set, with the given <code>key</code> being checked in the order they
 are provided.
@@ -11160,7 +11142,6 @@ are provided.
 <blockquote>
 <p><strong>clientGetName</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L484">src/Transaction.ts:484</a></p>
 <p>Gets the name of the connection on which the transaction is being executed.</p>
 <h4 id="returns_15">Returns</h4>
 <p><code>T</code></p>
@@ -11172,7 +11153,6 @@ are provided.
 <blockquote>
 <p><strong>clientId</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L597">src/Transaction.ts:597</a></p>
 <p>Returns the current connection ID.</p>
 <h4 id="returns_16">Returns</h4>
 <p><code>T</code></p>
@@ -11184,7 +11164,6 @@ are provided.
 <blockquote>
 <p><strong>configGet</strong>(<code>parameters</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L755">src/Transaction.ts:755</a></p>
 <p>Reads the configuration parameters of the running server.</p>
 <h4 id="parameters_14">Parameters</h4>
 <table>
@@ -11212,7 +11191,6 @@ are provided.
 <blockquote>
 <p><strong>configResetStat</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L506">src/Transaction.ts:506</a></p>
 <p>Resets the statistics reported by Valkey using the <code>INFO</code> and <code>LATENCY HISTOGRAM</code> commands.</p>
 <h4 id="returns_18">Returns</h4>
 <p><code>T</code></p>
@@ -11224,7 +11202,6 @@ are provided.
 <blockquote>
 <p><strong>configRewrite</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L495">src/Transaction.ts:495</a></p>
 <p>Rewrites the configuration file with the current configuration.</p>
 <h4 id="returns_19">Returns</h4>
 <p><code>T</code></p>
@@ -11236,7 +11213,6 @@ are provided.
 <blockquote>
 <p><strong>configSet</strong>(<code>parameters</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L768">src/Transaction.ts:768</a></p>
 <p>Sets configuration parameters to the specified values.</p>
 <h4 id="parameters_15">Parameters</h4>
 <table>
@@ -11264,7 +11240,6 @@ are provided.
 <blockquote>
 <p><strong>customCommand</strong>(<code>args</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2507">src/Transaction.ts:2507</a></p>
 <p>Executes a single command, without checking inputs. Every part of the command, including subcommands,
  should be added as a separate value in args.</p>
 <h4 id="parameters_16">Parameters</h4>
@@ -11292,7 +11267,6 @@ are provided.
 <blockquote>
 <p><strong>dbsize</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3477">src/Transaction.ts:3477</a></p>
 <p>Returns the number of keys in the currently selected database.</p>
 <h4 id="returns_22">Returns</h4>
 <p><code>T</code></p>
@@ -11304,7 +11278,6 @@ are provided.
 <blockquote>
 <p><strong>decr</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L608">src/Transaction.ts:608</a></p>
 <p>Decrements the number stored at <code>key</code> by one. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_17">Parameters</h4>
 <table>
@@ -11332,7 +11305,6 @@ are provided.
 <blockquote>
 <p><strong>decrBy</strong>(<code>key</code>, <code>amount</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L620">src/Transaction.ts:620</a></p>
 <p>Decrements the number stored at <code>key</code> by <code>amount</code>. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_18">Parameters</h4>
 <table>
@@ -11365,7 +11337,6 @@ are provided.
 <blockquote>
 <p><strong>del</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L436">src/Transaction.ts:436</a></p>
 <p>Removes the specified keys. A key is ignored if it does not exist.</p>
 <h4 id="parameters_19">Parameters</h4>
 <table>
@@ -11393,7 +11364,6 @@ are provided.
 <blockquote>
 <p><strong>dump</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L450">src/Transaction.ts:450</a></p>
 <p>Serialize the value stored at <code>key</code> in a Valkey-specific format and return it to the user.</p>
 <h4 id="parameters_20">Parameters</h4>
 <table>
@@ -11423,7 +11393,6 @@ are provided.
 <blockquote>
 <p><strong>echo</strong>(<code>message</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2317">src/Transaction.ts:2317</a></p>
 <p>Echoes the provided <code>message</code> back</p>
 <h4 id="parameters_21">Parameters</h4>
 <table>
@@ -11451,7 +11420,6 @@ are provided.
 <blockquote>
 <p><strong>exists</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1559">src/Transaction.ts:1559</a></p>
 <p>Returns the number of keys in <code>keys</code> that exist in the database.</p>
 <h4 id="parameters_22">Parameters</h4>
 <table>
@@ -11479,7 +11447,6 @@ are provided.
 <blockquote>
 <p><strong>expire</strong>(<code>key</code>, <code>seconds</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1594">src/Transaction.ts:1594</a></p>
 <p>Sets a timeout on <code>key</code> in seconds. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
 If <code>seconds</code> is non-positive number, the key will be deleted rather than expired.
@@ -11525,7 +11492,6 @@ The timeout will only be cleared by commands that delete or overwrite the conten
 <blockquote>
 <p><strong>expireAt</strong>(<code>key</code>, <code>unixSeconds</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1620">src/Transaction.ts:1620</a></p>
 <p>Sets a timeout on <code>key</code>. It takes an absolute Unix timestamp (seconds since January 1, 1970) instead of specifying the number of seconds.
 A timestamp in the past will delete the key immediately. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
@@ -11571,7 +11537,6 @@ The timeout will only be cleared by commands that delete or overwrite the conten
 <blockquote>
 <p><strong>expireTime</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1641">src/Transaction.ts:1641</a></p>
 <p>Returns the absolute Unix timestamp (since January 1, 1970) at which the given <code>key</code> will expire, in seconds.
 To get the expiration with millisecond precision, use pexpiretime.</p>
 <h4 id="parameters_25">Parameters</h4>
@@ -11602,7 +11567,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>fcall</strong>(<code>func</code>, <code>keys</code>, <code>args</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3291">src/Transaction.ts:3291</a></p>
 <p>Invokes a previously loaded function.</p>
 <h4 id="parameters_26">Parameters</h4>
 <table>
@@ -11642,7 +11606,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>fcallReadonly</strong>(<code>func</code>, <code>keys</code>, <code>args</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3312">src/Transaction.ts:3312</a></p>
 <p>Invokes a previously loaded read-only function.</p>
 <h4 id="parameters_27">Parameters</h4>
 <table>
@@ -11682,7 +11645,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>flushall</strong>(<code>mode</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3430">src/Transaction.ts:3430</a></p>
 <p>Deletes all the keys of all the existing databases. This command never fails.</p>
 <h4 id="parameters_28">Parameters</h4>
 <table>
@@ -11710,7 +11672,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>flushdb</strong>(<code>mode</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3443">src/Transaction.ts:3443</a></p>
 <p>Deletes all the keys of the currently selected database. This command never fails.</p>
 <h4 id="parameters_29">Parameters</h4>
 <table>
@@ -11738,7 +11699,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>functionDelete</strong>(<code>libraryCode</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3330">src/Transaction.ts:3330</a></p>
 <p>Deletes a library and all its functions.</p>
 <h4 id="parameters_30">Parameters</h4>
 <table>
@@ -11768,7 +11728,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>functionDump</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3402">src/Transaction.ts:3402</a></p>
 <p>Returns the serialized payload of all loaded libraries.</p>
 <h4 id="returns_37">Returns</h4>
 <p><code>T</code></p>
@@ -11781,7 +11740,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>functionFlush</strong>(<code>mode</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3359">src/Transaction.ts:3359</a></p>
 <p>Deletes all function libraries.</p>
 <h4 id="parameters_31">Parameters</h4>
 <table>
@@ -11811,7 +11769,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>functionList</strong>(<code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3373">src/Transaction.ts:3373</a></p>
 <p>Returns information about the functions and libraries.</p>
 <h4 id="parameters_32">Parameters</h4>
 <table>
@@ -11841,7 +11798,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>functionLoad</strong>(<code>libraryCode</code>, <code>replace</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3346">src/Transaction.ts:3346</a></p>
 <p>Loads a library to Valkey.</p>
 <h4 id="parameters_33">Parameters</h4>
 <table>
@@ -11876,7 +11832,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>functionRestore</strong>(<code>payload</code>, <code>policy</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3417">src/Transaction.ts:3417</a></p>
 <p>Restores libraries from the serialized payload returned by <a href="./#functiondump">functionDump</a>.</p>
 <h4 id="parameters_34">Parameters</h4>
 <table>
@@ -11911,7 +11866,6 @@ To get the expiration with millisecond precision, use pexpiretime.</p>
 <blockquote>
 <p><strong>functionStats</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3389">src/Transaction.ts:3389</a></p>
 <p>Returns information about the function that's currently running and information about the
 available execution engines.</p>
 <h4 id="returns_42">Returns</h4>
@@ -11930,7 +11884,6 @@ available execution engines.</p>
 <blockquote>
 <p><strong>geoadd</strong>(<code>key</code>, <code>membersToGeospatialData</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3513">src/Transaction.ts:3513</a></p>
 <p>Adds geospatial members with their positions to the specified sorted set stored at <code>key</code>.
 If a member is already a part of the sorted set, its position is updated.</p>
 <h4 id="parameters_35">Parameters</h4>
@@ -11969,7 +11922,6 @@ If a member is already a part of the sorted set, its position is updated.</p>
 <blockquote>
 <p><strong>geodist</strong>(<code>key</code>, <code>member1</code>, <code>member2</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3732">src/Transaction.ts:3732</a></p>
 <p>Returns the distance between <code>member1</code> and <code>member2</code> saved in the geospatial index stored at <code>key</code>.</p>
 <h4 id="parameters_36">Parameters</h4>
 <table>
@@ -12017,7 +11969,6 @@ If a member is already a part of the sorted set, its position is updated.</p>
 <blockquote>
 <p><strong>geohash</strong>(<code>key</code>, <code>members</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3754">src/Transaction.ts:3754</a></p>
 <p>Returns the <code>GeoHash</code> strings representing the positions of all the specified <code>members</code> in the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_37">Parameters</h4>
 <table>
@@ -12050,7 +12001,6 @@ If a member is already a part of the sorted set, its position is updated.</p>
 <blockquote>
 <p><strong>geopos</strong>(<code>key</code>, <code>members</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3619">src/Transaction.ts:3619</a></p>
 <p>Returns the positions (longitude, latitude) of all the specified <code>members</code> of the
 geospatial index represented by the sorted set at <code>key</code>.</p>
 <h4 id="parameters_38">Parameters</h4>
@@ -12084,7 +12034,6 @@ geospatial index represented by the sorted set at <code>key</code>.</p>
 <blockquote>
 <p><strong>geosearch</strong>(<code>key</code>, <code>searchFrom</code>, <code>searchBy</code>, <code>resultOptions</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3554">src/Transaction.ts:3554</a></p>
 <p>Returns the members of a sorted set populated with geospatial information using <a href="./#geoadd">geoadd</a>,
 which are within the borders of the area specified by a given shape.</p>
 <h4 id="parameters_39">Parameters</h4>
@@ -12130,7 +12079,6 @@ which are within the borders of the area specified by a given shape.</p>
 <blockquote>
 <p><strong>geosearchstore</strong>(<code>destination</code>, <code>source</code>, <code>searchFrom</code>, <code>searchBy</code>, <code>resultOptions</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3588">src/Transaction.ts:3588</a></p>
 <p>Searches for members in a sorted set stored at <code>source</code> representing geospatial data
 within a circular or rectangular area and stores the result in <code>destination</code>.</p>
 <p>If <code>destination</code> already exists, it is overwritten. Otherwise, a new sorted set will be created.</p>
@@ -12183,7 +12131,6 @@ within a circular or rectangular area and stores the result in <code>destination
 <blockquote>
 <p><strong>get</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L327">src/Transaction.ts:327</a></p>
 <p>Get the value associated with the given key, or null if no such value exists.</p>
 <h4 id="parameters_41">Parameters</h4>
 <table>
@@ -12211,7 +12158,6 @@ within a circular or rectangular area and stores the result in <code>destination
 <blockquote>
 <p><strong>getbit</strong>(<code>key</code>, <code>offset</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L656">src/Transaction.ts:656</a></p>
 <p>Returns the bit value at <code>offset</code> in the string value stored at <code>key</code>. <code>offset</code> must be greater than or equal
 to zero.</p>
 <h4 id="parameters_42">Parameters</h4>
@@ -12245,7 +12191,6 @@ to zero.</p>
 <blockquote>
 <p><strong>getdel</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L360">src/Transaction.ts:360</a></p>
 <p>Gets a string value associated with the given <code>key</code>and deletes the key.</p>
 <h4 id="parameters_43">Parameters</h4>
 <table>
@@ -12273,7 +12218,6 @@ to zero.</p>
 <blockquote>
 <p><strong>getex</strong>(<code>key</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L344">src/Transaction.ts:344</a></p>
 <p>Get the value of <code>key</code> and optionally set its expiration. <code>GETEX</code> is similar to <a href="./#get">get</a>.</p>
 <h4 id="parameters_44">Parameters</h4>
 <table>
@@ -12308,7 +12252,6 @@ to zero.</p>
 <blockquote>
 <p><strong>getrange</strong>(<code>key</code>, <code>start</code>, <code>end</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L379">src/Transaction.ts:379</a></p>
 <p>Returns the substring of the string value stored at <code>key</code>, determined by the byte offsets
 <code>start</code> and <code>end</code> (both are inclusive). Negative offsets can be used in order to provide
 an offset starting from the end of the string. So <code>-1</code> means the last character, <code>-2</code> the
@@ -12350,7 +12293,6 @@ or <code>end</code> are out of range, returns the substring within the valid ran
 <blockquote>
 <p><strong>hdel</strong>(<code>key</code>, <code>fields</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L843">src/Transaction.ts:843</a></p>
 <p>Removes the specified fields from the hash stored at <code>key</code>.
 Specified fields that do not exist within this hash are ignored.</p>
 <h4 id="parameters_46">Parameters</h4>
@@ -12384,7 +12326,6 @@ Specified fields that do not exist within this hash are ignored.</p>
 <blockquote>
 <p><strong>hexists</strong>(<code>key</code>, <code>field</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L870">src/Transaction.ts:870</a></p>
 <p>Returns if <code>field</code> is an existing field in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_47">Parameters</h4>
 <table>
@@ -12417,7 +12358,6 @@ Specified fields that do not exist within this hash are ignored.</p>
 <blockquote>
 <p><strong>hget</strong>(<code>key</code>, <code>field</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L780">src/Transaction.ts:780</a></p>
 <p>Retrieve the value associated with <code>field</code> in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_48">Parameters</h4>
 <table>
@@ -12450,7 +12390,6 @@ Specified fields that do not exist within this hash are ignored.</p>
 <blockquote>
 <p><strong>hgetall</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L884">src/Transaction.ts:884</a></p>
 <p>Returns all fields and values of the hash stored at <code>key</code>.</p>
 <h4 id="parameters_49">Parameters</h4>
 <table>
@@ -12478,7 +12417,6 @@ Specified fields that do not exist within this hash are ignored.</p>
 <blockquote>
 <p><strong>hincrBy</strong>(<code>key</code>, <code>field</code>, <code>amount</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L899">src/Transaction.ts:899</a></p>
 <p>Increments the number stored at <code>field</code> in the hash stored at <code>key</code> by <code>increment</code>.
 By using a negative increment value, the value stored at <code>field</code> in the hash stored at <code>key</code> is decremented.
 If <code>field</code> or <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
@@ -12518,7 +12456,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hincrByFloat</strong>(<code>key</code>, <code>field</code>, <code>amount</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L914">src/Transaction.ts:914</a></p>
 <p>Increment the string representing a floating point number stored at <code>field</code> in the hash stored at <code>key</code> by <code>increment</code>.
 By using a negative increment value, the value stored at <code>field</code> in the hash stored at <code>key</code> is decremented.
 If <code>field</code> or <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
@@ -12558,7 +12495,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hkeys</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L814">src/Transaction.ts:814</a></p>
 <p>Returns all field names in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_52">Parameters</h4>
 <table>
@@ -12586,7 +12522,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hlen</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L929">src/Transaction.ts:929</a></p>
 <p>Returns the number of fields contained in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_53">Parameters</h4>
 <table>
@@ -12614,7 +12549,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hmget</strong>(<code>key</code>, <code>fields</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L857">src/Transaction.ts:857</a></p>
 <p>Returns the values associated with the specified fields in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_54">Parameters</h4>
 <table>
@@ -12647,7 +12581,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hrandfield</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L969">src/Transaction.ts:969</a></p>
 <p>Returns a random field name from the hash value stored at <code>key</code>.</p>
 <h4 id="parameters_55">Parameters</h4>
 <table>
@@ -12677,7 +12610,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hrandfieldCount</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1007">src/Transaction.ts:1007</a></p>
 <p>Retrieves up to <code>count</code> random field names from the hash value stored at <code>key</code>.</p>
 <h4 id="parameters_56">Parameters</h4>
 <table>
@@ -12712,7 +12644,6 @@ If <code>field</code> or <code>key</code> does not exist, it is set to 0 before 
 <blockquote>
 <p><strong>hrandfieldWithValues</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1027">src/Transaction.ts:1027</a></p>
 <p>Retrieves up to <code>count</code> random field names along with their values from the hash
 value stored at <code>key</code>.</p>
 <h4 id="parameters_57">Parameters</h4>
@@ -12748,7 +12679,6 @@ value stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>hscan</strong>(<code>key</code>, <code>cursor</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L989">src/Transaction.ts:989</a></p>
 <p>Iterates incrementally over a hash.</p>
 <h4 id="parameters_58">Parameters</h4>
 <table>
@@ -12786,7 +12716,6 @@ value stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>hset</strong>(<code>key</code>, <code>fieldsAndValues</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L793">src/Transaction.ts:793</a></p>
 <p>Sets the specified fields to their respective values in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_59">Parameters</h4>
 <table>
@@ -12819,7 +12748,6 @@ value stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>hsetnx</strong>(<code>key</code>, <code>field</code>, <code>value</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L829">src/Transaction.ts:829</a></p>
 <p>Sets <code>field</code> in the hash stored at <code>key</code> to <code>value</code>, only if <code>field</code> does not yet exist.
 If <code>key</code> does not exist, a new key holding a hash is created.
 If <code>field</code> already exists, this operation has no effect.</p>
@@ -12859,7 +12787,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>hstrlen</strong>(<code>key</code>, <code>field</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L954">src/Transaction.ts:954</a></p>
 <p>Returns the string length of the value associated with <code>field</code> in the hash stored at <code>key</code>.</p>
 <h4 id="parameters_61">Parameters</h4>
 <table>
@@ -12892,7 +12819,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>hvals</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L940">src/Transaction.ts:940</a></p>
 <p>Returns all values in the hash stored at key.</p>
 <h4 id="parameters_62">Parameters</h4>
 <table>
@@ -12920,7 +12846,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>incr</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L559">src/Transaction.ts:559</a></p>
 <p>Increments the number stored at <code>key</code> by one. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_63">Parameters</h4>
 <table>
@@ -12948,7 +12873,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>incrBy</strong>(<code>key</code>, <code>amount</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L571">src/Transaction.ts:571</a></p>
 <p>Increments the number stored at <code>key</code> by <code>amount</code>. If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
 <h4 id="parameters_64">Parameters</h4>
 <table>
@@ -12981,7 +12905,6 @@ If <code>field</code> already exists, this operation has no effect.</p>
 <blockquote>
 <p><strong>incrByFloat</strong>(<code>key</code>, <code>amount</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L586">src/Transaction.ts:586</a></p>
 <p>Increment the string representing a floating point number stored at <code>key</code> by <code>amount</code>.
 By using a negative amount value, the result is that the value stored at <code>key</code> is decremented.
 If <code>key</code> does not exist, it is set to 0 before performing the operation.</p>
@@ -13016,7 +12939,6 @@ If <code>key</code> does not exist, it is set to 0 before performing the operati
 <blockquote>
 <p><strong>info</strong>(<code>sections</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L423">src/Transaction.ts:423</a></p>
 <p>Gets information and statistics about the server.</p>
 <h4 id="parameters_66">Parameters</h4>
 <table>
@@ -13044,7 +12966,6 @@ If <code>key</code> does not exist, it is set to 0 before performing the operati
 <blockquote>
 <p><strong>lastsave</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3766">src/Transaction.ts:3766</a></p>
 <p>Returns <code>UNIX TIME</code> of the last DB save timestamp or startup timestamp if no save
 was made since then.</p>
 <h4 id="returns_75">Returns</h4>
@@ -13057,7 +12978,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lcs</strong>(<code>key1</code>, <code>key2</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3782">src/Transaction.ts:3782</a></p>
 <p>Returns all the longest common subsequences combined between strings stored at <code>key1</code> and <code>key2</code>.</p>
 <h4 id="parameters_67">Parameters</h4>
 <table>
@@ -13092,7 +13012,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lcsIdx</strong>(<code>key1</code>, <code>key2</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3825">src/Transaction.ts:3825</a></p>
 <p>Returns the indices and lengths of the longest common subsequences between strings stored at
 <code>key1</code> and <code>key2</code>.</p>
 <h4 id="parameters_68">Parameters</h4>
@@ -13143,7 +13062,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lcsLen</strong>(<code>key1</code>, <code>key2</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3797">src/Transaction.ts:3797</a></p>
 <p>Returns the total length of all the longest common subsequences between strings stored at <code>key1</code> and <code>key2</code>.</p>
 <h4 id="parameters_69">Parameters</h4>
 <table>
@@ -13178,7 +13096,6 @@ was made since then.</p>
 <blockquote>
 <p><strong>lindex</strong>(<code>key</code>, <code>index</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2522">src/Transaction.ts:2522</a></p>
 <p>Returns the element at index <code>index</code> in the list stored at <code>key</code>.
 The index is zero-based, so 0 means the first element, 1 the second element and so on.
 Negative indices can be used to designate elements starting at the tail of the list.
@@ -13214,7 +13131,6 @@ Here, -1 means the last element, -2 means the penultimate and so forth.</p>
 <blockquote>
 <p><strong>linsert</strong>(<code>key</code>, <code>position</code>, <code>pivot</code>, <code>element</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2541">src/Transaction.ts:2541</a></p>
 <p>Inserts <code>element</code> in the list at <code>key</code> either before or after the <code>pivot</code>.</p>
 <h4 id="parameters_71">Parameters</h4>
 <table>
@@ -13257,7 +13173,6 @@ Here, -1 means the last element, -2 means the penultimate and so forth.</p>
 <blockquote>
 <p><strong>llen</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1113">src/Transaction.ts:1113</a></p>
 <p>Returns the length of the list stored at <code>key</code>.</p>
 <h4 id="parameters_72">Parameters</h4>
 <table>
@@ -13285,7 +13200,6 @@ Here, -1 means the last element, -2 means the penultimate and so forth.</p>
 <blockquote>
 <p><strong>lmove</strong>(<code>source</code>, <code>destination</code>, <code>whereFrom</code>, <code>whereTo</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1132">src/Transaction.ts:1132</a></p>
 <p>Atomically pops and removes the left/right-most element to the list stored at <code>source</code>
 depending on <code>whereFrom</code>, and pushes the element at the first/last element of the list
 stored at <code>destination</code> depending on <code>whereTo</code>, see <a href="../../../Commands/enumerations/ListDirection/">ListDirection</a>.</p>
@@ -13332,7 +13246,6 @@ stored at <code>destination</code> depending on <code>whereTo</code>, see <a hre
 <blockquote>
 <p><strong>lmpop</strong>(<code>keys</code>, <code>direction</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3901">src/Transaction.ts:3901</a></p>
 <p>Pops one or more elements from the first non-empty list from the provided <code>keys</code>.</p>
 <h4 id="parameters_74">Parameters</h4>
 <table>
@@ -13372,7 +13285,6 @@ stored at <code>destination</code> depending on <code>whereTo</code>, see <a hre
 <blockquote>
 <p><strong>lolwut</strong>(<code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3257">src/Transaction.ts:3257</a></p>
 <p>Displays a piece of generative computer art and the server version.</p>
 <h4 id="parameters_75">Parameters</h4>
 <table>
@@ -13400,7 +13312,6 @@ stored at <code>destination</code> depending on <code>whereTo</code>, see <a hre
 <blockquote>
 <p><strong>lpop</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1069">src/Transaction.ts:1069</a></p>
 <p>Removes and returns the first elements of the list stored at <code>key</code>.
 The command pops a single element from the beginning of the list.</p>
 <h4 id="parameters_76">Parameters</h4>
@@ -13429,7 +13340,6 @@ The command pops a single element from the beginning of the list.</p>
 <blockquote>
 <p><strong>lpopCount</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1082">src/Transaction.ts:1082</a></p>
 <p>Removes and returns up to <code>count</code> elements of the list stored at <code>key</code>, depending on the list's length.</p>
 <h4 id="parameters_77">Parameters</h4>
 <table>
@@ -13462,7 +13372,6 @@ The command pops a single element from the beginning of the list.</p>
 <blockquote>
 <p><strong>lpos</strong>(<code>key</code>, <code>element</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3462">src/Transaction.ts:3462</a></p>
 <p>Returns the index of the first occurrence of <code>element</code> inside the list specified by <code>key</code>. If no
 match is found, <code>null</code> is returned. If the <code>count</code> option is specified, then the function returns
 an <code>array</code> of indices of matching elements within the list.</p>
@@ -13504,7 +13413,6 @@ an <code>array</code> of indices of matching elements within the list.</p>
 <blockquote>
 <p><strong>lpush</strong>(<code>key</code>, <code>elements</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1041">src/Transaction.ts:1041</a></p>
 <p>Inserts all the specified values at the head of the list stored at <code>key</code>.
 <code>elements</code> are inserted one after the other to the head of the list, from the leftmost element to the rightmost element.
 If <code>key</code> does not exist, it is created as empty list before performing the push operations.</p>
@@ -13539,7 +13447,6 @@ If <code>key</code> does not exist, it is created as empty list before performin
 <blockquote>
 <p><strong>lpushx</strong>(<code>key</code>, <code>elements</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1056">src/Transaction.ts:1056</a></p>
 <p>Inserts specified values at the head of the <code>list</code>, only if <code>key</code> already
 exists and holds a list.</p>
 <h4 id="parameters_80">Parameters</h4>
@@ -13573,7 +13480,6 @@ exists and holds a list.</p>
 <blockquote>
 <p><strong>lrange</strong>(<code>key</code>, <code>start</code>, <code>end</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1101">src/Transaction.ts:1101</a></p>
 <p>Returns the specified elements of the list stored at <code>key</code>.
 The offsets <code>start</code> and <code>end</code> are zero-based indexes, with 0 being the first element of the list, 1 being the next element and so on.
 These offsets can also be negative numbers indicating offsets starting at the end of the list,
@@ -13614,7 +13520,6 @@ with -1 being the last element of the list, -2 being the penultimate, and so on.
 <blockquote>
 <p><strong>lrem</strong>(<code>key</code>, <code>count</code>, <code>element</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1224">src/Transaction.ts:1224</a></p>
 <p>Removes the first <code>count</code> occurrences of elements equal to <code>element</code> from the list stored at <code>key</code>.
 If <code>count</code> is positive : Removes elements equal to <code>element</code> moving from head to tail.
 If <code>count</code> is negative : Removes elements equal to <code>element</code> moving from tail to head.
@@ -13653,7 +13558,6 @@ If <code>count</code> is 0 or <code>count</code> is greater than the occurrences
 <blockquote>
 <p><strong>lset</strong>(<code>key</code>, <code>index</code>, <code>element</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1189">src/Transaction.ts:1189</a></p>
 <p>Sets the list element at <code>index</code> to <code>element</code>.
 The index is zero-based, so <code>0</code> means the first element, <code>1</code> the second element and so on.
 Negative indices can be used to designate elements starting at the tail of
@@ -13694,7 +13598,6 @@ the list. Here, <code>-1</code> means the last element, <code>-2</code> means th
 <blockquote>
 <p><strong>ltrim</strong>(<code>key</code>, <code>start</code>, <code>end</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1208">src/Transaction.ts:1208</a></p>
 <p>Trim an existing list so that it will contain only the specified range of elements specified.
 The offsets <code>start</code> and <code>end</code> are zero-based indexes, with 0 being the first element of the list, 1 being the next element and so on.
 These offsets can also be negative numbers indicating offsets starting at the end of the list,
@@ -13735,7 +13638,6 @@ with -1 being the last element of the list, -2 being the penultimate, and so on.
 <blockquote>
 <p><strong>mget</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L518">src/Transaction.ts:518</a></p>
 <p>Retrieve the values of multiple keys.</p>
 <h4 id="parameters_85">Parameters</h4>
 <table>
@@ -13763,7 +13665,6 @@ with -1 being the last element of the list, -2 being the penultimate, and so on.
 <blockquote>
 <p><strong>mset</strong>(<code>keysAndValues</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L529">src/Transaction.ts:529</a></p>
 <p>Set multiple keys to multiple values in a single atomic operation.</p>
 <h4 id="parameters_86">Parameters</h4>
 <table>
@@ -13791,7 +13692,6 @@ with -1 being the last element of the list, -2 being the penultimate, and so on.
 <blockquote>
 <p><strong>msetnx</strong>(<code>keysAndValues</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L544">src/Transaction.ts:544</a></p>
 <p>Sets multiple keys to values if the key does not exist. The operation is atomic, and if one or
 more keys already exist, the entire operation fails.</p>
 <h4 id="parameters_87">Parameters</h4>
@@ -13820,7 +13720,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectEncoding</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3203">src/Transaction.ts:3203</a></p>
 <p>Returns the internal encoding for the Valkey object stored at <code>key</code>.</p>
 <h4 id="parameters_88">Parameters</h4>
 <table>
@@ -13848,7 +13747,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectFreq</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3217">src/Transaction.ts:3217</a></p>
 <p>Returns the logarithmic access frequency counter of a Valkey object stored at <code>key</code>.</p>
 <h4 id="parameters_89">Parameters</h4>
 <table>
@@ -13876,7 +13774,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectIdletime</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3230">src/Transaction.ts:3230</a></p>
 <p>Returns the time in seconds since the last access to the value stored at <code>key</code>.</p>
 <h4 id="parameters_90">Parameters</h4>
 <table>
@@ -13904,7 +13801,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>objectRefcount</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3244">src/Transaction.ts:3244</a></p>
 <p>Returns the reference count of the object stored at <code>key</code>.</p>
 <h4 id="parameters_91">Parameters</h4>
 <table>
@@ -13932,7 +13828,6 @@ more keys already exist, the entire operation fails.</p>
 <blockquote>
 <p><strong>persist</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2496">src/Transaction.ts:2496</a></p>
 <p>Removes the existing timeout on <code>key</code>, turning the key from volatile (a key with an expire set) to
 persistent (a key that will never expire as no timeout is associated).</p>
 <h4 id="parameters_92">Parameters</h4>
@@ -13961,7 +13856,6 @@ persistent (a key that will never expire as no timeout is associated).</p>
 <blockquote>
 <p><strong>pexpire</strong>(<code>key</code>, <code>milliseconds</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1661">src/Transaction.ts:1661</a></p>
 <p>Sets a timeout on <code>key</code> in milliseconds. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
 If <code>milliseconds</code> is non-positive number, the key will be deleted rather than expired.
@@ -14007,7 +13901,6 @@ The timeout will only be cleared by commands that delete or overwrite the conten
 <blockquote>
 <p><strong>pexpireAt</strong>(<code>key</code>, <code>unixMilliseconds</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1687">src/Transaction.ts:1687</a></p>
 <p>Sets a timeout on <code>key</code>. It takes an absolute Unix timestamp (milliseconds since January 1, 1970) instead of specifying the number of milliseconds.
 A timestamp in the past will delete the key immediately. After the timeout has expired, the key will automatically be deleted.
 If <code>key</code> already has an existing expire set, the time to live is updated to the new value.
@@ -14053,7 +13946,6 @@ The timeout will only be cleared by commands that delete or overwrite the conten
 <blockquote>
 <p><strong>pexpireTime</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1707">src/Transaction.ts:1707</a></p>
 <p>Returns the absolute Unix timestamp (since January 1, 1970) at which the given <code>key</code> will expire, in milliseconds.</p>
 <h4 id="parameters_95">Parameters</h4>
 <table>
@@ -14083,7 +13975,6 @@ The timeout will only be cleared by commands that delete or overwrite the conten
 <blockquote>
 <p><strong>pfadd</strong>(<code>key</code>, <code>elements</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3162">src/Transaction.ts:3162</a></p>
 <p>Adds all elements to the HyperLogLog data structure stored at the specified <code>key</code>.
 Creates a new structure if the <code>key</code> does not exist.
 When no elements are provided, and <code>key</code> exists and is a HyperLogLog, then no operation is performed.</p>
@@ -14118,7 +14009,6 @@ When no elements are provided, and <code>key</code> exists and is a HyperLogLog,
 <blockquote>
 <p><strong>pfcount</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3175">src/Transaction.ts:3175</a></p>
 <p>Estimates the cardinality of the data stored in a HyperLogLog structure for a single key or
 calculates the combined cardinality of multiple keys by merging their HyperLogLogs temporarily.</p>
 <h4 id="parameters_97">Parameters</h4>
@@ -14147,7 +14037,6 @@ calculates the combined cardinality of multiple keys by merging their HyperLogLo
 <blockquote>
 <p><strong>pfmerge</strong>(<code>destination</code>, <code>sourceKeys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3189">src/Transaction.ts:3189</a></p>
 <p>Merges multiple HyperLogLog values into a unique value. If the destination variable exists, it is
 treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog is created.</p>
 <h4 id="parameters_98">Parameters</h4>
@@ -14181,7 +14070,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>ping</strong>(<code>message</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L409">src/Transaction.ts:409</a></p>
 <p>Pings the server.</p>
 <h4 id="parameters_99">Parameters</h4>
 <table>
@@ -14209,7 +14097,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>pttl</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2330">src/Transaction.ts:2330</a></p>
 <p>Returns the remaining time to live of <code>key</code> that has a timeout, in milliseconds.</p>
 <h4 id="parameters_100">Parameters</h4>
 <table>
@@ -14237,7 +14124,6 @@ treated as one of the source HyperLogLog data sets, otherwise a new HyperLogLog 
 <blockquote>
 <p><strong>pubsubChannels</strong>(<code>pattern</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3945">src/Transaction.ts:3945</a></p>
 <p>Lists the currently active channels.
 The command is routed to all nodes, and aggregates the response to a single array.</p>
 <h4 id="parameters_101">Parameters</h4>
@@ -14266,7 +14152,6 @@ The command is routed to all nodes, and aggregates the response to a single arra
 <blockquote>
 <p><strong>pubsubNumPat</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3960">src/Transaction.ts:3960</a></p>
 <p>Returns the number of unique patterns that are subscribed to by clients.</p>
 <p>Note: This is the total number of unique patterns all the clients are subscribed to,
 not the count of clients subscribed to patterns.
@@ -14281,7 +14166,6 @@ The command is routed to all nodes, and aggregates the response to the sum of al
 <blockquote>
 <p><strong>pubsubNumSub</strong>(<code>channels</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3973">src/Transaction.ts:3973</a></p>
 <p>Returns the number of subscribers (exclusive of clients subscribed to patterns) for the specified channels.</p>
 <h4 id="parameters_102">Parameters</h4>
 <table>
@@ -14309,7 +14193,6 @@ The command is routed to all nodes, and aggregates the response to the sum of al
 <blockquote>
 <p><strong>randomKey</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3853">src/Transaction.ts:3853</a></p>
 <p>Returns a random existing key name from the currently selected database.</p>
 <h4 id="returns_113">Returns</h4>
 <p><code>T</code></p>
@@ -14321,7 +14204,6 @@ The command is routed to all nodes, and aggregates the response to the sum of al
 <blockquote>
 <p><strong>rename</strong>(<code>key</code>, <code>newKey</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3096">src/Transaction.ts:3096</a></p>
 <p>Renames <code>key</code> to <code>newkey</code>.
 If <code>newkey</code> already exists it is overwritten.</p>
 <h4 id="parameters_103">Parameters</h4>
@@ -14355,7 +14237,6 @@ If <code>newkey</code> already exists it is overwritten.</p>
 <blockquote>
 <p><strong>renamenx</strong>(<code>key</code>, <code>newKey</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3111">src/Transaction.ts:3111</a></p>
 <p>Renames <code>key</code> to <code>newkey</code> if <code>newkey</code> does not yet exist.</p>
 <h4 id="parameters_104">Parameters</h4>
 <table>
@@ -14388,7 +14269,6 @@ If <code>newkey</code> already exists it is overwritten.</p>
 <blockquote>
 <p><strong>restore</strong>(<code>key</code>, <code>ttl</code>, <code>value</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L468">src/Transaction.ts:468</a></p>
 <p>Create a <code>key</code> associated with a <code>value</code> that is obtained by deserializing the provided
 serialized <code>value</code> (obtained via <a href="./#dump">dump</a>).</p>
 <h4 id="parameters_105">Parameters</h4>
@@ -14434,7 +14314,6 @@ serialized <code>value</code> (obtained via <a href="./#dump">dump</a>).</p>
 <blockquote>
 <p><strong>rpop</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1266">src/Transaction.ts:1266</a></p>
 <p>Removes and returns the last elements of the list stored at <code>key</code>.
 The command pops a single element from the end of the list.</p>
 <h4 id="parameters_106">Parameters</h4>
@@ -14463,7 +14342,6 @@ The command pops a single element from the end of the list.</p>
 <blockquote>
 <p><strong>rpopCount</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1279">src/Transaction.ts:1279</a></p>
 <p>Removes and returns up to <code>count</code> elements from the list stored at <code>key</code>, depending on the list's length.</p>
 <h4 id="parameters_107">Parameters</h4>
 <table>
@@ -14496,7 +14374,6 @@ The command pops a single element from the end of the list.</p>
 <blockquote>
 <p><strong>rpush</strong>(<code>key</code>, <code>elements</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1238">src/Transaction.ts:1238</a></p>
 <p>Inserts all the specified values at the tail of the list stored at <code>key</code>.
 <code>elements</code> are inserted one after the other to the tail of the list, from the leftmost element to the rightmost element.
 If <code>key</code> does not exist, it is created as empty list before performing the push operations.</p>
@@ -14531,7 +14408,6 @@ If <code>key</code> does not exist, it is created as empty list before performin
 <blockquote>
 <p><strong>rpushx</strong>(<code>key</code>, <code>elements</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1253">src/Transaction.ts:1253</a></p>
 <p>Inserts specified values at the tail of the <code>list</code>, only if <code>key</code> already
 exists and holds a list.</p>
 <h4 id="parameters_109">Parameters</h4>
@@ -14565,7 +14441,6 @@ exists and holds a list.</p>
 <blockquote>
 <p><strong>sadd</strong>(<code>key</code>, <code>members</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1292">src/Transaction.ts:1292</a></p>
 <p>Adds the specified members to the set stored at <code>key</code>. Specified members that are already a member of this set are ignored.
 If <code>key</code> does not exist, a new set is created before adding <code>members</code>.</p>
 <h4 id="parameters_110">Parameters</h4>
@@ -14599,7 +14474,6 @@ If <code>key</code> does not exist, a new set is created before adding <code>mem
 <blockquote>
 <p><strong>scard</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1366">src/Transaction.ts:1366</a></p>
 <p>Returns the set cardinality (number of elements) of the set stored at <code>key</code>.</p>
 <h4 id="parameters_111">Parameters</h4>
 <table>
@@ -14627,7 +14501,6 @@ If <code>key</code> does not exist, a new set is created before adding <code>mem
 <blockquote>
 <p><strong>sdiff</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1423">src/Transaction.ts:1423</a></p>
 <p>Computes the difference between the first set and all the successive sets in <code>keys</code>.</p>
 <h4 id="parameters_112">Parameters</h4>
 <table>
@@ -14655,7 +14528,6 @@ If <code>key</code> does not exist, a new set is created before adding <code>mem
 <blockquote>
 <p><strong>sdiffstore</strong>(<code>destination</code>, <code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1437">src/Transaction.ts:1437</a></p>
 <p>Stores the difference between the first set and all the successive sets in <code>keys</code> into a new set at <code>destination</code>.</p>
 <h4 id="parameters_113">Parameters</h4>
 <table>
@@ -14688,7 +14560,6 @@ If <code>key</code> does not exist, a new set is created before adding <code>mem
 <blockquote>
 <p><strong>set</strong>(<code>key</code>, <code>value</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L394">src/Transaction.ts:394</a></p>
 <p>Set the given key with the given value. Return value is dependent on the passed options.</p>
 <h4 id="parameters_114">Parameters</h4>
 <table>
@@ -14726,7 +14597,6 @@ If <code>key</code> does not exist, a new set is created before adding <code>mem
 <blockquote>
 <p><strong>setbit</strong>(<code>key</code>, <code>offset</code>, <code>value</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L674">src/Transaction.ts:674</a></p>
 <p>Sets or clears the bit at <code>offset</code> in the string value stored at <code>key</code>. The <code>offset</code> is a zero-based index, with
 <code>0</code> being the first element of the list, <code>1</code> being the next element, and so on. The <code>offset</code> must be less than
 <code>2^32</code> and greater than or equal to <code>0</code>. If a key is non-existent then the bit at <code>offset</code> is set to <code>value</code> and
@@ -14767,7 +14637,6 @@ the preceding bits are set to <code>0</code>.</p>
 <blockquote>
 <p><strong>setrange</strong>(<code>key</code>, <code>offset</code>, <code>value</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3870">src/Transaction.ts:3870</a></p>
 <p>Overwrites part of the string stored at <code>key</code>, starting at the specified byte <code>offset</code>,
 for the entire length of <code>value</code>. If the <code>offset</code> is larger than the current length of the string at <code>key</code>,
 the string is padded with zero bytes to make <code>offset</code> fit. Creates the <code>key</code> if it doesn't exist.</p>
@@ -14807,7 +14676,6 @@ the string is padded with zero bytes to make <code>offset</code> fit. Creates th
 <blockquote>
 <p><strong>sinter</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1379">src/Transaction.ts:1379</a></p>
 <p>Gets the intersection of all the given sets.
 When in cluster mode, all <code>keys</code> must map to the same hash slot.</p>
 <h4 id="parameters_117">Parameters</h4>
@@ -14836,7 +14704,6 @@ When in cluster mode, all <code>keys</code> must map to the same hash slot.</p>
 <blockquote>
 <p><strong>sintercard</strong>(<code>keys</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1395">src/Transaction.ts:1395</a></p>
 <p>Gets the cardinality of the intersection of all the given sets.</p>
 <h4 id="parameters_118">Parameters</h4>
 <table>
@@ -14876,7 +14743,6 @@ When in cluster mode, all <code>keys</code> must map to the same hash slot.</p>
 <blockquote>
 <p><strong>sinterstore</strong>(<code>destination</code>, <code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1409">src/Transaction.ts:1409</a></p>
 <p>Stores the members of the intersection of all given sets specified by <code>keys</code> into a new set at <code>destination</code>.</p>
 <h4 id="parameters_119">Parameters</h4>
 <table>
@@ -14909,7 +14775,6 @@ When in cluster mode, all <code>keys</code> must map to the same hash slot.</p>
 <blockquote>
 <p><strong>sismember</strong>(<code>key</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1479">src/Transaction.ts:1479</a></p>
 <p>Returns if <code>member</code> is a member of the set stored at <code>key</code>.</p>
 <h4 id="parameters_120">Parameters</h4>
 <table>
@@ -14942,7 +14807,6 @@ When in cluster mode, all <code>keys</code> must map to the same hash slot.</p>
 <blockquote>
 <p><strong>smembers</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1337">src/Transaction.ts:1337</a></p>
 <p>Returns all the members of the set value stored at <code>key</code>.</p>
 <h4 id="parameters_121">Parameters</h4>
 <table>
@@ -14970,7 +14834,6 @@ When in cluster mode, all <code>keys</code> must map to the same hash slot.</p>
 <blockquote>
 <p><strong>smismember</strong>(<code>key</code>, <code>members</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1494">src/Transaction.ts:1494</a></p>
 <p>Checks whether each member is contained in the members of the set stored at <code>key</code>.</p>
 <h4 id="parameters_122">Parameters</h4>
 <table>
@@ -15005,7 +14868,6 @@ When in cluster mode, all <code>keys</code> must map to the same hash slot.</p>
 <blockquote>
 <p><strong>smove</strong>(<code>source</code>, <code>destination</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1351">src/Transaction.ts:1351</a></p>
 <p>Moves <code>member</code> from the set at <code>source</code> to the set at <code>destination</code>, removing it from the source set.
 Creates a new destination set if needed. The operation is atomic.</p>
 <h4 id="parameters_123">Parameters</h4>
@@ -15044,7 +14906,6 @@ Creates a new destination set if needed. The operation is atomic.</p>
 <blockquote>
 <p><strong>sort</strong>(<code>key</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3995">src/Transaction.ts:3995</a></p>
 <p>Sorts the elements in the list, set, or sorted set at <code>key</code> and returns the result.</p>
 <p>The <code>sort</code> command can be used to sort elements based on different criteria and
 apply transformations on sorted elements.</p>
@@ -15084,7 +14945,6 @@ and <a href="../../../Commands/interfaces/SortOptions/#getpatterns">SortOptions.
 <blockquote>
 <p><strong>sortReadOnly</strong>(<code>key</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L4017">src/Transaction.ts:4017</a></p>
 <p>Sorts the elements in the list, set, or sorted set at <code>key</code> and returns the result.</p>
 <p>The <code>sortReadOnly</code> command can be used to sort elements based on different criteria and
 apply transformations on sorted elements.</p>
@@ -15120,7 +14980,6 @@ apply transformations on sorted elements.</p>
 <blockquote>
 <p><strong>sortStore</strong>(<code>key</code>, <code>destination</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L4041">src/Transaction.ts:4041</a></p>
 <p>Sorts the elements in the list, set, or sorted set at <code>key</code> and stores the result in
 <code>destination</code>.</p>
 <p>The <code>sort</code> command can be used to sort elements based on different criteria and
@@ -15166,7 +15025,6 @@ and <a href="../../../Commands/interfaces/SortOptions/#getpatterns">SortOptions.
 <blockquote>
 <p><strong>spop</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1507">src/Transaction.ts:1507</a></p>
 <p>Removes and returns one random member from the set value store at <code>key</code>.</p>
 <h4 id="parameters_127">Parameters</h4>
 <table>
@@ -15195,7 +15053,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>spopCount</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1520">src/Transaction.ts:1520</a></p>
 <p>Removes and returns up to <code>count</code> random members from the set value store at <code>key</code>, depending on the set's length.</p>
 <h4 id="parameters_128">Parameters</h4>
 <table>
@@ -15228,7 +15085,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>srandmember</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1531">src/Transaction.ts:1531</a></p>
 <p>Returns a random element from the set value stored at <code>key</code>.</p>
 <h4 id="parameters_129">Parameters</h4>
 <table>
@@ -15256,7 +15112,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>srandmemberCount</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1545">src/Transaction.ts:1545</a></p>
 <p>Returns one or more random elements from the set value stored at <code>key</code>.</p>
 <h4 id="parameters_130">Parameters</h4>
 <table>
@@ -15289,7 +15144,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>srem</strong>(<code>key</code>, <code>members</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1305">src/Transaction.ts:1305</a></p>
 <p>Removes the specified members from the set stored at <code>key</code>. Specified members that are not a member of this set are ignored.</p>
 <h4 id="parameters_131">Parameters</h4>
 <table>
@@ -15322,7 +15176,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>sscan</strong>(<code>key</code>, <code>cursor</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1321">src/Transaction.ts:1321</a></p>
 <p>Iterates incrementally over a set.</p>
 <h4 id="parameters_132">Parameters</h4>
 <table>
@@ -15360,7 +15213,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>strlen</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2228">src/Transaction.ts:2228</a></p>
 <p>Returns the length of the string value stored at <code>key</code>.</p>
 <h4 id="parameters_133">Parameters</h4>
 <table>
@@ -15388,7 +15240,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>sunion</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1451">src/Transaction.ts:1451</a></p>
 <p>Gets the union of all the given sets.</p>
 <h4 id="parameters_134">Parameters</h4>
 <table>
@@ -15416,7 +15267,6 @@ To pop multiple members, see <code>spopCount</code>.</p>
 <blockquote>
 <p><strong>sunionstore</strong>(<code>destination</code>, <code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1466">src/Transaction.ts:1466</a></p>
 <p>Stores the members of the union of all given sets specified by <code>keys</code> into a new set
 at <code>destination</code>.</p>
 <h4 id="parameters_135">Parameters</h4>
@@ -15450,7 +15300,6 @@ at <code>destination</code>.</p>
 <blockquote>
 <p><strong>time</strong>(): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2636">src/Transaction.ts:2636</a></p>
 <p>Returns the server time.</p>
 <h4 id="returns_147">Returns</h4>
 <p><code>T</code></p>
@@ -15464,7 +15313,6 @@ at <code>destination</code>.</p>
 <blockquote>
 <p><strong>touch</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3842">src/Transaction.ts:3842</a></p>
 <p>Updates the last access time of the specified keys.</p>
 <h4 id="parameters_136">Parameters</h4>
 <table>
@@ -15492,7 +15340,6 @@ at <code>destination</code>.</p>
 <blockquote>
 <p><strong>ttl</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1720">src/Transaction.ts:1720</a></p>
 <p>Returns the remaining time to live of <code>key</code> that has a timeout.</p>
 <h4 id="parameters_137">Parameters</h4>
 <table>
@@ -15520,7 +15367,6 @@ at <code>destination</code>.</p>
 <blockquote>
 <p><strong>type</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2214">src/Transaction.ts:2214</a></p>
 <p>Returns the string representation of the type of the value stored at <code>key</code>.</p>
 <h4 id="parameters_138">Parameters</h4>
 <table>
@@ -15548,7 +15394,6 @@ at <code>destination</code>.</p>
 <blockquote>
 <p><strong>unlink</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1574">src/Transaction.ts:1574</a></p>
 <p>Removes the specified keys. A key is ignored if it does not exist.
 This command, similar to <a href="./#del">del</a>, removes specified keys and ignores non-existent ones.
 However, this command does not block the server, while <a href="https://valkey.io/commands/del|DEL">https://valkey.io/commands/del|`DEL`</a> does.</p>
@@ -15578,7 +15423,6 @@ However, this command does not block the server, while <a href="https://valkey.i
 <blockquote>
 <p><strong>wait</strong>(<code>numreplicas</code>, <code>timeout</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3274">src/Transaction.ts:3274</a></p>
 <p>Blocks the current client until all the previous write commands are successfully transferred and
 acknowledged by at least <code>numreplicas</code> of replicas. If <code>timeout</code> is reached, the command returns
 the number of replicas that were not yet reached.</p>
@@ -15613,7 +15457,6 @@ the number of replicas that were not yet reached.</p>
 <blockquote>
 <p><strong>xack</strong>(<code>key</code>, <code>group</code>, <code>ids</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3056">src/Transaction.ts:3056</a></p>
 <p>Returns the number of messages that were successfully acknowledged by the consumer group member of a stream.
 This command should be called on a pending message so that such message does not get processed again.</p>
 <h4 id="parameters_141">Parameters</h4>
@@ -15652,7 +15495,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xadd</strong>(<code>key</code>, <code>values</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2560">src/Transaction.ts:2560</a></p>
 <p>Adds an entry to the specified stream stored at <code>key</code>. If the <code>key</code> doesn't exist, the stream is created.</p>
 <h4 id="parameters_142">Parameters</h4>
 <table>
@@ -15690,7 +15532,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xautoclaim</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>start</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2899">src/Transaction.ts:2899</a></p>
 <p>Transfers ownership of pending stream entries that match the specified criteria.</p>
 <h4 id="parameters_143">Parameters</h4>
 <table>
@@ -15750,7 +15591,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xautoclaimJustId</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>start</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2943">src/Transaction.ts:2943</a></p>
 <p>Transfers ownership of pending stream entries that match the specified criteria.</p>
 <h4 id="parameters_144">Parameters</h4>
 <table>
@@ -15810,7 +15650,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xclaim</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>ids</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2832">src/Transaction.ts:2832</a></p>
 <p>Changes the ownership of a pending message.</p>
 <h4 id="parameters_145">Parameters</h4>
 <table>
@@ -15863,7 +15702,6 @@ This command should be called on a pending message so that such message does not
 <blockquote>
 <p><strong>xclaimJustId</strong>(<code>key</code>, <code>group</code>, <code>consumer</code>, <code>minIdleTime</code>, <code>ids</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2860">src/Transaction.ts:2860</a></p>
 <p>Changes the ownership of a pending message. This function returns an <code>array</code> with
 only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in the Valkey API.</p>
 <h4 id="parameters_146">Parameters</h4>
@@ -15917,7 +15755,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xdel</strong>(<code>key</code>, <code>ids</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2579">src/Transaction.ts:2579</a></p>
 <p>Removes the specified entries by id from a stream, and returns the number of entries deleted.</p>
 <h4 id="parameters_147">Parameters</h4>
 <table>
@@ -15950,7 +15787,6 @@ only the message/entry IDs, and is equivalent to using <code>JUSTID</code> in th
 <blockquote>
 <p><strong>xgroupCreate</strong>(<code>key</code>, <code>groupName</code>, <code>id</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2977">src/Transaction.ts:2977</a></p>
 <p>Creates a new consumer group uniquely identified by <code>groupname</code> for the stream
 stored at <code>key</code>.</p>
 <h4 id="parameters_148">Parameters</h4>
@@ -15994,7 +15830,6 @@ stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xgroupCreateConsumer</strong>(<code>key</code>, <code>groupName</code>, <code>consumerName</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3013">src/Transaction.ts:3013</a></p>
 <p>Creates a consumer named <code>consumerName</code> in the consumer group <code>groupName</code> for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_149">Parameters</h4>
 <table>
@@ -16032,7 +15867,6 @@ stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xgroupDelConsumer</strong>(<code>key</code>, <code>groupName</code>, <code>consumerName</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3034">src/Transaction.ts:3034</a></p>
 <p>Deletes a consumer named <code>consumerName</code> in the consumer group <code>groupName</code> for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_150">Parameters</h4>
 <table>
@@ -16070,7 +15904,6 @@ stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xgroupDestroy</strong>(<code>key</code>, <code>groupName</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2998">src/Transaction.ts:2998</a></p>
 <p>Destroys the consumer group <code>groupname</code> for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_151">Parameters</h4>
 <table>
@@ -16103,7 +15936,6 @@ stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xgroupSetId</strong>(<code>key</code>, <code>groupName</code>, <code>id</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3074">src/Transaction.ts:3074</a></p>
 <p>Sets the last delivered ID for a consumer group.</p>
 <h4 id="parameters_152">Parameters</h4>
 <table>
@@ -16151,7 +15983,6 @@ stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xinfoConsumers</strong>(<code>key</code>, <code>group</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2813">src/Transaction.ts:2813</a></p>
 <p>Returns the list of all consumers and their attributes for the given consumer group of the
 stream stored at <code>key</code>.</p>
 <h4 id="parameters_153">Parameters</h4>
@@ -16185,7 +16016,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xinfoGroups</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2623">src/Transaction.ts:2623</a></p>
 <p>Returns the list of all consumer groups and their attributes for the stream stored at <code>key</code>.</p>
 <h4 id="parameters_154">Parameters</h4>
 <table>
@@ -16213,7 +16043,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xinfoStream</strong>(<code>key</code>, <code>fullOptions</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2608">src/Transaction.ts:2608</a></p>
 <p>Returns information about the stream stored at <code>key</code>.</p>
 <h4 id="parameters_155">Parameters</h4>
 <table>
@@ -16244,7 +16073,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xlen</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2764">src/Transaction.ts:2764</a></p>
 <p>Returns the number of entries in the stream stored at <code>key</code>.</p>
 <h4 id="parameters_156">Parameters</h4>
 <table>
@@ -16272,7 +16100,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xpending</strong>(<code>key</code>, <code>group</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2779">src/Transaction.ts:2779</a></p>
 <p>Returns stream message summary information for pending messages matching a given range of IDs.</p>
 <h4 id="parameters_157">Parameters</h4>
 <table>
@@ -16305,7 +16132,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xpendingWithOptions</strong>(<code>key</code>, <code>group</code>, <code>options</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2795">src/Transaction.ts:2795</a></p>
 <p>Returns stream message summary information for pending messages matching a given range of IDs.</p>
 <h4 id="parameters_158">Parameters</h4>
 <table>
@@ -16343,7 +16169,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xrange</strong>(<code>key</code>, <code>start</code>, <code>end</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2660">src/Transaction.ts:2660</a></p>
 <p>Returns stream entries matching a given range of entry IDs.</p>
 <h4 id="parameters_159">Parameters</h4>
 <table>
@@ -16386,7 +16211,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xread</strong>(<code>keys_and_ids</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2710">src/Transaction.ts:2710</a></p>
 <p>Reads entries from the given streams.</p>
 <h4 id="parameters_160">Parameters</h4>
 <table>
@@ -16419,7 +16243,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xreadgroup</strong>(<code>group</code>, <code>consumer</code>, <code>keys_and_ids</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2738">src/Transaction.ts:2738</a></p>
 <p>Reads entries from the given streams owned by a consumer group.</p>
 <h4 id="parameters_161">Parameters</h4>
 <table>
@@ -16462,7 +16285,6 @@ stream stored at <code>key</code>.</p>
 <blockquote>
 <p><strong>xrevrange</strong>(<code>key</code>, <code>end</code>, <code>start</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2690">src/Transaction.ts:2690</a></p>
 <p>Returns stream entries matching a given range of entry IDs in reverse order. Equivalent to <a href="./#xrange">xrange</a> but returns the
 entries in reverse order.</p>
 <h4 id="parameters_162">Parameters</h4>
@@ -16506,7 +16328,6 @@ entries in reverse order.</p>
 <blockquote>
 <p><strong>xtrim</strong>(<code>key</code>, <code>options</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2592">src/Transaction.ts:2592</a></p>
 <p>Trims the stream stored at <code>key</code> by evicting older entries.</p>
 <h4 id="parameters_163">Parameters</h4>
 <table>
@@ -16539,7 +16360,6 @@ entries in reverse order.</p>
 <blockquote>
 <p><strong>zadd</strong>(<code>key</code>, <code>membersAndScores</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1737">src/Transaction.ts:1737</a></p>
 <p>Adds members with their scores to the sorted set stored at <code>key</code>.
 If a member is already a part of the sorted set, its score is updated.</p>
 <h4 id="parameters_164">Parameters</h4>
@@ -16578,7 +16398,6 @@ If a member is already a part of the sorted set, its score is updated.</p>
 <blockquote>
 <p><strong>zaddIncr</strong>(<code>key</code>, <code>member</code>, <code>increment</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1766">src/Transaction.ts:1766</a></p>
 <p>Increments the score of member in the sorted set stored at <code>key</code> by <code>increment</code>.
 If <code>member</code> does not exist in the sorted set, it is added with <code>increment</code> as its score (as if its previous score was 0.0).
 If <code>key</code> does not exist, a new sorted set with the specified member as its sole member is created.</p>
@@ -16623,7 +16442,6 @@ If <code>key</code> does not exist, a new sorted set with the specified member a
 <blockquote>
 <p><strong>zcard</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1808">src/Transaction.ts:1808</a></p>
 <p>Returns the cardinality (number of elements) of the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_166">Parameters</h4>
 <table>
@@ -16651,7 +16469,6 @@ If <code>key</code> does not exist, a new sorted set with the specified member a
 <blockquote>
 <p><strong>zcount</strong>(<code>key</code>, <code>minScore</code>, <code>maxScore</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1949">src/Transaction.ts:1949</a></p>
 <p>Returns the number of members in the sorted set stored at <code>key</code> with scores between <code>minScore</code> and <code>maxScore</code>.</p>
 <h4 id="parameters_167">Parameters</h4>
 <table>
@@ -16689,7 +16506,6 @@ If <code>key</code> does not exist, a new sorted set with the specified member a
 <blockquote>
 <p><strong>zdiff</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1840">src/Transaction.ts:1840</a></p>
 <p>Returns the difference between the first sorted set and all the successive sorted sets.
 To get the elements with their scores, see <a href="./#zdiffwithscores">zdiffWithScores</a>.</p>
 <h4 id="parameters_168">Parameters</h4>
@@ -16720,7 +16536,6 @@ To get the elements with their scores, see <a href="./#zdiffwithscores">zdiffWit
 <blockquote>
 <p><strong>zdiffstore</strong>(<code>destination</code>, <code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1874">src/Transaction.ts:1874</a></p>
 <p>Calculates the difference between the first sorted set and all the successive sorted sets in <code>keys</code> and stores
 the difference as a sorted set to <code>destination</code>, overwriting it if it already exists. Non-existent keys are
 treated as empty sets.</p>
@@ -16757,7 +16572,6 @@ treated as empty sets.</p>
 <blockquote>
 <p><strong>zdiffWithScores</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1857">src/Transaction.ts:1857</a></p>
 <p>Returns the difference between the first sorted set and all the successive sorted sets, with the associated
 scores.</p>
 <h4 id="parameters_170">Parameters</h4>
@@ -16788,7 +16602,6 @@ scores.</p>
 <blockquote>
 <p><strong>zincrby</strong>(<code>key</code>, <code>increment</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3688">src/Transaction.ts:3688</a></p>
 <p>Increments the score of <code>member</code> in the sorted set stored at <code>key</code> by <code>increment</code>.
 If <code>member</code> does not exist in the sorted set, it is added with <code>increment</code> as its score.
 If <code>key</code> does not exist, a new sorted set is created with the specified member as its sole member.</p>
@@ -16828,7 +16641,6 @@ If <code>key</code> does not exist, a new sorted set is created with the specifi
 <blockquote>
 <p><strong>zinter</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2080">src/Transaction.ts:2080</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and returns a list of intersecting elements.
 To get the scores as well, see <a href="./#zinterwithscores">zinterWithScores</a>.
 To store the result in a key as a sorted set, see zinterStore.</p>
@@ -16860,7 +16672,6 @@ To store the result in a key as a sorted set, see zinterStore.</p>
 <blockquote>
 <p><strong>zintercard</strong>(<code>keys</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1824">src/Transaction.ts:1824</a></p>
 <p>Returns the cardinality of the intersection of the sorted sets specified by <code>keys</code>.</p>
 <h4 id="parameters_173">Parameters</h4>
 <table>
@@ -16900,7 +16711,6 @@ To store the result in a key as a sorted set, see zinterStore.</p>
 <blockquote>
 <p><strong>zinterstore</strong>(<code>destination</code>, <code>keys</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2057">src/Transaction.ts:2057</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and stores the result in <code>destination</code>.
 If <code>destination</code> already exists, it is overwritten. Otherwise, a new sorted set will be created.</p>
 <h4 id="parameters_174">Parameters</h4>
@@ -16946,7 +16756,6 @@ If <code>destination</code> already exists, it is overwritten. Otherwise, a new 
 <blockquote>
 <p><strong>zinterWithScores</strong>(<code>keys</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2104">src/Transaction.ts:2104</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and returns a list of intersecting elements with scores.
 To get the elements only, see <a href="./#zinter">zinter</a>.
 To store the result in a key as a sorted set, see zinterStore.</p>
@@ -16988,7 +16797,6 @@ To store the result in a key as a sorted set, see zinterStore.</p>
 <blockquote>
 <p><strong>zlexcount</strong>(<code>key</code>, <code>minLex</code>, <code>maxLex</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2411">src/Transaction.ts:2411</a></p>
 <p>Returns the number of members in the sorted set stored at 'key' with scores between 'minLex' and 'maxLex'.</p>
 <h4 id="parameters_176">Parameters</h4>
 <table>
@@ -17026,7 +16834,6 @@ To store the result in a key as a sorted set, see zinterStore.</p>
 <blockquote>
 <p><strong>zmpop</strong>(<code>keys</code>, <code>modifier</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3639">src/Transaction.ts:3639</a></p>
 <p>Pops member-score pairs from the first non-empty sorted set, with the given <code>keys</code>
 being checked in the order they are provided.</p>
 <h4 id="parameters_177">Parameters</h4>
@@ -17067,7 +16874,6 @@ being checked in the order they are provided.</p>
 <blockquote>
 <p><strong>zmscore</strong>(<code>key</code>, <code>members</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1932">src/Transaction.ts:1932</a></p>
 <p>Returns the scores associated with the specified <code>members</code> in the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_178">Parameters</h4>
 <table>
@@ -17102,7 +16908,6 @@ being checked in the order they are provided.</p>
 <blockquote>
 <p><strong>zpopmax</strong>(<code>key</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2285">src/Transaction.ts:2285</a></p>
 <p>Removes and returns the members with the highest scores from the sorted set stored at <code>key</code>.
 If <code>count</code> is provided, up to <code>count</code> members with the highest scores are removed and returned.
 Otherwise, only one member with the highest score is removed and returned.</p>
@@ -17137,7 +16942,6 @@ Otherwise, only one member with the highest score is removed and returned.</p>
 <blockquote>
 <p><strong>zpopmin</strong>(<code>key</code>, <code>count</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2247">src/Transaction.ts:2247</a></p>
 <p>Removes and returns the members with the lowest scores from the sorted set stored at <code>key</code>.
 If <code>count</code> is provided, up to <code>count</code> members with the lowest scores are removed and returned.
 Otherwise, only one member with the lowest score is removed and returned.</p>
@@ -17172,7 +16976,6 @@ Otherwise, only one member with the lowest score is removed and returned.</p>
 <blockquote>
 <p><strong>zrandmember</strong>(<code>key</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2167">src/Transaction.ts:2167</a></p>
 <p>Returns a random member from the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_181">Parameters</h4>
 <table>
@@ -17198,7 +17001,6 @@ Otherwise, only one member with the lowest score is removed and returned.</p>
 <blockquote>
 <p><strong>zrandmemberWithCount</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2184">src/Transaction.ts:2184</a></p>
 <p>Returns random members from the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_182">Parameters</h4>
 <table>
@@ -17231,7 +17033,6 @@ Otherwise, only one member with the lowest score is removed and returned.</p>
 <blockquote>
 <p><strong>zrandmemberWithCountWithScores</strong>(<code>key</code>, <code>count</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2201">src/Transaction.ts:2201</a></p>
 <p>Returns random members with scores from the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_183">Parameters</h4>
 <table>
@@ -17264,7 +17065,6 @@ Otherwise, only one member with the lowest score is removed and returned.</p>
 <blockquote>
 <p><strong>zrange</strong>(<code>key</code>, <code>rangeQuery</code>, <code>reverse</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1975">src/Transaction.ts:1975</a></p>
 <p>Returns the specified range of elements in the sorted set stored at <code>key</code>.
 <code>ZRANGE</code> can perform different types of range queries: by index (rank), by the score, or by lexicographical order.</p>
 <p>To get the elements with their scores, see <a href="./#zrangewithscores">zrangeWithScores</a>.</p>
@@ -17308,7 +17108,6 @@ Otherwise, only one member with the lowest score is removed and returned.</p>
 <blockquote>
 <p><strong>zrangeStore</strong>(<code>destination</code>, <code>source</code>, <code>rangeQuery</code>, <code>reverse</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2028">src/Transaction.ts:2028</a></p>
 <p>Stores a specified range of elements from the sorted set at <code>source</code>, into a new
 sorted set at <code>destination</code>. If <code>destination</code> doesn't exist, a new sorted
 set is created; if it exists, it's overwritten.</p>
@@ -17360,7 +17159,6 @@ set is created; if it exists, it's overwritten.</p>
 <blockquote>
 <p><strong>zrangeWithScores</strong>(<code>key</code>, <code>rangeQuery</code>, <code>reverse</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2000">src/Transaction.ts:2000</a></p>
 <p>Returns the specified range of elements with their scores in the sorted set stored at <code>key</code>.
 Similar to ZRange but with a <code>WITHSCORE</code> flag.</p>
 <h4 id="parameters_186">Parameters</h4>
@@ -17403,7 +17201,6 @@ Similar to ZRange but with a <code>WITHSCORE</code> flag.</p>
 <blockquote>
 <p><strong>zrank</strong>(<code>key</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2431">src/Transaction.ts:2431</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code>, with scores ordered from low to high.
 To get the rank of <code>member</code> with its score, see <a href="./#zrankwithscore">zrankWithScore</a>.</p>
 <h4 id="parameters_187">Parameters</h4>
@@ -17437,7 +17234,6 @@ To get the rank of <code>member</code> with its score, see <a href="./#zrankwith
 <blockquote>
 <p><strong>zrankWithScore</strong>(<code>key</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2447">src/Transaction.ts:2447</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code> with its score, where scores are ordered from the lowest to highest.</p>
 <h4 id="parameters_188">Parameters</h4>
 <table>
@@ -17472,7 +17268,6 @@ To get the rank of <code>member</code> with its score, see <a href="./#zrankwith
 <blockquote>
 <p><strong>zrem</strong>(<code>key</code>, <code>members</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1794">src/Transaction.ts:1794</a></p>
 <p>Removes the specified members from the sorted set stored at <code>key</code>.
 Specified members that are not a member of this set are ignored.</p>
 <h4 id="parameters_189">Parameters</h4>
@@ -17506,7 +17301,6 @@ Specified members that are not a member of this set are ignored.</p>
 <blockquote>
 <p><strong>zremRangeByLex</strong>(<code>key</code>, <code>minLex</code>, <code>maxLex</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2367">src/Transaction.ts:2367</a></p>
 <p>Removes all elements in the sorted set stored at <code>key</code> with lexicographical order between <code>minLex</code> and <code>maxLex</code>.</p>
 <h4 id="parameters_190">Parameters</h4>
 <table>
@@ -17544,7 +17338,6 @@ Specified members that are not a member of this set are ignored.</p>
 <blockquote>
 <p><strong>zremRangeByRank</strong>(<code>key</code>, <code>start</code>, <code>end</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2350">src/Transaction.ts:2350</a></p>
 <p>Removes all elements in the sorted set stored at <code>key</code> with rank between <code>start</code> and <code>end</code>.
 Both <code>start</code> and <code>end</code> are zero-based indexes with 0 being the element with the lowest score.
 These indexes can be negative numbers, where they indicate offsets starting at the element with the highest score.</p>
@@ -17584,7 +17377,6 @@ These indexes can be negative numbers, where they indicate offsets starting at t
 <blockquote>
 <p><strong>zremRangeByScore</strong>(<code>key</code>, <code>minScore</code>, <code>maxScore</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2388">src/Transaction.ts:2388</a></p>
 <p>Removes all elements in the sorted set stored at <code>key</code> with a score between <code>minScore</code> and <code>maxScore</code>.</p>
 <h4 id="parameters_192">Parameters</h4>
 <table>
@@ -17622,7 +17414,6 @@ These indexes can be negative numbers, where they indicate offsets starting at t
 <blockquote>
 <p><strong>zrevrank</strong>(<code>key</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2464">src/Transaction.ts:2464</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code>, where
 scores are ordered from the highest to lowest, starting from <code>0</code>.
 To get the rank of <code>member</code> with its score, see <a href="./#zrevrankwithscore">zrevrankWithScore</a>.</p>
@@ -17657,7 +17448,6 @@ To get the rank of <code>member</code> with its score, see <a href="./#zrevrankw
 <blockquote>
 <p><strong>zrevrankWithScore</strong>(<code>key</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2482">src/Transaction.ts:2482</a></p>
 <p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code> with its
 score, where scores are ordered from the highest to lowest, starting from <code>0</code>.</p>
 <h4 id="parameters_194">Parameters</h4>
@@ -17693,7 +17483,6 @@ score, where scores are ordered from the highest to lowest, starting from <code>
 <blockquote>
 <p><strong>zscan</strong>(<code>key</code>, <code>cursor</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L3713">src/Transaction.ts:3713</a></p>
 <p>Iterates incrementally over a sorted set.</p>
 <h4 id="parameters_195">Parameters</h4>
 <table>
@@ -17731,7 +17520,6 @@ score, where scores are ordered from the highest to lowest, starting from <code>
 <blockquote>
 <p><strong>zscore</strong>(<code>key</code>, <code>member</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1890">src/Transaction.ts:1890</a></p>
 <p>Returns the score of <code>member</code> in the sorted set stored at <code>key</code>.</p>
 <h4 id="parameters_196">Parameters</h4>
 <table>
@@ -17764,7 +17552,6 @@ score, where scores are ordered from the highest to lowest, starting from <code>
 <blockquote>
 <p><strong>zunion</strong>(<code>keys</code>): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2126">src/Transaction.ts:2126</a></p>
 <p>Computes the union of sorted sets given by the specified <code>keys</code> and returns a list of union elements.</p>
 <p>To get the scores as well, see <a href="./#zunionwithscores">zunionWithScores</a>.
 To store the result in a key as a sorted set, see <a href="./#zunionstore">zunionstore</a>.</p>
@@ -17796,7 +17583,6 @@ To store the result in a key as a sorted set, see <a href="./#zunionstore">zunio
 <blockquote>
 <p><strong>zunionstore</strong>(<code>destination</code>, <code>keys</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L1910">src/Transaction.ts:1910</a></p>
 <p>Computes the union of sorted sets given by the specified <code>keys</code> and stores the result in <code>destination</code>.
 If <code>destination</code> already exists, it is overwritten. Otherwise, a new sorted set will be created.
 To get the result directly, see <a href="./#zunionwithscores">zunionWithScores</a>.</p>
@@ -17841,7 +17627,6 @@ To get the result directly, see <a href="./#zunionwithscores">zunionWithScores</
 <blockquote>
 <p><strong>zunionWithScores</strong>(<code>keys</code>, <code>options</code>?): <code>T</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Transaction.ts#L2148">src/Transaction.ts:2148</a></p>
 <p>Computes the intersection of sorted sets given by the specified <code>keys</code> and returns a list of union elements with scores.
 To get the elements only, see <a href="./#zunion">zunion</a>.</p>
 <h4 id="parameters_199">Parameters</h4>

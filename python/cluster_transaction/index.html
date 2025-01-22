@@ -1426,45 +1426,7 @@ are documented alongside each method.</p>
 
               <details class="quote">
                 <summary>Source code in <code>glide/async_commands/transaction.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5075</span>
-<span class="normal">5076</span>
-<span class="normal">5077</span>
-<span class="normal">5078</span>
-<span class="normal">5079</span>
-<span class="normal">5080</span>
-<span class="normal">5081</span>
-<span class="normal">5082</span>
-<span class="normal">5083</span>
-<span class="normal">5084</span>
-<span class="normal">5085</span>
-<span class="normal">5086</span>
-<span class="normal">5087</span>
-<span class="normal">5088</span>
-<span class="normal">5089</span>
-<span class="normal">5090</span>
-<span class="normal">5091</span>
-<span class="normal">5092</span>
-<span class="normal">5093</span>
-<span class="normal">5094</span>
-<span class="normal">5095</span>
-<span class="normal">5096</span>
-<span class="normal">5097</span>
-<span class="normal">5098</span>
-<span class="normal">5099</span>
-<span class="normal">5100</span>
-<span class="normal">5101</span>
-<span class="normal">5102</span>
-<span class="normal">5103</span>
-<span class="normal">5104</span>
-<span class="normal">5105</span>
-<span class="normal">5106</span>
-<span class="normal">5107</span>
-<span class="normal">5108</span>
-<span class="normal">5109</span>
-<span class="normal">5110</span>
-<span class="normal">5111</span>
-<span class="normal">5112</span>
-<span class="normal">5113</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5113</span>
 <span class="normal">5114</span>
 <span class="normal">5115</span>
 <span class="normal">5116</span>
@@ -1522,7 +1484,45 @@ are documented alongside each method.</p>
 <span class="normal">5168</span>
 <span class="normal">5169</span>
 <span class="normal">5170</span>
-<span class="normal">5171</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ClusterTransaction</span><span class="p">(</span><span class="n">BaseTransaction</span><span class="p">):</span>
+<span class="normal">5171</span>
+<span class="normal">5172</span>
+<span class="normal">5173</span>
+<span class="normal">5174</span>
+<span class="normal">5175</span>
+<span class="normal">5176</span>
+<span class="normal">5177</span>
+<span class="normal">5178</span>
+<span class="normal">5179</span>
+<span class="normal">5180</span>
+<span class="normal">5181</span>
+<span class="normal">5182</span>
+<span class="normal">5183</span>
+<span class="normal">5184</span>
+<span class="normal">5185</span>
+<span class="normal">5186</span>
+<span class="normal">5187</span>
+<span class="normal">5188</span>
+<span class="normal">5189</span>
+<span class="normal">5190</span>
+<span class="normal">5191</span>
+<span class="normal">5192</span>
+<span class="normal">5193</span>
+<span class="normal">5194</span>
+<span class="normal">5195</span>
+<span class="normal">5196</span>
+<span class="normal">5197</span>
+<span class="normal">5198</span>
+<span class="normal">5199</span>
+<span class="normal">5200</span>
+<span class="normal">5201</span>
+<span class="normal">5202</span>
+<span class="normal">5203</span>
+<span class="normal">5204</span>
+<span class="normal">5205</span>
+<span class="normal">5206</span>
+<span class="normal">5207</span>
+<span class="normal">5208</span>
+<span class="normal">5209</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ClusterTransaction</span><span class="p">(</span><span class="n">BaseTransaction</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Extends BaseTransaction class for cluster mode commands that are not supported in standalone.</span>
 
@@ -1597,7 +1597,7 @@ are documented alongside each method.</p>
 <span class="sd">                    If no pattern is specified, all active shard channels are returned.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">command_args</span> <span class="o">=</span> <span class="p">[</span><span class="n">pattern</span><span class="p">]</span> <span class="k">if</span> <span class="n">pattern</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[]</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">append_command</span><span class="p">(</span><span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubShardChannels</span><span class="p">,</span> <span class="n">command_args</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">append_command</span><span class="p">(</span><span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubSChannels</span><span class="p">,</span> <span class="n">command_args</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">pubsub_shardnumsub</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">channels</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">TEncodable</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
@@ -1617,7 +1617,7 @@ are documented alongside each method.</p>
 <span class="sd">            Mapping[bytes, int]: A map where keys are the shard channel names and values are the number of subscribers.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">append_command</span><span class="p">(</span>
-            <span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubShardNumSub</span><span class="p">,</span> <span class="n">channels</span> <span class="k">if</span> <span class="n">channels</span> <span class="k">else</span> <span class="p">[]</span>
+            <span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubSNumSub</span><span class="p">,</span> <span class="n">channels</span> <span class="k">if</span> <span class="n">channels</span> <span class="k">else</span> <span class="p">[]</span>
         <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
               </details>
@@ -1720,33 +1720,33 @@ removes the <code>destination</code> key first if it already exists, otherwise p
 
             <details class="quote">
               <summary>Source code in <code>glide/async_commands/transaction.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5084</span>
-<span class="normal">5085</span>
-<span class="normal">5086</span>
-<span class="normal">5087</span>
-<span class="normal">5088</span>
-<span class="normal">5089</span>
-<span class="normal">5090</span>
-<span class="normal">5091</span>
-<span class="normal">5092</span>
-<span class="normal">5093</span>
-<span class="normal">5094</span>
-<span class="normal">5095</span>
-<span class="normal">5096</span>
-<span class="normal">5097</span>
-<span class="normal">5098</span>
-<span class="normal">5099</span>
-<span class="normal">5100</span>
-<span class="normal">5101</span>
-<span class="normal">5102</span>
-<span class="normal">5103</span>
-<span class="normal">5104</span>
-<span class="normal">5105</span>
-<span class="normal">5106</span>
-<span class="normal">5107</span>
-<span class="normal">5108</span>
-<span class="normal">5109</span>
-<span class="normal">5110</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5122</span>
+<span class="normal">5123</span>
+<span class="normal">5124</span>
+<span class="normal">5125</span>
+<span class="normal">5126</span>
+<span class="normal">5127</span>
+<span class="normal">5128</span>
+<span class="normal">5129</span>
+<span class="normal">5130</span>
+<span class="normal">5131</span>
+<span class="normal">5132</span>
+<span class="normal">5133</span>
+<span class="normal">5134</span>
+<span class="normal">5135</span>
+<span class="normal">5136</span>
+<span class="normal">5137</span>
+<span class="normal">5138</span>
+<span class="normal">5139</span>
+<span class="normal">5140</span>
+<span class="normal">5141</span>
+<span class="normal">5142</span>
+<span class="normal">5143</span>
+<span class="normal">5144</span>
+<span class="normal">5145</span>
+<span class="normal">5146</span>
+<span class="normal">5147</span>
+<span class="normal">5148</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="n">source</span><span class="p">:</span> <span class="n">TEncodable</span><span class="p">,</span>
     <span class="n">destination</span><span class="p">:</span> <span class="n">TEncodable</span><span class="p">,</span>
@@ -1883,26 +1883,26 @@ See https://valkey.io/commands/publish and https://valkey.io/commands/spublish f
 
             <details class="quote">
               <summary>Source code in <code>glide/async_commands/transaction.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5112</span>
-<span class="normal">5113</span>
-<span class="normal">5114</span>
-<span class="normal">5115</span>
-<span class="normal">5116</span>
-<span class="normal">5117</span>
-<span class="normal">5118</span>
-<span class="normal">5119</span>
-<span class="normal">5120</span>
-<span class="normal">5121</span>
-<span class="normal">5122</span>
-<span class="normal">5123</span>
-<span class="normal">5124</span>
-<span class="normal">5125</span>
-<span class="normal">5126</span>
-<span class="normal">5127</span>
-<span class="normal">5128</span>
-<span class="normal">5129</span>
-<span class="normal">5130</span>
-<span class="normal">5131</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">publish</span><span class="p">(</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5150</span>
+<span class="normal">5151</span>
+<span class="normal">5152</span>
+<span class="normal">5153</span>
+<span class="normal">5154</span>
+<span class="normal">5155</span>
+<span class="normal">5156</span>
+<span class="normal">5157</span>
+<span class="normal">5158</span>
+<span class="normal">5159</span>
+<span class="normal">5160</span>
+<span class="normal">5161</span>
+<span class="normal">5162</span>
+<span class="normal">5163</span>
+<span class="normal">5164</span>
+<span class="normal">5165</span>
+<span class="normal">5166</span>
+<span class="normal">5167</span>
+<span class="normal">5168</span>
+<span class="normal">5169</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">publish</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">channel</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">sharded</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;ClusterTransaction&quot;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -1982,24 +1982,24 @@ See https://valkey.io/commands/publish and https://valkey.io/commands/spublish f
 </details>
             <details class="quote">
               <summary>Source code in <code>glide/async_commands/transaction.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5133</span>
-<span class="normal">5134</span>
-<span class="normal">5135</span>
-<span class="normal">5136</span>
-<span class="normal">5137</span>
-<span class="normal">5138</span>
-<span class="normal">5139</span>
-<span class="normal">5140</span>
-<span class="normal">5141</span>
-<span class="normal">5142</span>
-<span class="normal">5143</span>
-<span class="normal">5144</span>
-<span class="normal">5145</span>
-<span class="normal">5146</span>
-<span class="normal">5147</span>
-<span class="normal">5148</span>
-<span class="normal">5149</span>
-<span class="normal">5150</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">pubsub_shardchannels</span><span class="p">(</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5171</span>
+<span class="normal">5172</span>
+<span class="normal">5173</span>
+<span class="normal">5174</span>
+<span class="normal">5175</span>
+<span class="normal">5176</span>
+<span class="normal">5177</span>
+<span class="normal">5178</span>
+<span class="normal">5179</span>
+<span class="normal">5180</span>
+<span class="normal">5181</span>
+<span class="normal">5182</span>
+<span class="normal">5183</span>
+<span class="normal">5184</span>
+<span class="normal">5185</span>
+<span class="normal">5186</span>
+<span class="normal">5187</span>
+<span class="normal">5188</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">pubsub_shardchannels</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">TEncodable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;ClusterTransaction&quot;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -2016,7 +2016,7 @@ See https://valkey.io/commands/publish and https://valkey.io/commands/spublish f
 <span class="sd">                If no pattern is specified, all active shard channels are returned.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">command_args</span> <span class="o">=</span> <span class="p">[</span><span class="n">pattern</span><span class="p">]</span> <span class="k">if</span> <span class="n">pattern</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[]</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">append_command</span><span class="p">(</span><span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubShardChannels</span><span class="p">,</span> <span class="n">command_args</span><span class="p">)</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">append_command</span><span class="p">(</span><span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubSChannels</span><span class="p">,</span> <span class="n">command_args</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -2077,26 +2077,26 @@ See https://valkey.io/commands/publish and https://valkey.io/commands/spublish f
 </details>
             <details class="quote">
               <summary>Source code in <code>glide/async_commands/transaction.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5152</span>
-<span class="normal">5153</span>
-<span class="normal">5154</span>
-<span class="normal">5155</span>
-<span class="normal">5156</span>
-<span class="normal">5157</span>
-<span class="normal">5158</span>
-<span class="normal">5159</span>
-<span class="normal">5160</span>
-<span class="normal">5161</span>
-<span class="normal">5162</span>
-<span class="normal">5163</span>
-<span class="normal">5164</span>
-<span class="normal">5165</span>
-<span class="normal">5166</span>
-<span class="normal">5167</span>
-<span class="normal">5168</span>
-<span class="normal">5169</span>
-<span class="normal">5170</span>
-<span class="normal">5171</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">pubsub_shardnumsub</span><span class="p">(</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">5190</span>
+<span class="normal">5191</span>
+<span class="normal">5192</span>
+<span class="normal">5193</span>
+<span class="normal">5194</span>
+<span class="normal">5195</span>
+<span class="normal">5196</span>
+<span class="normal">5197</span>
+<span class="normal">5198</span>
+<span class="normal">5199</span>
+<span class="normal">5200</span>
+<span class="normal">5201</span>
+<span class="normal">5202</span>
+<span class="normal">5203</span>
+<span class="normal">5204</span>
+<span class="normal">5205</span>
+<span class="normal">5206</span>
+<span class="normal">5207</span>
+<span class="normal">5208</span>
+<span class="normal">5209</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">pubsub_shardnumsub</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span> <span class="n">channels</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">TEncodable</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;ClusterTransaction&quot;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -2114,7 +2114,7 @@ See https://valkey.io/commands/publish and https://valkey.io/commands/spublish f
 <span class="sd">        Mapping[bytes, int]: A map where keys are the shard channel names and values are the number of subscribers.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">append_command</span><span class="p">(</span>
-        <span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubShardNumSub</span><span class="p">,</span> <span class="n">channels</span> <span class="k">if</span> <span class="n">channels</span> <span class="k">else</span> <span class="p">[]</span>
+        <span class="n">RequestType</span><span class="o">.</span><span class="n">PubSubSNumSub</span><span class="p">,</span> <span class="n">channels</span> <span class="k">if</span> <span class="n">channels</span> <span class="k">else</span> <span class="p">[]</span>
     <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>

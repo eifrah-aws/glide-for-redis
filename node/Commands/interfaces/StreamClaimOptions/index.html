@@ -1262,7 +1262,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Commands</a> / StreamClaimOptions</p>
 <h1 id="interface-streamclaimoptions">Interface: StreamClaimOptions</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2768">src/Commands.ts:2768</a></p>
 <p>Optional parameters for <a href="../../../BaseClient/classes/BaseClient/#xclaim">xclaim</a> command.</p>
 <h2 id="properties">Properties</h2>
 <table>
@@ -1271,7 +1270,6 @@
 <th>Property</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1279,25 +1277,21 @@
 <td><a id="idle"></a> <code>idle?</code></td>
 <td><code>number</code></td>
 <td>Set the idle time (last time it was delivered) of the message in milliseconds. If <code>idle</code> is not specified, an <code>idle</code> of <code>0</code> is assumed, that is, the time count is reset because the message now has a new owner trying to process it.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2774">src/Commands.ts:2774</a></td>
 </tr>
 <tr>
 <td><a id="idleunixtime"></a> <code>idleUnixTime?</code></td>
 <td><code>number</code></td>
 <td>This is the same as <a href="./#idle">idle</a> but instead of a relative amount of milliseconds, it sets the idle time to a specific Unix time (in milliseconds). This is useful in order to rewrite the AOF file generating <code>XCLAIM</code> commands.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2781">src/Commands.ts:2781</a></td>
 </tr>
 <tr>
 <td><a id="isforce"></a> <code>isForce?</code></td>
 <td><code>boolean</code></td>
 <td>Creates the pending message entry in the PEL even if certain specified IDs are not already in the PEL assigned to a different client. However, the message must exist in the stream, otherwise the IDs of non-existing messages are ignored.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2797">src/Commands.ts:2797</a></td>
 </tr>
 <tr>
 <td><a id="retrycount"></a> <code>retryCount?</code></td>
 <td><code>number</code></td>
 <td>Set the retry counter to the specified value. This counter is incremented every time a message is delivered again. Normally <a href="../../../BaseClient/classes/BaseClient/#xclaim">xclaim</a> does not alter this counter, which is just served to clients when the <a href="../../../BaseClient/classes/BaseClient/#xpending">xpending</a> command is called: this way clients can detect anomalies, like messages that are never processed for some reason after a big number of delivery attempts.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L2790">src/Commands.ts:2790</a></td>
 </tr>
 </tbody>
 </table>

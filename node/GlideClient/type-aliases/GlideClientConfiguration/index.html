@@ -1283,7 +1283,6 @@
 <blockquote>
 <p><strong>GlideClientConfiguration</strong>: <a href="../../../BaseClient/interfaces/BaseClientConfiguration/"><code>BaseClientConfiguration</code></a> &amp; <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L66">src/GlideClient.ts:66</a></p>
 <p>Configuration options for creating a <a href="../../classes/GlideClient/">GlideClient</a>.</p>
 <p>Extends <code>BaseClientConfiguration</code> with properties specific to <code>GlideClient</code>, such as database selection,
 reconnection strategies, and Pub/Sub subscription settings.</p>
@@ -1294,7 +1293,6 @@ reconnection strategies, and Pub/Sub subscription settings.</p>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1302,43 +1300,36 @@ reconnection strategies, and Pub/Sub subscription settings.</p>
 <td><code>advancedConfiguration</code>?</td>
 <td><a href="../AdvancedGlideClientConfiguration/"><code>AdvancedGlideClientConfiguration</code></a></td>
 <td>Advanced configuration settings for the client.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L178">src/GlideClient.ts:178</a></td>
 </tr>
 <tr>
 <td><code>connectionBackoff</code>?</td>
 <td><code>object</code></td>
 <td>Strategy used to determine how and when to reconnect, in case of connection failures. The time between attempts grows exponentially, to the formula rand(0 .. factor * (exponentBase ^ N)), where N is the number of failed attempts. The client will attempt to reconnect indefinitely. Once the maximum value is reached, that will remain the time between retry attempts until a reconnect attempt is succesful. If not set, a default backoff strategy will be used.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L152">src/GlideClient.ts:152</a></td>
 </tr>
 <tr>
 <td><code>connectionBackoff.exponentBase</code></td>
 <td><code>number</code></td>
 <td>The exponent base configured for the strategy. Value must be an integer.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L168">src/GlideClient.ts:168</a></td>
 </tr>
 <tr>
 <td><code>connectionBackoff.factor</code></td>
 <td><code>number</code></td>
 <td>The multiplier that will be applied to the waiting time between each retry. Value must be an integer.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L163">src/GlideClient.ts:163</a></td>
 </tr>
 <tr>
 <td><code>connectionBackoff.numberOfRetries</code></td>
 <td><code>number</code></td>
 <td>Number of retry attempts that the client should perform when disconnected from the server, where the time between retries increases. Once the retries have reached the maximum value, the time between retries will remain constant until a reconnect attempt is succesful. Value must be an integer.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L158">src/GlideClient.ts:158</a></td>
 </tr>
 <tr>
 <td><code>databaseId</code>?</td>
 <td><code>number</code></td>
 <td>index of the logical database to connect to.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L144">src/GlideClient.ts:144</a></td>
 </tr>
 <tr>
 <td><code>pubsubSubscriptions</code>?</td>
 <td><a href="../../namespaces/GlideClientConfiguration/interfaces/PubSubSubscriptions/"><code>PubSubSubscriptions</code></a></td>
 <td>PubSub subscriptions to be used for the client. Will be applied via SUBSCRIBE/PSUBSCRIBE commands during connection establishment.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClient.ts#L174">src/GlideClient.ts:174</a></td>
 </tr>
 </tbody>
 </table>

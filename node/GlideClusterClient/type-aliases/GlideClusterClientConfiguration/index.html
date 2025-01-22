@@ -1283,7 +1283,6 @@
 <blockquote>
 <p><strong>GlideClusterClientConfiguration</strong>: <a href="../../../BaseClient/interfaces/BaseClientConfiguration/"><code>BaseClientConfiguration</code></a> &amp; <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L104">src/GlideClusterClient.ts:104</a></p>
 <p>Configuration options for creating a <a href="../../classes/GlideClusterClient/">GlideClusterClient</a>.</p>
 <p>Extends <a href="../../../BaseClient/interfaces/BaseClientConfiguration/">BaseClientConfiguration</a> with properties specific to <code>GlideClusterClient</code>, such as periodic topology checks
 and Pub/Sub subscription settings.</p>
@@ -1294,7 +1293,6 @@ and Pub/Sub subscription settings.</p>
 <th>Name</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1302,19 +1300,16 @@ and Pub/Sub subscription settings.</p>
 <td><code>advancedConfiguration</code>?</td>
 <td><a href="../AdvancedGlideClusterClientConfiguration/"><code>AdvancedGlideClusterClientConfiguration</code></a></td>
 <td>Advanced configuration settings for the client.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L197">src/GlideClusterClient.ts:197</a></td>
 </tr>
 <tr>
 <td><code>periodicChecks</code>?</td>
 <td><a href="../PeriodicChecks/"><code>PeriodicChecks</code></a></td>
 <td>Configure the periodic topology checks. These checks evaluate changes in the cluster's topology, triggering a slot refresh when detected. Periodic checks ensure a quick and efficient process by querying a limited number of nodes. If not set, <code>enabledDefaultConfigs</code> will be used.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L187">src/GlideClusterClient.ts:187</a></td>
 </tr>
 <tr>
 <td><code>pubsubSubscriptions</code>?</td>
 <td><a href="../../namespaces/GlideClusterClientConfiguration/interfaces/PubSubSubscriptions/"><code>PubSubSubscriptions</code></a></td>
 <td>PubSub subscriptions to be used for the client. Will be applied via SUBSCRIBE/PSUBSCRIBE/SSUBSCRIBE commands during connection establishment.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L193">src/GlideClusterClient.ts:193</a></td>
 </tr>
 </tbody>
 </table>

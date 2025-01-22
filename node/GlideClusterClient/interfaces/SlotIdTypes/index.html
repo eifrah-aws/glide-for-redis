@@ -1280,7 +1280,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">GlideClusterClient</a> / SlotIdTypes</p>
 <h1 id="interface-slotidtypes">Interface: SlotIdTypes</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L283">src/GlideClusterClient.ts:283</a></p>
 <p>Routing configuration for commands based on a specific slot ID in a Valkey cluster.</p>
 <h2 id="remarks">Remarks</h2>
 <p>This interface allows you to specify routing of a command to a node responsible for a particular slot ID in the cluster.
@@ -1315,7 +1314,6 @@ manages a range of slots.</p>
 <th>Property</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1323,13 +1321,11 @@ manages a range of slots.</p>
 <td><a id="id"></a> <code>id</code></td>
 <td><code>number</code></td>
 <td>Slot number. There are 16384 slots in a Valkey cluster, and each shard manages a slot range. Unless the slot is known, it's better to route using <code>SlotKeyTypes</code></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L293">src/GlideClusterClient.ts:293</a></td>
 </tr>
 <tr>
 <td><a id="type"></a> <code>type</code></td>
 <td><code>"primarySlotId"</code> | <code>"replicaSlotId"</code></td>
 <td><code>replicaSlotId</code> overrides the <code>readFrom</code> configuration. If it's used the request will be routed to a replica, even if the strategy is <code>alwaysFromPrimary</code>.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/GlideClusterClient.ts#L288">src/GlideClusterClient.ts:288</a></td>
 </tr>
 </tbody>
 </table>

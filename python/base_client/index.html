@@ -1400,7 +1400,13 @@
 
               <details class="quote">
                 <summary>Source code in <code>glide/glide_client.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 62</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 56</span>
+<span class="normal"> 57</span>
+<span class="normal"> 58</span>
+<span class="normal"> 59</span>
+<span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
 <span class="normal"> 63</span>
 <span class="normal"> 64</span>
 <span class="normal"> 65</span>
@@ -1866,32 +1872,7 @@
 <span class="normal">525</span>
 <span class="normal">526</span>
 <span class="normal">527</span>
-<span class="normal">528</span>
-<span class="normal">529</span>
-<span class="normal">530</span>
-<span class="normal">531</span>
-<span class="normal">532</span>
-<span class="normal">533</span>
-<span class="normal">534</span>
-<span class="normal">535</span>
-<span class="normal">536</span>
-<span class="normal">537</span>
-<span class="normal">538</span>
-<span class="normal">539</span>
-<span class="normal">540</span>
-<span class="normal">541</span>
-<span class="normal">542</span>
-<span class="normal">543</span>
-<span class="normal">544</span>
-<span class="normal">545</span>
-<span class="normal">546</span>
-<span class="normal">547</span>
-<span class="normal">548</span>
-<span class="normal">549</span>
-<span class="normal">550</span>
-<span class="normal">551</span>
-<span class="normal">552</span>
-<span class="normal">553</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">BaseClient</span><span class="p">(</span><span class="n">CoreCommands</span><span class="p">):</span>
+<span class="normal">528</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">BaseClient</span><span class="p">(</span><span class="n">CoreCommands</span><span class="p">):</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">BaseClientConfiguration</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        To create a new client, use the `create` classmethod</span>
@@ -2356,7 +2337,7 @@
                         <span class="n">read_bytes</span><span class="p">,</span> <span class="n">read_bytes_view</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">Response</span>
                     <span class="p">)</span>
                 <span class="k">except</span> <span class="n">PartialMessageException</span><span class="p">:</span>
-                    <span class="c1"># Received only partial response, break the inner loop</span>
+                    <span class="c1"># Recieved only partial response, break the inner loop</span>
                     <span class="n">remaining_read_bytes</span> <span class="o">=</span> <span class="n">read_bytes</span><span class="p">[</span><span class="n">offset</span><span class="p">:]</span>
                     <span class="k">break</span>
                 <span class="n">response</span> <span class="o">=</span> <span class="n">cast</span><span class="p">(</span><span class="n">Response</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
@@ -2364,25 +2345,6 @@
                     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_process_push</span><span class="p">(</span><span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">)</span>
                 <span class="k">else</span><span class="p">:</span>
                     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_process_response</span><span class="p">(</span><span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">)</span>
-
-    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get_statistics</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">get_statistics</span><span class="p">()</span>
-
-    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_update_connection_password</span><span class="p">(</span>
-        <span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">immediate_auth</span><span class="p">:</span> <span class="nb">bool</span>
-    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TResult</span><span class="p">:</span>
-        <span class="n">request</span> <span class="o">=</span> <span class="n">CommandRequest</span><span class="p">()</span>
-        <span class="n">request</span><span class="o">.</span><span class="n">callback_idx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_callback_index</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">password</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">request</span><span class="o">.</span><span class="n">update_connection_password</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">password</span>
-        <span class="n">request</span><span class="o">.</span><span class="n">update_connection_password</span><span class="o">.</span><span class="n">immediate_auth</span> <span class="o">=</span> <span class="n">immediate_auth</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_write_request_await_response</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-        <span class="c1"># Update the client binding side password if managed to change core configuration password</span>
-        <span class="k">if</span> <span class="n">response</span> <span class="ow">is</span> <span class="n">OK</span><span class="p">:</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">credentials</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">credentials</span> <span class="o">=</span> <span class="n">ServerCredentials</span><span class="p">(</span><span class="n">password</span><span class="o">=</span><span class="n">password</span> <span class="ow">or</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">credentials</span><span class="o">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">password</span> <span class="ow">or</span> <span class="s2">&quot;&quot;</span>
-        <span class="k">return</span> <span class="n">response</span>
 </code></pre></div></td></tr></table></div>
               </details>
 
@@ -2413,7 +2375,13 @@
 
             <details class="quote">
               <summary>Source code in <code>glide/glide_client.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">63</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
 <span class="normal">64</span>
 <span class="normal">65</span>
 <span class="normal">66</span>
@@ -2421,13 +2389,7 @@
 <span class="normal">68</span>
 <span class="normal">69</span>
 <span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">BaseClientConfiguration</span><span class="p">):</span>
+<span class="normal">71</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">BaseClientConfiguration</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    To create a new client, use the `create` classmethod</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -2499,7 +2461,13 @@ All open futures will be closed with an exception.</p>
 
             <details class="quote">
               <summary>Source code in <code>glide/glide_client.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">144</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
 <span class="normal">145</span>
 <span class="normal">146</span>
 <span class="normal">147</span>
@@ -2517,13 +2485,7 @@ All open futures will be closed with an exception.</p>
 <span class="normal">159</span>
 <span class="normal">160</span>
 <span class="normal">161</span>
-<span class="normal">162</span>
-<span class="normal">163</span>
-<span class="normal">164</span>
-<span class="normal">165</span>
-<span class="normal">166</span>
-<span class="normal">167</span>
-<span class="normal">168</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">err_message</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">162</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">err_message</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Terminate the client by closing all associated resources, including the socket and any active futures.</span>
 <span class="sd">    All open futures will be closed with an exception.</span>
@@ -2629,7 +2591,13 @@ If no configuration is provided, a default client to "localhost":6379 will be cr
 
             <details class="quote">
               <summary>Source code in <code>glide/glide_client.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 79</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
 <span class="normal"> 80</span>
 <span class="normal"> 81</span>
 <span class="normal"> 82</span>
@@ -2664,13 +2632,7 @@ If no configuration is provided, a default client to "localhost":6379 will be cr
 <span class="normal">111</span>
 <span class="normal">112</span>
 <span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="normal">114</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
 <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">create</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">BaseClientConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates a Glide client.</span>
 

@@ -1271,7 +1271,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Commands</a> / SortOptions</p>
 <h1 id="interface-sortoptions">Interface: SortOptions</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3590">src/Commands.ts:3590</a></p>
 <p>Optional arguments to <a href="../../../BaseClient/classes/BaseClient/#sort">sort</a>, <a href="../../../BaseClient/classes/BaseClient/#sortstore">sortStore</a> and <a href="../../../BaseClient/classes/BaseClient/#sortreadonly">sortReadOnly</a> commands.</p>
 <p>See https://valkey.io/commands/sort/ for more details.</p>
 <h2 id="remarks">Remarks</h2>
@@ -1284,7 +1283,6 @@
 <th>Property</th>
 <th>Type</th>
 <th>Description</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1292,31 +1290,26 @@
 <td><a id="bypattern"></a> <code>byPattern?</code></td>
 <td><a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a></td>
 <td>A pattern to sort by external keys instead of by the elements stored at the key themselves. The pattern should contain an asterisk (*) as a placeholder for the element values, where the value from the key replaces the asterisk to create the key name. For example, if <code>key</code> contains IDs of objects, <code>byPattern</code> can be used to sort these IDs based on an attribute of the objects, like their weights or timestamps. Supported in cluster mode since Valkey version 8.0 and above.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3599">src/Commands.ts:3599</a></td>
 </tr>
 <tr>
 <td><a id="getpatterns"></a> <code>getPatterns?</code></td>
 <td><a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]</td>
 <td>A pattern used to retrieve external keys' values, instead of the elements at <code>key</code>. The pattern should contain an asterisk (<code>*</code>) as a placeholder for the element values, where the value from <code>key</code> replaces the asterisk to create the <code>key</code> name. This allows the sorted elements to be transformed based on the related keys values. For example, if <code>key</code> contains IDs of users, <code>getPatterns</code> can be used to retrieve specific attributes of these users, such as their names or email addresses. E.g., if <code>getPatterns</code> is <code>name_*</code>, the command will return the values of the keys <code>name_&lt;element&gt;</code> for each sorted element. Multiple <code>getPatterns</code> arguments can be provided to retrieve multiple attributes. The special value <code>#</code> can be used to include the actual element from <code>key</code> being sorted. If not provided, only the sorted elements themselves are returned. Supported in cluster mode since Valkey version 8.0 and above.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3621">src/Commands.ts:3621</a></td>
 </tr>
 <tr>
 <td><a id="isalpha"></a> <code>isAlpha?</code></td>
 <td><code>boolean</code></td>
 <td>When <code>true</code>, sorts elements lexicographically. When <code>false</code> (default), sorts elements numerically. Use this when the list, set, or sorted set contains string values that cannot be converted into double precision floating point numbers.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3631">src/Commands.ts:3631</a></td>
 </tr>
 <tr>
 <td><a id="limit"></a> <code>limit?</code></td>
 <td><a href="../Limit/"><code>Limit</code></a></td>
 <td>Limiting the range of the query by setting offset and result count. See <a href="../Limit/">Limit</a> class for more information.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3605">src/Commands.ts:3605</a></td>
 </tr>
 <tr>
 <td><a id="orderby"></a> <code>orderBy?</code></td>
 <td><a href="../../enumerations/SortOrder/"><code>SortOrder</code></a></td>
 <td>Options for sorting order of elements.</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3624">src/Commands.ts:3624</a></td>
 </tr>
 </tbody>
 </table>

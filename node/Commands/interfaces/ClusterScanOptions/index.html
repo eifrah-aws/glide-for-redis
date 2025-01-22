@@ -1271,7 +1271,6 @@
 <hr />
 <p><a href="../../../modules/">@valkey/valkey-glide</a> / <a href="../../">Commands</a> / ClusterScanOptions</p>
 <h1 id="interface-clusterscanoptions">Interface: ClusterScanOptions</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3869">src/Commands.ts:3869</a></p>
 <p>Options for the SCAN command.
 <code>match</code>: The match filter is applied to the result of the command and will only include keys that match the pattern specified.
 <code>count</code>: <code>COUNT</code> is a just a hint for the command for how many elements to fetch from the server, the default is 10.
@@ -1292,7 +1291,6 @@ By default, the scan will stop if slots are not covered by the cluster.</p>
 <th>Type</th>
 <th>Description</th>
 <th>Inherited from</th>
-<th>Defined in</th>
 </tr>
 </thead>
 <tbody>
@@ -1302,7 +1300,6 @@ By default, the scan will stop if slots are not covered by the cluster.</p>
 <td><code>boolean</code></td>
 <td>-</td>
 <td>-</td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3870">src/Commands.ts:3870</a></td>
 </tr>
 <tr>
 <td><a id="count"></a> <code>count?</code></td>
@@ -1310,7 +1307,6 @@ By default, the scan will stop if slots are not covered by the cluster.</p>
 <td><code>number</code></td>
 <td><code>COUNT</code> is a just a hint for the command for how many elements to fetch from the sorted set. <code>COUNT</code> could be ignored until the sorted set is large enough for the <code>SCAN</code> commands to represent the results as compact single-allocation packed encoding.</td>
 <td><a href="../ScanOptions/"><code>ScanOptions</code></a>.<a href="../ScanOptions/#count"><code>count</code></a></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3846">src/Commands.ts:3846</a></td>
 </tr>
 <tr>
 <td><a id="match"></a> <code>match?</code></td>
@@ -1318,7 +1314,6 @@ By default, the scan will stop if slots are not covered by the cluster.</p>
 <td><a href="../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a></td>
 <td>The match filter is applied to the result of the command and will only include strings that match the pattern specified. If the sorted set is large enough for scan commands to return only a subset of the sorted set then there could be a case where the result is empty although there are items that match the pattern specified. This is due to the default <code>COUNT</code> being <code>10</code> which indicates that it will only fetch and match <code>10</code> items from the list.</td>
 <td><a href="../ScanOptions/"><code>ScanOptions</code></a>.<a href="../ScanOptions/#match"><code>match</code></a></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3840">src/Commands.ts:3840</a></td>
 </tr>
 <tr>
 <td><a id="type"></a> <code>type?</code></td>
@@ -1326,7 +1321,6 @@ By default, the scan will stop if slots are not covered by the cluster.</p>
 <td><a href="../../../BaseClient/enumerations/ObjectType/"><code>ObjectType</code></a></td>
 <td>-</td>
 <td><a href="../ScanOptions/"><code>ScanOptions</code></a>.<a href="../ScanOptions/#type"><code>type</code></a></td>
-<td><a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/Commands.ts#L3857">src/Commands.ts:3857</a></td>
 </tr>
 </tbody>
 </table>

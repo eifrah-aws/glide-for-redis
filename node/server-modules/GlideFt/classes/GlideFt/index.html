@@ -2585,7 +2585,6 @@
 <hr />
 <p><a href="../../../../modules/">@valkey/valkey-glide</a> / <a href="../../">server-modules/GlideFt</a> / GlideFt</p>
 <h1 id="class-glideft">Class: GlideFt</h1>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L45">src/server-modules/GlideFt.ts:45</a></p>
 <p>Module for Vector Search commands.</p>
 <h2 id="constructors">Constructors</h2>
 <h3 id="new-glideft">new GlideFt()</h3>
@@ -2599,7 +2598,6 @@
 <blockquote>
 <p><code>static</code> <strong>aggregate</strong>(<code>client</code>, <code>indexName</code>, <code>query</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/FtAggregateReturnType/"><code>FtAggregateReturnType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L307">src/server-modules/GlideFt.ts:307</a></p>
 <p>Runs a search query on an index, and perform aggregate transformations on the results.</p>
 <h4 id="parameters">Parameters</h4>
 <table>
@@ -2693,7 +2691,6 @@
 <blockquote>
 <p><code>static</code> <strong>aliasadd</strong>(<code>client</code>, <code>indexName</code>, <code>alias</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L653">src/server-modules/GlideFt.ts:653</a></p>
 <p>Adds an alias for an index. The new alias name can be used anywhere that an index name is required.</p>
 <h4 id="parameters_1">Parameters</h4>
 <table>
@@ -2734,7 +2731,6 @@
 <blockquote>
 <p><code>static</code> <strong>aliasdel</strong>(<code>client</code>, <code>alias</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L677">src/server-modules/GlideFt.ts:677</a></p>
 <p>Deletes an existing alias for an index.</p>
 <h4 id="parameters_2">Parameters</h4>
 <table>
@@ -2770,7 +2766,6 @@
 <blockquote>
 <p><code>static</code> <strong>aliaslist</strong>(<code>client</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../../BaseClient/type-aliases/GlideRecord/"><code>GlideRecord</code></a>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L727">src/server-modules/GlideFt.ts:727</a></p>
 <p>List the index aliases.</p>
 <h4 id="parameters_3">Parameters</h4>
 <table>
@@ -2808,7 +2803,6 @@
 <blockquote>
 <p><code>static</code> <strong>aliasupdate</strong>(<code>client</code>, <code>alias</code>, <code>indexName</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L701">src/server-modules/GlideFt.ts:701</a></p>
 <p>Updates an existing alias to point to a different physical index. This command only affects future references to the alias.</p>
 <h4 id="parameters_4">Parameters</h4>
 <table>
@@ -2849,7 +2843,6 @@
 <blockquote>
 <p><code>static</code> <strong>create</strong>(<code>client</code>, <code>indexName</code>, <code>schema</code>, <code>options</code>?): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L75">src/server-modules/GlideFt.ts:75</a></p>
 <p>Creates an index and initiates a backfill of that index.</p>
 <h4 id="parameters_5">Parameters</h4>
 <table>
@@ -2909,7 +2902,6 @@
 <blockquote>
 <p><code>static</code> <strong>dropindex</strong>(<code>client</code>, <code>indexName</code>): <code>Promise</code>\&lt;<code>"OK"</code>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L212">src/server-modules/GlideFt.ts:212</a></p>
 <p>Deletes an index and associated content. Indexed document keys are unaffected.</p>
 <h4 id="parameters_6">Parameters</h4>
 <table>
@@ -2945,7 +2937,6 @@
 <blockquote>
 <p><code>static</code> <strong>explain</strong>(<code>client</code>, <code>indexName</code>, <code>query</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L408">src/server-modules/GlideFt.ts:408</a></p>
 <p>Parse a query and return information about how that query was parsed.</p>
 <h4 id="parameters_7">Parameters</h4>
 <table>
@@ -2991,7 +2982,6 @@
 <blockquote>
 <p><code>static</code> <strong>explaincli</strong>(<code>client</code>, <code>indexName</code>, <code>query</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L437">src/server-modules/GlideFt.ts:437</a></p>
 <p>Parse a query and return information about how that query was parsed.
 Same as <a href="./#explain">FT.EXPLAIN</a>, except that the results are
 displayed in a different format.</p>
@@ -3039,7 +3029,6 @@ displayed in a different format.</p>
 <blockquote>
 <p><code>static</code> <strong>info</strong>(<code>client</code>, <code>indexName</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/FtInfoReturnType/"><code>FtInfoReturnType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L378">src/server-modules/GlideFt.ts:378</a></p>
 <p>Returns information about a given index.</p>
 <h4 id="parameters_9">Parameters</h4>
 <table>
@@ -3117,7 +3106,6 @@ displayed in a different format.</p>
 <blockquote>
 <p><code>static</code> <strong>list</strong>(<code>client</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../../../BaseClient/type-aliases/GlideString/"><code>GlideString</code></a>[]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L235">src/server-modules/GlideFt.ts:235</a></p>
 <p>Lists all indexes.</p>
 <h4 id="parameters_10">Parameters</h4>
 <table>
@@ -3152,7 +3140,6 @@ displayed in a different format.</p>
 <blockquote>
 <p><code>static</code> <strong>profileAggregate</strong>(<code>client</code>, <code>indexName</code>, <code>query</code>, <code>options</code>?): <code>Promise</code>\&lt;[<a href="../../type-aliases/FtAggregateReturnType/"><code>FtAggregateReturnType</code></a>, <code>Record</code>\&lt;<code>string</code>, <code>number</code>&gt;]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L609">src/server-modules/GlideFt.ts:609</a></p>
 <p>Runs an aggregate query and collects performance profiling information.</p>
 <h4 id="parameters_11">Parameters</h4>
 <table>
@@ -3218,7 +3205,6 @@ displayed in a different format.</p>
 <blockquote>
 <p><code>static</code> <strong>profileSearch</strong>(<code>client</code>, <code>indexName</code>, <code>query</code>, <code>options</code>?): <code>Promise</code>\&lt;[<a href="../../type-aliases/FtSearchReturnType/"><code>FtSearchReturnType</code></a>, <code>Record</code>\&lt;<code>string</code>, <code>number</code>&gt;]&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L542">src/server-modules/GlideFt.ts:542</a></p>
 <p>Runs a search query and collects performance profiling information.</p>
 <h4 id="parameters_12">Parameters</h4>
 <table>
@@ -3269,7 +3255,6 @@ displayed in a different format.</p>
 <blockquote>
 <p><code>static</code> <strong>search</strong>(<code>client</code>, <code>indexName</code>, <code>query</code>, <code>options</code>?): <code>Promise</code>\&lt;<a href="../../type-aliases/FtSearchReturnType/"><code>FtSearchReturnType</code></a>&gt;</p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/eifrah-aws/glide-for-redis/blob/0db14eff006852f54dca3e67253f4a3d48df5a44/node/src/server-modules/GlideFt.ts#L502">src/server-modules/GlideFt.ts:502</a></p>
 <p>Uses the provided query expression to locate keys within an index. Once located, the count
 and/or content of indexed fields within those keys can be returned.</p>
 <h4 id="parameters_13">Parameters</h4>
